@@ -1,0 +1,54 @@
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  id: 'com.google.android.packageinstaller',
+  name: '软件包安装程序',
+  groups: [
+    {
+      key: 1,
+      name: '功能类-自动安装/更新软件',
+      fastQuery: true,
+      rules: [
+        {
+          key: 0,
+          matches: 'LinearLayout[childCount=2] > [text="安装"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/14046939',
+        },
+        {
+          key: 2,
+          matches: 'LinearLayout[childCount=2] > [text="更新"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14047571',
+            'https://i.gkd.li/i/14047854',
+          ],
+        },
+        {
+          key: 3,
+          matches: 'LinearLayout[childCount=2] > [text="完成"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14047514',
+            'https://i.gkd.li/i/14047969',
+          ],
+        },
+      ],
+      enable: false,
+    },
+    {
+      key: 2,
+      name: '功能类-安装未知应用设置',
+      fastQuery: true,
+      activityIds: 'com.android.packageinstaller.InstallStaging',
+      rules: [
+        {
+          key: 0,
+          matches: [
+            '[text*="禁止您的手机安装来自此来源的未知应用"]',
+            '[text="设置"]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/14080242',
+        },
+      ],
+      enable: false,
+    },
+  ],
+});

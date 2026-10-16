@@ -1,0 +1,42 @@
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  id: 'com.yoloho.dayima',
+  name: '大姨妈',
+  groups: [
+    {
+      key: 0,
+      name: '开屏广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          matches:
+            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14665571',
+            'https://i.gkd.li/i/13800282',
+          ],
+        },
+      ],
+      order: -10,
+    },
+    {
+      key: 1,
+      name: '未分类-广告弹窗',
+      matchTime: 10000,
+      rules: [
+        {
+          key: 0,
+          name: '腾讯SDK',
+          matches:
+            '[id="android:id/content"] >n FrameLayout[index=2] > ImageView',
+          snapshotUrls: 'https://i.gkd.li/i/13800255',
+        },
+      ],
+      enable: false,
+    },
+  ],
+});

@@ -1,0 +1,128 @@
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  id: 'com.ss.android.auto',
+  name: '懂车帝',
+  groups: [
+    {
+      key: 1,
+      name: '未分类-首页推荐卡片广告',
+      desc: '需二次点击关闭原因',
+      fastQuery: true,
+      activityIds: 'com.ss.android.auto.activity.SplashActivity',
+      rules: [
+        {
+          key: 0,
+          name: '点击【x】',
+          matches:
+            'TextView[text.length=1][id=null][clickable=false] < @FrameLayout[clickable=true][id!=null] - LinearLayout > [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/12660816',
+        },
+        {
+          preKeys: 1,
+          name: '点击【不感兴趣】1',
+          matches: '@ViewGroup[clickable=true] TextView[text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/13538627',
+        },
+        {
+          preKeys: 1,
+          name: '点击【不感兴趣】2',
+          matches: '[text="不感兴趣"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12711589',
+        },
+      ],
+      enable: false,
+    },
+    {
+      key: 2,
+      name: '未分类-升级弹窗',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: [
+        'com.ss.android.auto.activity.SplashActivity',
+        'com.ss.android.auto.policy.AutoPrivacyActivity',
+      ],
+      rules:
+        '@TextView[text="以后再说"] - FrameLayout >2 TextView[text$="升级"]',
+      snapshotUrls: 'https://i.gkd.li/i/13534445',
+      enable: false,
+    },
+    {
+      key: 3,
+      name: '未分类-右下角悬浮窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'activity',
+      activityIds: [
+        'com.ss.android.auto.activity.SplashActivity',
+        'com.ss.android.auto.activity.ConcernDetailActivity',
+      ],
+      rules:
+        'FrameLayout > RelativeLayout[childCount=2] > RelativeLayout + ImageView[clickable=true]',
+      snapshotUrls: [
+        'https://i.gkd.li/i/12798338',
+        'https://i.gkd.li/i/13535531',
+        'https://i.gkd.li/i/13535933',
+        'https://i.gkd.li/i/13535932',
+      ],
+      enable: false,
+    },
+    {
+      key: 4,
+      name: '未分类-文章底部卡片式广告',
+      fastQuery: true,
+      activityIds:
+        'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
+      rules:
+        'FrameLayout > RelativeLayout > @ImageView[clickable=true] + [text="广告"]',
+      snapshotUrls: 'https://i.gkd.li/i/12811597',
+      enable: false,
+    },
+    {
+      key: 5,
+      name: '局部广告-评论区-信息流广告',
+      desc: '像正常内容的广告',
+      fastQuery: true,
+      activityIds: [
+        'com.ss.android.article.base.feature.detail2.view.NewDetailActivity',
+        'com.ss.android.auto.ugc.video.activity.UgcLongPostActivity',
+        'com.ss.android.auto.ugc.video.activity.UgcNewDetailActivity',
+      ],
+      rules:
+        'FrameLayout > * > @ImageView[clickable=true] - LinearLayout > [text="广告"]',
+      snapshotUrls: [
+        'https://i.gkd.li/i/12811459',
+        'https://i.gkd.li/i/12825865',
+        'https://i.gkd.li/i/12900666',
+        'https://i.gkd.li/i/14321294',
+      ],
+      enable: false,
+    },
+    {
+      key: 6,
+      name: '未分类-请求推送通知弹窗',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: [
+        'com.ss.android.auto.activity.SplashActivity',
+        'com.ss.android.auto.policy.AutoPrivacyActivity',
+      ],
+      rules: '@TextView[clickable=true] + [text^="打开推送通知"]',
+      snapshotUrls: 'https://i.gkd.li/i/12840664',
+      enable: false,
+    },
+    {
+      key: 7,
+      name: '未分类-选车页卡片广告',
+      fastQuery: true,
+      activityIds: 'com.ss.android.auto.activity.ConcernDetailActivity',
+      rules:
+        'TextView[text.length=1][id=null][clickable=false] < @FrameLayout[clickable=true][id!=null] -2 [text="广告"]',
+      snapshotUrls: 'https://i.gkd.li/i/13686928',
+      enable: false,
+    },
+  ],
+});

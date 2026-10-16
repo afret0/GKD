@@ -1,0 +1,17 @@
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  id: 'com.julanling.app',
+  name: '安心记加班',
+  groups: [
+    {
+      key: 5,
+      name: '未分类-广告弹窗',
+      activityIds: 'com.julanling.dgq.main.view.MainFragmentActivity',
+      rules:
+        'FrameLayout > FrameLayout[childCount=1] > ImageView[width<80][height<80]',
+      snapshotUrls: 'https://i.gkd.li/i/13523567',
+      enable: false,
+    },
+  ],
+});

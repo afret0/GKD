@@ -1,0 +1,21 @@
+import { defineGkdApp } from '@gkd-kit/define';
+
+export default defineGkdApp({
+  id: 'com.ideal.flyerteacafes',
+  name: '飞客',
+  groups: [
+    {
+      key: 3,
+      name: '未分类-广告弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: 'com.ideal.flyerteacafes.ui.HomeActivity',
+      rules:
+        '@[id="com.ideal.flyerteacafes:id/close"] - FrameLayout > [id="com.ideal.flyerteacafes:id/tv_time_down"]',
+      snapshotUrls: 'https://i.gkd.li/i/13466119',
+      enable: false,
+    },
+  ],
+});
