@@ -1,7 +1,17 @@
 {
-  "name": "@gkd-kit/subscription-template",
-  "version": "0.0.0",
+  "name": "afreto",
+  "version": "1.0.1",
   "type": "module",
+  "description": "afret0 的 GKD 订阅",
+  "author": "afret0",
+  "homepage": "https://github.com/afret0/GKD#readme",
+  "bugs": {
+    "url": "https://github.com/afret0/GKD/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afret0/GKD.git"
+  },
   "scripts": {
     "postinstall": "simple-git-hooks",
     "format": "prettier --cache --write --ignore-unknown .",
