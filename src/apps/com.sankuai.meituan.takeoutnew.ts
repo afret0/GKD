@@ -14,7 +14,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13415044',
         'https://i.gkd.li/i/13276882',
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -22,7 +22,7 @@ export default defineGkdApp({
       name: '未分类-关闭美食广告弹窗',
       activityIds: 'com.sankuai.waimai.platform.mach.dialog.DynamicDialog',
       rules: ['@[desc="关闭"][clickable=true] > ImageView'],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -44,7 +44,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13175526',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });
