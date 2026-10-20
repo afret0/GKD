@@ -16,7 +16,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12646899',
         'https://i.gkd.li/i/12646925',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -24,7 +24,7 @@ export default defineGkdApp({
       activityIds: 'com.lphtsccft.zhangle.main.MainActivity',
       rules: '[text*="升级体验"] +2 LinearLayout > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/12699308',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -33,7 +33,7 @@ export default defineGkdApp({
       activityIds: 'com.lphtsccft.zhangle.main.MainActivity',
       rules: '[id="com.lphtsccft:id/home_float_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12892821',
-      enable: false,
+      enable: true,
     },
   ],
 });

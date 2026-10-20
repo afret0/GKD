@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'cn.com.livelab.MainActivity',
       rules: 'View >n View[childCount=2] > ImageView + Button',
       snapshotUrls: 'https://i.gkd.li/i/13258873',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.android.module.app.ui.test.activity.ActivityTestResult',
       rules: '[text="广告"] + TextView + View > TextView',
       snapshotUrls: 'https://i.gkd.li/i/13234012',
-      enable: false,
+      enable: true,
     },
   ],
 });

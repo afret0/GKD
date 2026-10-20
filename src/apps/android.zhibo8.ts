@@ -32,7 +32,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13786148',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -21,7 +21,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12818198',
         'https://i.gkd.li/i/13469004',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -31,7 +31,7 @@ export default defineGkdApp({
       activityIds: 'com.afollestad.materialdialogs.MaterialDialog',
       rules: '@[id="com.qidian.QDReader:id/ivClose"] + [text^="开启推送"]',
       snapshotUrls: 'https://i.gkd.li/i/12640242',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -55,7 +55,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13459031',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -64,7 +64,7 @@ export default defineGkdApp({
       activityIds: 'com.qidian.QDReader.ui.activity.QDBrowserActivity',
       rules: '[id="scanLogin"]',
       snapshotUrls: 'https://i.gkd.li/i/12903081',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -73,7 +73,7 @@ export default defineGkdApp({
       activityIds: 'com.qidian.QDReader.flutter.DailyReadingMainPageActivity',
       rules: 'View[desc="更多游戏"] - ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13406169',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -85,7 +85,7 @@ export default defineGkdApp({
       matchTime: 10000,
       rules: 'View[desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/13606901',
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -101,7 +101,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13918466',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

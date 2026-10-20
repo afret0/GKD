@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.mobileqq.richmediabrowser.AIOGalleryActivity',
       rules: '[text^="查看原图"]',
       snapshotUrls: 'https://i.gkd.li/i/15196002',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -22,7 +22,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/57941037/57b4e39f-ba48-4e57-a5de-3a461a583e60',
       snapshotUrls: 'https://i.gkd.li/i/15209768',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -68,7 +68,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13166361',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

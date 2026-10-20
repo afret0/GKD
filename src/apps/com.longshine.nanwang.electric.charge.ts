@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.longshine.nanwang.electric.charge:id/bodyFL"] + [id="com.longshine.nanwang.electric.charge:id/ivClose"]',
       snapshotUrls: ['https://i.gkd.li/i/12700011'],
-      enable: false,
+      enable: true,
     },
   ],
 });

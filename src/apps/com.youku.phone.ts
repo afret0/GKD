@@ -26,7 +26,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14321461',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -35,7 +35,7 @@ export default defineGkdApp({
       activityIds: 'com.youku.vip.wrapper.VipHomeActivity',
       rules: '[id="com.youku.phone:id/closeView"][desc="关闭弹层"]',
       snapshotUrls: 'https://i.gkd.li/i/12701029',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -59,7 +59,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

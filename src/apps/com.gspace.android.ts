@@ -28,14 +28,14 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12910420',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
       name: '未分类-Youtube播放视频跳过广告',
       rules: '[id="com.google.android.youtube:id/skip_ad_button"]',
       snapshotUrls: 'https://i.gkd.li/i/12709006',
-      enable: false,
+      enable: true,
     },
   ],
 });

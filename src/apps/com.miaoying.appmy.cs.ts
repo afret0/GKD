@@ -14,7 +14,7 @@ export default defineGkdApp({
       ],
       rules: '@[desc="我知道了"] + [desc="了解更多"]',
       snapshotUrls: 'https://i.gkd.li/i/12522872',
-      enable: false,
+      enable: true,
     },
     {
       key: 0,
@@ -58,7 +58,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12565522',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -71,7 +71,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12565408',
       ],
       rules: '[id="close_btn"][text="跳过"]',
-      enable: false,
+      enable: true,
     },
   ],
 });

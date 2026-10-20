@@ -35,7 +35,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13627900',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -44,7 +44,7 @@ export default defineGkdApp({
       activityIds: 'cn.damai.homepage.MainActivity',
       rules: '[text*="通知权限"] +2 LinearLayout > [text="不开启"]',
       snapshotUrls: 'https://i.gkd.li/i/13985393',
-      enable: false,
+      enable: true,
     },
   ],
 });

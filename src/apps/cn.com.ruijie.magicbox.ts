@@ -12,7 +12,7 @@ export default defineGkdApp({
         '@ImageView[id="cn.com.ruijie.magicbox:id/imageView_close"] +(2) RelativeLayout > LinearLayout > [text*="新版本"]',
       ],
       snapshotUrls: 'https://i.gkd.li/i/12642359',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

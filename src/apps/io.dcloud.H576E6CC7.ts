@@ -32,7 +32,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14743452',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -42,7 +42,7 @@ export default defineGkdApp({
       activityIds: 'com.yupao.entry.MainActivity',
       rules: '[vid="close"]',
       snapshotUrls: 'https://i.gkd.li/i/14731762',
-      enable: false,
+      enable: true,
     },
   ],
 });

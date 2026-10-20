@@ -20,7 +20,7 @@ export default defineGkdApp({
       name: '更新提示',
       rules: '[text*="新版本"] +(2) [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/12706195',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -63,7 +63,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12706240',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -72,7 +72,7 @@ export default defineGkdApp({
       rules:
         '@[id="io.iftech.android.box:id/ivClose"] + [text^="限时"][text$="特惠"]',
       snapshotUrls: 'https://i.gkd.li/i/12706226',
-      enable: false,
+      enable: true,
     },
   ],
 });

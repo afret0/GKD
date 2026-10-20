@@ -51,7 +51,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16410094',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -62,7 +62,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[text="允许获取位置信息"] +n * > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/14208572',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -72,7 +72,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[vid="iv_notification_reminder_dialog_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14208621',
-      enable: false,
+      enable: true,
     },
   ],
 });

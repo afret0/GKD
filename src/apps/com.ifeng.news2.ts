@@ -47,10 +47,10 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12705505',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
-      enable: false,
+      enable: true,
       key: 10,
       name: '权限提示-定位权限',
       desc: '自动点击取消',

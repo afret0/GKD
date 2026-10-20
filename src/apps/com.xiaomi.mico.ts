@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.xiaomi.mico:id/adImage"] + [id="com.xiaomi.mico:id/ivCloseAd"]',
       snapshotUrls: 'https://i.gkd.li/i/12745621',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -26,7 +26,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15284753',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

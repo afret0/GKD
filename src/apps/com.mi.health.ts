@@ -13,7 +13,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.mi.health:id/nextView"][text="下次再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13258813',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -24,7 +24,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text="开启后台无限制"] + [id="com.mi.health:id/close_icon"]',
       snapshotUrls: 'https://i.gkd.li/i/13495035',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -39,7 +39,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13537836',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -60,7 +60,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13626328',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

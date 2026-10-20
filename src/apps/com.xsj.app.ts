@@ -27,7 +27,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13670176',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -38,7 +38,7 @@ export default defineGkdApp({
       activityIds: 'com.xsj.app.MainActivity',
       rules: '[desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/13875711',
-      enable: false,
+      enable: true,
     },
   ],
 });

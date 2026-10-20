@@ -14,7 +14,7 @@ export default defineGkdApp({
       activityIds: 'com.shizhi.shihuoapp.module.main.ui.main.MainActivity',
       rules: '[text^="通知分类"] +n ImageView[id="com.hupu.shihuo:id/ivClose"]',
       snapshotUrls: 'https://i.gkd.li/i/13704887',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -25,7 +25,7 @@ export default defineGkdApp({
       rules:
         '[id="com.hupu.shihuo:id/fragment_container"] >11 @ViewGroup[clickable=true] > ImageView',
       snapshotUrls: 'https://i.gkd.li/i/13115664',
-      enable: false,
+      enable: true,
     },
   ],
 });

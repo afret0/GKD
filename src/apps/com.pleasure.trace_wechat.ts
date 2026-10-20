@@ -26,7 +26,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13479469',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -35,7 +35,7 @@ export default defineGkdApp({
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: '[text="反馈"] -2 @View > Image',
       snapshotUrls: 'https://i.gkd.li/i/13479468',
-      enable: false,
+      enable: true,
     },
   ],
 });

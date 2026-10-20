@@ -10,7 +10,7 @@ export default defineGkdApp({
       fastQuery: true,
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_ad_top_home_iv_close"]',
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -25,7 +25,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13218286',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -34,7 +34,7 @@ export default defineGkdApp({
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_iv_novel_back"]',
       snapshotUrls: 'https://i.gkd.li/i/13229127',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -44,7 +44,7 @@ export default defineGkdApp({
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.lite:id/main_login_guide_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13256447',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -54,7 +54,7 @@ export default defineGkdApp({
       rules:
         '[text="立即开启"] + [id="com.ximalaya.ting.lite:id/host_dialog_cancel_iv"]',
       snapshotUrls: 'https://i.gkd.li/i/13256505',
-      enable: false,
+      enable: true,
     },
   ],
 });

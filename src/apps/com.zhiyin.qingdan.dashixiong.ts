@@ -66,7 +66,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12843323',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -76,7 +76,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[desc^="必读通告"] +n [desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/12843280',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -89,7 +89,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13887500',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

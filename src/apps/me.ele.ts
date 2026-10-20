@@ -15,7 +15,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12650280',
         'https://i.gkd.li/i/13206819',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -63,7 +63,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14472929',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -108,7 +108,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -117,7 +117,7 @@ export default defineGkdApp({
       activityIds: 'me.ele.component.pops2.TransparentAppWebActivity',
       rules: 'bb Button[text="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/13205301',
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -126,7 +126,7 @@ export default defineGkdApp({
       activityIds: 'me.ele.component.webcontainer.view.AppUCWebActivity',
       rules: '@View + View >2 [text="买校园版超级吃货卡"]',
       snapshotUrls: 'https://i.gkd.li/i/13295007',
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -136,7 +136,7 @@ export default defineGkdApp({
       rules:
         '@ViewGroup[childCount=0][clickable=true] - ViewGroup[childCount=3] <<n [id="me.ele:id/id_magex_mist_view"]',
       snapshotUrls: 'https://i.gkd.li/i/13710588',
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -157,7 +157,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13710585',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -172,7 +172,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13931205',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -188,7 +188,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14473000',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -209,7 +209,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14630370',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -219,7 +219,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/101449500/a7264d48-cdf6-4f6c-851c-3b6f94f71405',
       snapshotUrls: 'https://i.gkd.li/i/14740515',
-      enable: false,
+      enable: true,
     },
   ],
 });

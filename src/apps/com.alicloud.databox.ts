@@ -32,7 +32,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -40,7 +40,7 @@ export default defineGkdApp({
       activityIds: 'com.alicloud.databox.MainActivity',
       rules: '[text^="好运盲盒"] >n View > Image + TextView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13228610',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -52,7 +52,7 @@ export default defineGkdApp({
       matchTime: 10000,
       rules: 'View[childCount=9] > @Image -2 View[childCount=5]',
       snapshotUrls: 'https://i.gkd.li/i/13596924',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -68,7 +68,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13806865',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -82,7 +82,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/101449500/9f0fb5fb-cb5a-4a11-9a6c-595b8795baad',
       snapshotUrls: 'https://i.gkd.li/i/14895886',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -97,7 +97,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14414503',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -113,7 +113,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15158788',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

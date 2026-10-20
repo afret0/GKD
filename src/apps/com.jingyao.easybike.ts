@@ -18,7 +18,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16108173',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -33,7 +33,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13228735',
         'https://i.gkd.li/i/13402675',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -45,7 +45,7 @@ export default defineGkdApp({
       rules:
         '[text="系统定位服务已关闭"] < FrameLayout +n FrameLayout >2 [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/13228677',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -86,7 +86,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12739316',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -96,7 +96,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.jingyao.easybike:id/closeFloatArea"] + [id="com.jingyao.easybike:id/floatADContainer"]',
       snapshotUrls: 'https://i.gkd.li/i/12650071',
-      enable: false,
+      enable: true,
     },
     {
       key: 15,
@@ -107,7 +107,7 @@ export default defineGkdApp({
       rules:
         '@View[text="跳过"] <2 View <2 View <<n FrameLayout[id="com.jingyao.easybike:id/h5_pc_container"]',
       snapshotUrls: 'https://i.gkd.li/i/13837543',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules:
         '[id="com.redfinger.app:id/btn_update"] + [id="com.redfinger.app:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13761821',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -28,7 +28,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13761825',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

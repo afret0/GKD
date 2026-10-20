@@ -66,7 +66,7 @@ export default defineGkdApp({
         },
       ],
       snapshotUrls: 'https://i.gkd.li/i/12664070',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -77,7 +77,7 @@ export default defineGkdApp({
       rules:
         'TextView[text="恭喜您获得以下成就"] - TextView[text=""][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13876817',
-      enable: false,
+      enable: true,
     },
   ],
 });

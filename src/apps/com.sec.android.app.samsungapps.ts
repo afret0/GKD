@@ -29,7 +29,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text="您是否年满 18 岁？"] +4 [vid="positive"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14473690',
-      enable: false,
+      enable: true,
     },
   ],
 });

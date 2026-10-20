@@ -14,7 +14,7 @@ export default defineGkdApp({
       activityIds: 'com.android.realme2.home.view.MainActivity',
       rules: '[vid="tv_check_in"][text="签到"]',
       snapshotUrls: 'https://i.gkd.li/i/14321155',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: ['com.jin10.lgd.update.UpdateActivity'],
       rules: '@[id="com.jin10:id/update_cancel"] + [id="com.jin10:id/iv_pic"]',
       snapshotUrls: ['https://i.gkd.li/i/12706043'],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -19,7 +19,7 @@ export default defineGkdApp({
       activityIds: ['com.jin10.lgd.biz.MainActivity'],
       rules: '[id="com.jin10:id/iv_body"] + [id="com.jin10:id/iv_close"]',
       snapshotUrls: ['https://i.gkd.li/i/12706045'],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -27,7 +27,7 @@ export default defineGkdApp({
       activityIds: ['com.jin10.lgd.biz.MainActivity'],
       rules: '@[id="com.jin10:id/iv_close"] + [id="com.jin10:id/iv_pic"]',
       snapshotUrls: ['https://i.gkd.li/i/12706047'],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -35,7 +35,7 @@ export default defineGkdApp({
       activityIds: ['com.jin10.lgd.biz.MainActivity'],
       rules: '[id="com.jin10:id/iv_header"] + [id="com.jin10:id/iv_close"]',
       snapshotUrls: ['https://i.gkd.li/i/12706051'],
-      enable: false,
+      enable: true,
     },
   ],
 });

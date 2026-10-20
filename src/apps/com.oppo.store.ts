@@ -13,7 +13,7 @@ export default defineGkdApp({
       activityIds: 'com.oppo.store.MainActivity',
       rules: '@[text="下次再说"] -n [text="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/i/13295202',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -22,7 +22,7 @@ export default defineGkdApp({
       activityIds: 'com.oppo.store.MainActivity',
       rules: 'ImageView[id="com.oppo.store:id/dialog_delete"][desc="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/13295201',
-      enable: false,
+      enable: true,
     },
   ],
 });

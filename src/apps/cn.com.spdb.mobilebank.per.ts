@@ -12,7 +12,7 @@ export default defineGkdApp({
         'cn.com.spdb.mobilebank.per.activity.web.stage.StageCommonWebActivity',
       rules: '[text="去开启"] + View > Image[text.length=0]',
       snapshotUrls: 'https://i.gkd.li/i/13458535',
-      enable: false,
+      enable: true,
     },
   ],
 });

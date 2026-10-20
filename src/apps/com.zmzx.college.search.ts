@@ -40,7 +40,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: 'ImageView[id="com.zmzx.college.search:id/siv_dialog_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12867853',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -101,7 +101,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13929945',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -130,7 +130,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13063381',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -144,7 +144,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13063373',
         'https://i.gkd.li/i/13623469',
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -161,7 +161,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13440939',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -173,7 +173,7 @@ export default defineGkdApp({
       rules:
         '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13476308',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -193,7 +193,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14555042',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

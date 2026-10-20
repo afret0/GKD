@@ -12,7 +12,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text="开启推送通知"] + [vid="tv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14622501',
-      enable: false,
+      enable: true,
     },
   ],
 });

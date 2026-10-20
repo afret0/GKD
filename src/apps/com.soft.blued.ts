@@ -24,7 +24,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -36,7 +36,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/101449500/2a5e9e45-09c5-4b72-a6af-4d284c6532a2',
       snapshotUrls: 'https://i.gkd.li/i/13989423',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -48,7 +48,7 @@ export default defineGkdApp({
       activityIds: 'com.soft.blued.ui.home.HomeActivity',
       rules: '[vid="fl_main"] > [vid="iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14039501',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -64,7 +64,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14157519',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

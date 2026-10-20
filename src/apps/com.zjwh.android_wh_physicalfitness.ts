@@ -22,7 +22,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -36,7 +36,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12673349'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -71,7 +71,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -82,7 +82,7 @@ export default defineGkdApp({
       matchTime: 10000,
       rules: '@ImageView - RelativeLayout[childCount=9]',
       snapshotUrls: 'https://i.gkd.li/i/13554229',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -95,7 +95,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12673476'],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

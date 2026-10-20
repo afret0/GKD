@@ -19,7 +19,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13325125',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -37,7 +37,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13325125',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       name: '功能类-自动点击原图',
@@ -57,7 +57,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -78,7 +78,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13772151',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -95,7 +95,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13433981',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

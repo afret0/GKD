@@ -12,7 +12,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[vid="app_update_later_button"]',
       snapshotUrls: 'https://i.gkd.li/i/13800011',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -16,7 +16,7 @@ export default defineGkdApp({
       rules:
         'Button[id="com.google.android.apps.translate:id/sign_in_button"] + [id="com.google.android.apps.translate:id/secondary_action_button"]',
       snapshotUrls: 'https://i.gkd.li/i/13495796',
-      enable: false,
+      enable: true,
     },
   ],
 });

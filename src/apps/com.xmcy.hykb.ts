@@ -15,7 +15,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12870604',
         'https://i.gkd.li/i/13297450',
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -25,7 +25,7 @@ export default defineGkdApp({
       activityIds: 'com.xmcy.hykb.app.ui.main.MainActivity',
       rules: '[id="com.xmcy.hykb:id/dialog_home_notice_image_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13259427',
-      enable: false,
+      enable: true,
     },
   ],
 });

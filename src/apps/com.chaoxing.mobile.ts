@@ -12,7 +12,7 @@ export default defineGkdApp({
       activityIds: 'com.chaoxing.mobile.main.ui.MainTabActivity',
       rules: '[id="com.chaoxing.mobile:id/vNotificationItemClose"]',
       snapshotUrls: 'https://i.gkd.li/i/13197374',
-      enable: false,
+      enable: true,
     },
   ],
 });

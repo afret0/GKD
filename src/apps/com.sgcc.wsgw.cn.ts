@@ -43,7 +43,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12745042'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -55,7 +55,7 @@ export default defineGkdApp({
       activityIds: 'com.sgcc.wsgw.rnbundle.activity.HomeReactActivity',
       rules: '@ImageView < ViewGroup -3 [text="有新版本啦!"]',
       snapshotUrls: 'https://i.gkd.li/i/13501638',
-      enable: false,
+      enable: true,
     },
   ],
 });

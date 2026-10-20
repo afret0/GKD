@@ -42,7 +42,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13379426',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -60,7 +60,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12818770',
         'https://i.gkd.li/i/13764540',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -70,7 +70,7 @@ export default defineGkdApp({
       rules:
         '[text="分享截图至"] < ViewGroup < ViewGroup + @ViewGroup[clickable=true] > ImageView',
       snapshotUrls: 'https://i.gkd.li/i/13473388',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -79,7 +79,7 @@ export default defineGkdApp({
       rules:
         'RelativeLayout[desc="弹窗"] > [id="com.autonavi.minimap:id/msgbox_popup_clear"]',
       snapshotUrls: 'https://i.gkd.li/i/12642830',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -88,7 +88,7 @@ export default defineGkdApp({
       rules:
         '@ImageView < [desc="关闭"][clickable=true] - ViewGroup > ViewGroup > ViewGroup > View[text="立即领取"]',
       snapshotUrls: ['https://i.gkd.li/i/12642857'],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -105,7 +105,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14715295',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -134,7 +134,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14809993',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 15,
@@ -151,7 +151,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14881505',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

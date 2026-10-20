@@ -17,7 +17,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12745130',
         'https://i.gkd.li/i/12745153',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -26,7 +26,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.moutai.mall:id/vClose"] - LinearLayout > [text*="开通消息通知"]',
       snapshotUrls: 'https://i.gkd.li/i/12745142',
-      enable: false,
+      enable: true,
     },
   ],
 });

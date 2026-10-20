@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.android.documentsui.picker.PickActivity',
       rules: '[text="取消"] + [text="允许"]',
       snapshotUrls: 'https://i.gkd.li/i/13801468',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -23,7 +23,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13916082',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

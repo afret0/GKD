@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.sohu.sohuvideo:id/ivClose"] + LinearLayout [text="新版本上线啦"]',
       snapshotUrls: 'https://i.gkd.li/i/13435504',
-      enable: false,
+      enable: true,
     },
   ],
 });

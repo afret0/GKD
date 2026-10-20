@@ -60,7 +60,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/13175439'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -69,7 +69,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.firebear.androil:id/dismissNtfImgView"] < RelativeLayout - [id="com.firebear.androil:id/contentLay"] >3 TextView[text^="升级"]',
       snapshotUrls: 'https://i.gkd.li/i/12755032',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

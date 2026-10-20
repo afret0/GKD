@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.xiaomi.hm.health.activity.ChannelMainTabActivity',
       rules: 'ImageView[id="com.xiaomi.hm.health:id/close_icon"]',
       snapshotUrls: 'https://i.gkd.li/i/13695424',
-      enable: false,
+      enable: true,
     },
   ],
 });

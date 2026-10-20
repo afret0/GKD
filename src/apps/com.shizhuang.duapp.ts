@@ -14,7 +14,7 @@ export default defineGkdApp({
       rules:
         '[id="com.shizhuang.duapp:id/ivClose"] +2 [id="com.shizhuang.duapp:id/ivSave"]',
       snapshotUrls: 'https://i.gkd.li/i/13473449',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -25,7 +25,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16487142',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -60,7 +60,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14925748',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -88,7 +88,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -178,7 +178,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -238,7 +238,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -302,7 +302,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16487274',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

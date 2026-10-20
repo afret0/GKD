@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'cn.com.hkgt.gasapp.dialog.BannerDialog',
       rules: 'ImageView[id="cn.com.hkgt.gasapp:id/exit"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12744270',
-      enable: false,
+      enable: true,
     },
   ],
 });

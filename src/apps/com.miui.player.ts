@@ -14,7 +14,7 @@ export default defineGkdApp({
       rules:
         '[id="com.miui.player:id/free_mode_tips_layout"] + [id="com.miui.player:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13303283',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -42,7 +42,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14711960',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -50,7 +50,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
       rules: 'ViewGroup > @ViewGroup + ViewGroup[childCount=5]',
       snapshotUrls: ['https://i.gkd.li/i/13304343'],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -60,7 +60,7 @@ export default defineGkdApp({
       rules:
         '[id="com.miui.player:id/cl_floating_promote"] > [id="com.miui.player:id/iv_close"]',
       snapshotUrls: ['https://i.gkd.li/i/13562649'],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -70,7 +70,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.miui.player:id/iv_close_dialog_button"]',
       snapshotUrls: ['https://i.gkd.li/i/13623503'],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -78,7 +78,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
       rules: '[id=null][desc="关闭弹框按钮"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12700955',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -87,7 +87,7 @@ export default defineGkdApp({
       rules:
         '[id="com.miui.player:id/banner_image"] + [id="com.miui.player:id/close_banner"]',
       snapshotUrls: 'https://i.gkd.li/i/12700984',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -102,7 +102,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13610667',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

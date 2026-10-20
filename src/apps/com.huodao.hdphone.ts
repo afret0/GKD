@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         '[id="android:id/content"] >2 [id="com.huodao.hdphone:id/dialog_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13927567',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -24,7 +24,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/57941037/dc1534ca-9ab1-4d7b-8da4-6c7992882c94',
       snapshotUrls: 'https://i.gkd.li/i/15052025',
-      enable: false,
+      enable: true,
     },
   ],
 });

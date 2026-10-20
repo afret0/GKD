@@ -65,7 +65,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14661956',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -74,7 +74,7 @@ export default defineGkdApp({
       rules:
         'ViewGroup + FrameLayout[id=null] > FrameLayout[childCount=2][id!=null] > ImageView[desc="关闭"][clickable=true][id!=null]',
       snapshotUrls: 'https://i.gkd.li/i/12749276',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -83,7 +83,7 @@ export default defineGkdApp({
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount<=5] > @ImageView[clickable=true][id!=null] - TextView[text="广告"][id!=null]',
       snapshotUrls: 'https://i.gkd.li/i/12769137',
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -97,7 +97,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/13053628',
       exampleUrls:
         'https://m.gkd.li/101449500/8225f12c-adcf-4385-a1ca-670e62906cd2',
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -107,7 +107,7 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="拒绝"] + [text="去设置"]',
       snapshotUrls: 'https://i.gkd.li/i/13256087',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -130,7 +130,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13669790',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -144,7 +144,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12846036',
         'https://i.gkd.li/i/12846040',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -163,7 +163,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13372725',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -206,7 +206,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14325749',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -214,7 +214,7 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: 'FrameLayout > @[desc="关闭"] + ViewGroup > [text$="打个招呼"]',
       snapshotUrls: 'https://i.gkd.li/i/13379307',
-      enable: false,
+      enable: true,
     },
     {
       key: 15,
@@ -222,7 +222,7 @@ export default defineGkdApp({
       desc: '点击【不感兴趣】',
       rules: '@[text="不感兴趣"][clickable=true] + [text="去商城搜索更多"]',
       snapshotUrls: 'https://i.gkd.li/i/13800207',
-      enable: false,
+      enable: true,
     },
     {
       key: 16,
@@ -239,7 +239,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14123300',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 17,
@@ -261,7 +261,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13974007',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 18,
@@ -270,7 +270,7 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '@[text="不感兴趣"][clickable=true] + [text="更多优惠商品"]',
       snapshotUrls: 'https://i.gkd.li/i/14157498',
-      enable: false,
+      enable: true,
     },
     {
       key: 19,
@@ -290,7 +290,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14585377',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 20,
@@ -302,7 +302,7 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.ugc.aweme.main.MainActivity',
       rules: '[text$="通讯录"] +2 FrameLayout >2 [text="拒绝"]',
       snapshotUrls: 'https://i.gkd.li/i/14735284',
-      enable: false,
+      enable: true,
     },
     {
       key: 21,
@@ -322,7 +322,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
       order: -8,
     },
     {
@@ -349,7 +349,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

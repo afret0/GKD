@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[text^="开启定位权限"] + [id="com.hihonor.phoneservice:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12783134',
-      enable: false,
+      enable: true,
     },
   ],
 });

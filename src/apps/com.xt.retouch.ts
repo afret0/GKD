@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.xt.retouch.uilauncher.MainActivity',
       rules: '[id="com.xt.retouch:id/market_feedback_dialog_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13062637',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.duokan.reader.DkMainActivity',
       rules: '[id="com.duokan.reader:id/store_feed_layer_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13248773',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -27,7 +27,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13413412',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -38,7 +38,7 @@ export default defineGkdApp({
       rules:
         '@ImageView < FrameLayout[id="com.duokan.reader:id/reading__app_ad_view__close"]',
       snapshotUrls: 'https://i.gkd.li/i/13497902',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -62,7 +62,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13498048',
         'https://i.gkd.li/i/13497990',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

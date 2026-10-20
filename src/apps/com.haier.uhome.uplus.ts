@@ -16,7 +16,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12726844',
         'https://i.gkd.li/i/12726801',
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -25,7 +25,7 @@ export default defineGkdApp({
       activityIds: 'com.haier.uhome.uplus.ui.widget.MPermissionCheckDialog',
       rules: '[text*="通知栏权限"] +n LinearLayout > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/12726829',
-      enable: false,
+      enable: true,
     },
   ],
 });

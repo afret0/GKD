@@ -18,7 +18,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12597916'],
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -33,7 +33,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12970088'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -49,7 +49,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12970094'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -64,7 +64,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12970094'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -94,7 +94,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -106,7 +106,7 @@ export default defineGkdApp({
       rules:
         '[id="com.baidu.youavideo:id/dialog_open_guide_notification_root"] > [id="com.baidu.youavideo:id/img_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13413819',
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -116,7 +116,7 @@ export default defineGkdApp({
       rules:
         '[id="com.baidu.youavideo:id/cl_root"] + [id="com.baidu.youavideo:id/img_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13711475',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -127,7 +127,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13874124',
         'https://i.gkd.li/i/15220559',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -137,7 +137,7 @@ export default defineGkdApp({
       rules:
         '[text*="电池优化权限"] < * +n [vid="bottom_two_button_layout"] >n [vid="cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/14065510',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -148,7 +148,7 @@ export default defineGkdApp({
         'com.baidu.youavideo.story.ui.view.activity.CloudStorySetActivity',
       rules: '[text="在桌面展示精选回忆故事"] - [vid="iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14138907',
-      enable: false,
+      enable: true,
     },
   ],
 });

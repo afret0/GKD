@@ -40,7 +40,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13401266',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -56,7 +56,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13440833',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -71,7 +71,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13625453',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -83,7 +83,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[text^="您的设备已经被ROOT"] + LinearLayout [text="确认"]',
       snapshotUrls: 'https://i.gkd.li/i/13536744',
-      enable: false,
+      enable: true,
     },
   ],
 });

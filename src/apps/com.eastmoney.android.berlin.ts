@@ -17,11 +17,11 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12706070',
         'https://i.gkd.li/i/13399156',
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
-      enable: false,
+      enable: true,
       key: 10,
       name: '未分类-请求通知权限提示信息',
       activityIds: [

@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         'ImageView -2 FrameLayout > FrameLayout > FrameLayout > FrameLayout > ImageView',
       snapshotUrls: 'https://i.gkd.li/i/13188475',
-      enable: false,
+      enable: true,
     },
   ],
 });

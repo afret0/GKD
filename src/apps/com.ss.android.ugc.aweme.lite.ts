@@ -18,7 +18,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13684791',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -30,7 +30,7 @@ export default defineGkdApp({
       rules:
         '[text="朋友推荐"] +2 [id="com.ss.android.ugc.aweme.lite:id/close"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13650523',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -45,7 +45,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13888485',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

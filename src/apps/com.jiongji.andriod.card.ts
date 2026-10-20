@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[text="反馈"] + ImageView + ImageView[childCount=0][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13415075',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -23,7 +23,7 @@ export default defineGkdApp({
       activityIds: 'com.baicizhan.main.activity.MainTabActivity',
       rules: '[text="抢先体验"] - [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/13488652',
-      enable: false,
+      enable: true,
     },
   ],
 });

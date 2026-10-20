@@ -13,7 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[text="立即升级"] +2 [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13378992',
-      enable: false,
+      enable: true,
     },
   ],
 });

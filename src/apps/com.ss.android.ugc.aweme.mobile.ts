@@ -13,7 +13,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: '[text="发现好友"] -2 [text="暂时不要"]',
       snapshotUrls: 'https://i.gkd.li/i/14467866',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -32,7 +32,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14614184',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

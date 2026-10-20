@@ -18,7 +18,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12649330',
         'https://i.gkd.li/i/14393039',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

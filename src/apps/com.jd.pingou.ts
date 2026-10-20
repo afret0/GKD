@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.jd.jdlite.MainFrameActivity',
       rules: '[text*="开启定位授权"] +2 ImageView',
       snapshotUrls: 'https://i.gkd.li/i/13804515',
-      enable: false,
+      enable: true,
     },
   ],
 });

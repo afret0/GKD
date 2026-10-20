@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.intsig.camscanner:id/card_ad_tag"] + [id="com.intsig.camscanner:id/card_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12668813',
-      enable: false,
+      enable: true,
     },
   ],
 });

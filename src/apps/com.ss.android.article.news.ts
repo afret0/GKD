@@ -15,7 +15,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12840104',
         'https://i.gkd.li/i/13316081',
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -39,7 +39,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13761236',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -57,7 +57,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15102876',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -76,7 +76,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12840217',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -127,7 +127,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/13186082'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -172,7 +172,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -186,7 +186,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12706699'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -210,7 +210,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13402480',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 15,
@@ -225,7 +225,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13828331',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 16,
@@ -250,7 +250,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/13825373'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 17,
@@ -268,7 +268,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14717889',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

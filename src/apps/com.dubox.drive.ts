@@ -30,7 +30,7 @@ export default defineGkdApp({
       activityIds: 'com.dubox.drive.ui.MainActivity',
       rules: 'ImageView[id="com.dubox.drive:id/ivClose"]',
       snapshotUrls: 'https://i.gkd.li/i/13200577',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -40,7 +40,7 @@ export default defineGkdApp({
       rules:
         '[text="Authorize"] - [id="com.dubox.drive:id/dialog_button_cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/13688406',
-      enable: false,
+      enable: true,
     },
   ],
 });

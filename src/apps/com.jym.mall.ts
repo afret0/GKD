@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '未分类-升级弹窗',
       rules: '[id="com.jym.mall:id/tv_cancel"][text="下次再说"]',
       snapshotUrls: 'https://i.gkd.li/i/12496974',
-      enable: false,
+      enable: true,
     },
   ],
 });

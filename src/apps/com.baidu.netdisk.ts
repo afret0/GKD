@@ -37,7 +37,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12648987',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -73,7 +73,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12924036',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -85,7 +85,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: 'ImageView[id="com.baidu.netdisk:id/dialog_cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/12923936',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -95,7 +95,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[vid="view_score_style"] > [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/14317054',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -111,7 +111,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14278618',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

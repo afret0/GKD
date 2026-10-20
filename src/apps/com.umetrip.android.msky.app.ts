@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         'View[desc="立即预订"] <n FrameLayout <n FrameLayout <n FrameLayout <n ViewPager <n FrameLayout + FrameLayout > ImageView[id=null]',
       snapshotUrls: 'https://i.gkd.li/i/12909632',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -28,7 +28,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12838294',
         'https://i.gkd.li/i/12838293',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -38,7 +38,7 @@ export default defineGkdApp({
       rules:
         '[id="com.umetrip.android.msky.app:id/imageView"] + [id="com.umetrip.android.msky.app:id/iv_cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/12750185',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -48,7 +48,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.umetrip.android.msky.app:id/iv_close_envelope"] + [id="com.umetrip.android.msky.app:id/media_view_envelope"]',
       snapshotUrls: 'https://i.gkd.li/i/12783264',
-      enable: false,
+      enable: true,
     },
   ],
 });

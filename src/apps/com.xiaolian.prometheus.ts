@@ -12,7 +12,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '@[vid="close_rel"] - * > [text="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/i/14292788',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -22,7 +22,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '@[vid="close_img"] + [text="关注"]',
       snapshotUrls: 'https://i.gkd.li/i/14292789',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -32,7 +32,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13725337',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       name: '未分类-首页-今日要闻-关闭',
@@ -46,7 +46,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13725337',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

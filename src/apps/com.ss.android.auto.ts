@@ -31,7 +31,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12711589',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -46,7 +46,7 @@ export default defineGkdApp({
       rules:
         '@TextView[text="以后再说"] - FrameLayout >2 TextView[text$="升级"]',
       snapshotUrls: 'https://i.gkd.li/i/13534445',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -67,7 +67,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13535933',
         'https://i.gkd.li/i/13535932',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -78,7 +78,7 @@ export default defineGkdApp({
       rules:
         'FrameLayout > RelativeLayout > @ImageView[clickable=true] + [text="广告"]',
       snapshotUrls: 'https://i.gkd.li/i/12811597',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -98,7 +98,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12900666',
         'https://i.gkd.li/i/14321294',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -112,7 +112,7 @@ export default defineGkdApp({
       ],
       rules: '@TextView[clickable=true] + [text^="打开推送通知"]',
       snapshotUrls: 'https://i.gkd.li/i/12840664',
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -122,7 +122,7 @@ export default defineGkdApp({
       rules:
         'TextView[text.length=1][id=null][clickable=false] < @FrameLayout[clickable=true][id!=null] -2 [text="广告"]',
       snapshotUrls: 'https://i.gkd.li/i/13686928',
-      enable: false,
+      enable: true,
     },
   ],
 });

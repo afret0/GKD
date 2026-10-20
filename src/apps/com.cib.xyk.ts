@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         '[id="android:id/content"] >2 RelativeLayout[childCount=2] > RelativeLayout + ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14122970',
-      enable: false,
+      enable: true,
     },
   ],
 });

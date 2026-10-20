@@ -29,7 +29,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[id="com.qq.reader:id/tv_i_know"]',
       snapshotUrls: 'https://i.gkd.li/i/13194867',
-      enable: false,
+      enable: true,
       order: -8,
     },
     {
@@ -51,7 +51,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -67,7 +67,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14376088',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -103,7 +103,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

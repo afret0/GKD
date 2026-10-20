@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         'FrameLayout[id="android:id/content"] >2 FrameLayout > ImageView + FrameLayout[id=null][desc="关闭"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12727011',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -26,7 +26,7 @@ export default defineGkdApp({
         action: 'clickCenter',
       },
       snapshotUrls: 'https://i.gkd.li/i/12727070',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -36,7 +36,7 @@ export default defineGkdApp({
       rules:
         '[id="com.dianping.v1:id/float_image"] + [id="com.dianping.v1:id/close"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12727366',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -50,7 +50,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13538340',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -79,7 +79,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[text="升级提示"] < * + [vid="btn_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14188929',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

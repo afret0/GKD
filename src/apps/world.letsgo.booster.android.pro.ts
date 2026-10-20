@@ -12,7 +12,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: '[vid="close_update_tip"]',
       snapshotUrls: 'https://i.gkd.li/i/14066056',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -23,7 +23,7 @@ export default defineGkdApp({
       activityIds: 'world.letsgo.booster.android.pages.home.HomeActivity',
       rules: '[text="快快收下"]',
       snapshotUrls: 'https://i.gkd.li/i/14072381',
-      enable: false,
+      enable: true,
     },
   ],
 });

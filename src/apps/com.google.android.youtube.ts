@@ -30,7 +30,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/13705106'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -47,7 +47,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13705106',
         'https://i.gkd.li/i/14786081',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -57,7 +57,7 @@ export default defineGkdApp({
       rules:
         'ImageView < @Button < ViewGroup +3 Button[desc*="YouTube Premium"]',
       snapshotUrls: 'https://i.gkd.li/i/12877357',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -67,7 +67,7 @@ export default defineGkdApp({
       rules:
         'ViewGroup[desc="免费试用 1 个月"] < * - * > ViewGroup[text="不用了，谢谢"]',
       snapshotUrls: 'https://i.gkd.li/i/13797512',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -77,7 +77,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[text="开启通知"] < * < * +2 * >2 [text="不用了"]',
       snapshotUrls: 'https://i.gkd.li/i/14194155',
-      enable: false,
+      enable: true,
     },
   ],
 });

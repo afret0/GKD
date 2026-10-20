@@ -14,7 +14,7 @@ export default defineGkdApp({
       rules:
         '[vid="tv_next"][text="下一条"] <<n LinearLayout - [vid="iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14141561',
-      enable: false,
+      enable: true,
     },
   ],
 });

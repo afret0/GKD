@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.wm.dmall.MainActivity',
       rules: '[id="com.wm.dmall:id/advert_close"]',
       snapshotUrls: ['https://i.gkd.li/i/13197627'],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -26,7 +26,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13197634',
         'https://i.gkd.li/i/13246242',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -40,7 +40,7 @@ export default defineGkdApp({
         ],
         snapshotUrls: ['https://i.gkd.li/i/13234668'],
       },
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -54,7 +54,7 @@ export default defineGkdApp({
         ],
         snapshotUrls: ['https://i.gkd.li/i/13331283'],
       },
-      enable: false,
+      enable: true,
     },
   ],
 });

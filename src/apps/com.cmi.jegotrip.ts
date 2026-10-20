@@ -16,7 +16,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13631904',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -29,7 +29,7 @@ export default defineGkdApp({
       rules:
         '[text="申请定位权限说明"] < LinearLayout +2 LinearLayout [id="com.cmi.jegotrip:id/btn_cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/13232766',
-      enable: false,
+      enable: true,
     },
   ],
 });

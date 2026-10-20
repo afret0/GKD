@@ -88,7 +88,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13228423',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -114,7 +114,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -220,7 +220,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12879452',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -264,7 +264,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -274,7 +274,7 @@ export default defineGkdApp({
         'com.xunlei.downloadprovider.search.ui.search.SearchOperateActivity',
       rules: '[id="com.xunlei.downloadprovider:id/search_banner_ad_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12882892',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -312,7 +312,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13259268',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -328,7 +328,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/15048355',
         'https://i.gkd.li/i/15048357',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

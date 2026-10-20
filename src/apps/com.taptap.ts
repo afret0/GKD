@@ -44,7 +44,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -62,7 +62,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -72,7 +72,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[text*="青少年模式"] + [vid="iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14209309',
-      enable: false,
+      enable: true,
       order: -8,
     },
   ],

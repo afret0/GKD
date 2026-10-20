@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.wanxiao.basebusiness.activity.SplashActivity',
       rules: '[id="com.newcapec.mobile.ncp:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12843377',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.wanxiao.ui.activity.IndexActivity',
       rules: '[id="com.newcapec.mobile.ncp:id/dialog_oppotion"]',
       snapshotUrls: 'https://i.gkd.li/i/12843399',
-      enable: false,
+      enable: true,
     },
   ],
 });

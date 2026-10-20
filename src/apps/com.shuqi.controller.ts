@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.shuqi.home.MainActivity',
       rules: '[id="com.shuqi.controller:id/promotion_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12513811',
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -18,7 +18,7 @@ export default defineGkdApp({
       activityIds: 'com.shuqi.common',
       rules: '[id="com.shuqi.controller:id/bottomCloseImg"]',
       snapshotUrls: 'https://i.gkd.li/i/12513822',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -55,7 +55,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12901429',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -72,7 +72,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12513944',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

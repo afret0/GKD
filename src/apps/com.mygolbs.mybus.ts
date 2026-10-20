@@ -101,7 +101,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12791579',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -147,7 +147,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14587397',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -160,7 +160,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12790841',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -176,7 +176,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12715980',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -186,7 +186,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.mygolbs.mybus:id/iv_close"] < RelativeLayout - LinearLayout >n [text="签到成功"]',
       snapshotUrls: 'https://i.gkd.li/i/12716035',
-      enable: false,
+      enable: true,
     },
   ],
 });

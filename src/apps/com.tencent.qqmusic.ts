@@ -43,7 +43,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15041019',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -59,7 +59,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -69,7 +69,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text="抢先体验"] -2 [text="不再提醒"]',
       snapshotUrls: 'https://i.gkd.li/i/13178485',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -90,7 +90,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -104,7 +104,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14550144',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -113,7 +113,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.qqmusic.activity.AppStarterActivity',
       rules: '[text*="好评"] <4 ViewGroup + [vid="close_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/14881903',
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -135,7 +135,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15010226',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -144,7 +144,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.qqmusiccommon.hybrid.HybridViewActivity',
       rules: '@[desc="关闭按钮"] <n * > [desc^="看广告"]',
       snapshotUrls: 'https://i.gkd.li/i/13806773',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -169,7 +169,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -33,7 +33,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -42,7 +42,7 @@ export default defineGkdApp({
       activityIds: 'com.jiaohua_browser.MainActivity',
       rules: '[text*="滿18歲"]',
       snapshotUrls: 'https://i.gkd.li/i/14141809',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -54,7 +54,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/14141807',
         'https://i.gkd.li/i/14205170',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

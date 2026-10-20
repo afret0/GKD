@@ -38,7 +38,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/12914026',
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/433dd71c-4fe5-41c9-a2da-dd3ac29f8dd4',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -66,7 +66,7 @@ export default defineGkdApp({
             'https://github.com/gkd-kit/inspect/assets/38517192/d098a194-80ff-49a1-b80e-191f7574a816',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

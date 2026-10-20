@@ -19,7 +19,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12801465',
         'https://i.gkd.li/i/12909281',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -28,7 +28,7 @@ export default defineGkdApp({
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: 'RelativeLayout[id="com.baidu.BaiduMap:id/rl_close_content"]',
       snapshotUrls: 'https://i.gkd.li/i/12642307',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -37,7 +37,7 @@ export default defineGkdApp({
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[text="美食大礼包"] +(6) TextView[id=null][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12642310',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -46,7 +46,7 @@ export default defineGkdApp({
       activityIds: 'com.baidu.baidumaps.MapsActivity',
       rules: '[id="lottie_box"] + TextView[id=null][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12642319',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -79,7 +79,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12909299',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -95,7 +95,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12909300',
         'https://i.gkd.li/i/12930699',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -106,7 +106,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: 'ImageView[id="com.baidu.BaiduMap:id/cancel_update"]',
       snapshotUrls: 'https://i.gkd.li/i/12909385',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -119,7 +119,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[vid="push_close"]',
       snapshotUrls: 'https://i.gkd.li/i/15284736',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -134,7 +134,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13439258',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

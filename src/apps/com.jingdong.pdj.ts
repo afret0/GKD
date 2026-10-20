@@ -22,7 +22,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13223282',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -33,7 +33,7 @@ export default defineGkdApp({
       activityIds: 'com.jingdong.pdj.plunginupdate.update.UpdateDialogActivity',
       rules: 'Button[text="暂不安装"]',
       snapshotUrls: 'https://i.gkd.li/i/13217634',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

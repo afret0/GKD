@@ -22,7 +22,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '@[desc="暂不更新"] + [desc="现在更新"]',
       snapshotUrls: 'https://i.gkd.li/i/13198091',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -31,7 +31,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.docs.DocsFlutterActivity',
       rules: '[desc="限时购买"] + ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13198097',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -40,7 +40,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.docs.DocsFlutterActivity',
       rules: 'View[childCount=2] > @TextView[id=null][clickable=true] + View',
       snapshotUrls: 'https://i.gkd.li/i/13242404',
-      enable: false,
+      enable: true,
     },
   ],
 });

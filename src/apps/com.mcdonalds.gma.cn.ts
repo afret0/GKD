@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.mcdonalds.gma.cn.activity.MainActivity',
       rules: '[id="com.mcdonalds.gma.cn:id/tv_cancel"][text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/13259242',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -24,7 +24,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13465873',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -39,7 +39,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14798873',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

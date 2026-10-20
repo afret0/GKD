@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.cmcc.cmvideo.main.application.CompatibleMainActivity',
       rules: '[id="com.cmcc.cmvideo:id/iv_right_bottom_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12498315',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -22,7 +22,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.cmcc.cmvideo:id/btn_update_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13276116',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -34,7 +34,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.cmcc.cmvideo:id/base_dialog_left_btn"][text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13276127',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -50,7 +50,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16503612',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

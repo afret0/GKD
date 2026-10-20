@@ -8,7 +8,7 @@ export default defineGkdApp({
       name: '未分类-跳过安全使用协议',
       key: 2,
       desc: '自动点击略过并关闭反恶意软件协议',
-      enable: false,
+      enable: true,
       rules: [
         {
           key: 1,

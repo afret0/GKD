@@ -45,7 +45,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -111,7 +111,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -150,7 +150,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12798810',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -164,7 +164,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13774150',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -181,7 +181,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13930126',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -193,7 +193,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/14189895',
         'https://i.gkd.li/i/14615911',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -202,7 +202,7 @@ export default defineGkdApp({
       activityIds: 'com.twitter.app.main.MainActivity',
       rules: '[vid="gap_text"][text="显示更多帖子"]',
       snapshotUrls: 'https://i.gkd.li/i/14189897',
-      enable: false,
+      enable: true,
     },
   ],
 });

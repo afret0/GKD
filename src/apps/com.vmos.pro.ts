@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.vmos.pro.activities.main.MainActivity',
       rules: '[id="com.vmos.pro:id/iv_dismiss"] ',
       snapshotUrls: 'https://i.gkd.li/i/13536416',
-      enable: false,
+      enable: true,
     },
   ],
 });

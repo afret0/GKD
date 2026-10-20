@@ -17,7 +17,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13248808',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -26,7 +26,7 @@ export default defineGkdApp({
       activityIds: 'com.xiaomi.market.ui.UpdateListActivity',
       rules: '[id="com.xiaomi.market:id/iv_close_tip"]',
       snapshotUrls: 'https://i.gkd.li/i/13197334',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -48,7 +48,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14931578',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -76,7 +76,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -88,7 +88,7 @@ export default defineGkdApp({
       activityIds: 'com.xiaomi.market.business_ui.main.MarketTabActivity',
       rules: '[id="com.xiaomi.market:id/close_float_recommend"]',
       snapshotUrls: 'https://i.gkd.li/i/13624971',
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -105,7 +105,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14782814',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -67,7 +67,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -77,7 +77,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text="立即体验"] + [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13203105',
-      enable: false,
+      enable: true,
     },
   ],
 });

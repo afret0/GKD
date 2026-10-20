@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.dw.btime.MainHomeTabActivity',
       rules: '[id="com.dw.btime:id/iv_overlay_close"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12889448',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.dw.btime.MainHomeTabActivity',
       rules: '[id="com.dw.btime:id/old_baby_close"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12889450',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -30,7 +30,7 @@ export default defineGkdApp({
       rules:
         'TextView[text="立即更新"] -3 [id="com.dw.btime:id/iv_upgrade_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12911011',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

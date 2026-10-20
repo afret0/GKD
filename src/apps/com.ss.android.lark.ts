@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules:
         '[text="飞书 桌面端登录确认"] +2 [id="com.ss.android.lark:id/login_button"]',
       snapshotUrls: 'https://i.gkd.li/i/13494960',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -24,7 +24,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.ss.android.lark:id/look_origin_icon"]',
       snapshotUrls: 'https://i.gkd.li/i/12840528',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -35,7 +35,7 @@ export default defineGkdApp({
       rules:
         '@View[id$="original_photo"][checked=false] + [id="com.ss.android.lark:id/original_label"][text="原图"]',
       snapshotUrls: 'https://i.gkd.li/i/12840551',
-      enable: false,
+      enable: true,
     },
   ],
 });

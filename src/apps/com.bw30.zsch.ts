@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: ['com.bw.zsch.MainActivityTab'],
       rules: '[id="com.bw30.zsch:id/tv_cancel"]',
       snapshotUrls: ['https://i.gkd.li/i/13068699'],
-      enable: false,
+      enable: true,
     },
   ],
 });

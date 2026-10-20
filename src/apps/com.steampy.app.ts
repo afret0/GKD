@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.steampy.app:id/imgClose"] - RelativeLayout [id="com.steampy.app:id/tv_update"]',
       snapshotUrls: 'https://i.gkd.li/i/13695519',
-      enable: false,
+      enable: true,
     },
   ],
 });

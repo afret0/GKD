@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.dep.biguo:id/imageView"] + [id="com.dep.biguo:id/closeView"]',
       snapshotUrls: 'https://i.gkd.li/i/12708756',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -19,7 +19,7 @@ export default defineGkdApp({
       activityIds: 'com.dep.biguo.mvp.ui.activity.MainActivity',
       rules: '[text*="定位权限"] +2 [text="拒绝"]',
       snapshotUrls: 'https://i.gkd.li/i/12708770',
-      enable: false,
+      enable: true,
     },
   ],
 });

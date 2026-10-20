@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.xiaomi.gamecenter:id/ad_view"] + [id="com.xiaomi.gamecenter:id/close_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/12715800',
-      enable: false,
+      enable: true,
     },
   ],
 });

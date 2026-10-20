@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         '[text^="开启消息通知"] +2 [id="cn.xuexi.android:id/layout_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12715160',
-      enable: false,
+      enable: true,
     },
   ],
 });

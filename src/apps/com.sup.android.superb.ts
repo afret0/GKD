@@ -46,7 +46,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14886477',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -56,7 +56,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[text="开启推送通知"] +2 * > [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13691081',
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -68,7 +68,7 @@ export default defineGkdApp({
       rules:
         'FrameLayout > RelativeLayout > @ImageView[clickable=true] + ImageView',
       snapshotUrls: 'https://i.gkd.li/i/13624220',
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -84,7 +84,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13858490',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -104,7 +104,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -120,7 +120,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14151026',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -136,7 +136,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14471869',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

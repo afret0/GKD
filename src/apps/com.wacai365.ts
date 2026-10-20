@@ -19,7 +19,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13249620',
         'https://i.gkd.li/i/13772291',
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -30,7 +30,7 @@ export default defineGkdApp({
       activityIds: 'com.wacai365.HomeActivity',
       rules: '[id^="com.wacai365:id/promote_banner_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13249666',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,

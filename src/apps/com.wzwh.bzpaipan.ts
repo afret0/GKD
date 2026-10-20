@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         '@ImageView[clickable=true] < LinearLayout[childCount=1] <2 FrameLayout[childCount=2] < [id="android:id/content"][childCount=1]',
       snapshotUrls: 'https://i.gkd.li/i/13162912',
-      enable: false,
+      enable: true,
     },
   ],
 });

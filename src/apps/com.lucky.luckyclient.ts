@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '@ImageView[id="com.lucky.luckyclient:id/dismiss_btn"] - LinearLayout > ImageView[id="com.lucky.luckyclient:id/update_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/12846499',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -21,7 +21,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.lucky.luckyclient:id/close_iv"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/i/12922834',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -33,7 +33,7 @@ export default defineGkdApp({
         action: 'back',
       },
       snapshotUrls: 'https://i.gkd.li/i/13164114',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -14,7 +14,7 @@ export default defineGkdApp({
       activityIds: 'com.csair.mbp.CSMBPActivity',
       rules: '[text="开启长辈版"] -2 [text="暂不开启"]',
       snapshotUrls: 'https://i.gkd.li/i/14810700',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -23,7 +23,7 @@ export default defineGkdApp({
       activityIds: 'com.csair.mbp.CSMBPActivity',
       rules: '[id="com.csair.mbp:id/close_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/13197497',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -13,7 +13,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: '[id="android:id/content"] >2 [vid="button_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14179064',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -21,7 +21,7 @@ export default defineGkdApp({
       activityIds: 'com.baidu.input.ImeAppMainActivity',
       rules: '[desc="开会员，全部皮肤免费用"] +5 View[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14179107',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -30,7 +30,7 @@ export default defineGkdApp({
       activityIds: 'com.baidu.input.ImeSkinTryActivity',
       rules: '[vid="close_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/14205945',
-      enable: false,
+      enable: true,
     },
   ],
 });

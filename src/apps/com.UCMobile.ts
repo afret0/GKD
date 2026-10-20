@@ -64,7 +64,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -77,7 +77,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12880812',
         'https://i.gkd.li/i/12880802',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -85,7 +85,7 @@ export default defineGkdApp({
       activityIds: 'com.uc.browser.InnerUCMobile',
       rules: '@ImageView + [text^="添加"][text$="到桌面"]',
       snapshotUrls: 'https://i.gkd.li/i/12880983',
-      enable: false,
+      enable: true,
     },
   ],
 });

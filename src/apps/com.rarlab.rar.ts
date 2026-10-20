@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.rarlab.rar.MainActivity',
       rules: '[text="订购"] + [text="放弃"]',
       snapshotUrls: 'https://i.gkd.li/i/12781596',
-      enable: false,
+      enable: true,
     },
   ],
 });

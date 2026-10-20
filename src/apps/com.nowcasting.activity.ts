@@ -16,7 +16,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13405130',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -41,7 +41,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14814374',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -72,7 +72,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14814348',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -91,7 +91,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

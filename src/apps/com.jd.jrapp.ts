@@ -26,7 +26,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13255656',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -39,7 +39,7 @@ export default defineGkdApp({
       rules:
         '@ImageButton[id="com.jd.jrapp:id/ib_close"] + RelativeLayout [text^="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/i/13628364',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -48,7 +48,7 @@ export default defineGkdApp({
       resetMatch: 'activity',
       rules: '[text*="满意度打几分"] + ImageView',
       snapshotUrls: 'https://i.gkd.li/i/13804561',
-      enable: false,
+      enable: true,
     },
   ],
 });

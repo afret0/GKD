@@ -97,7 +97,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13526712',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -133,7 +133,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15282417',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -194,7 +194,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15160018',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -262,7 +262,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14969806',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -283,7 +283,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -318,7 +318,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14045424',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -332,7 +332,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13768367',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -354,7 +354,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13804544',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -404,7 +404,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14549856',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -420,7 +420,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14830218',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 15,
@@ -439,7 +439,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14926750',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

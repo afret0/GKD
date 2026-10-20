@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules:
         '[text="发现新版本"] <n ViewGroup < ScrollView +n ViewGroup[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14072723',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -22,7 +22,7 @@ export default defineGkdApp({
       activityIds: 'com.huabenapp.MainActivity',
       rules: '[text*="社区问答"] +2 ViewGroup',
       snapshotUrls: 'https://i.gkd.li/i/14076166',
-      enable: false,
+      enable: true,
     },
   ],
 });

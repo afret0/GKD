@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules: '[id="com.smzdm.client.android:id/dialog_home_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12695751',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -22,7 +22,7 @@ export default defineGkdApp({
       rules:
         '[id="com.smzdm.client.android:id/tv_version"] +2 [id="com.smzdm.client.android:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13198016',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -32,7 +32,7 @@ export default defineGkdApp({
       activityIds: 'com.smzdm.client.android.app.HomeActivity',
       rules: '@[text="暂不允许"] + [text="允许"]',
       snapshotUrls: 'https://i.gkd.li/i/13198020',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -48,7 +48,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13438810',
         'https://i.gkd.li/i/13626746',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

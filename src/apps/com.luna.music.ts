@@ -61,7 +61,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -91,7 +91,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13613184',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -130,7 +130,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -139,7 +139,7 @@ export default defineGkdApp({
       activityIds: 'com.luna.biz.main.main.MainActivity',
       rules: '[text="立得全天畅听"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14237527',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -157,7 +157,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14720841',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -174,7 +174,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13674376',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -16,7 +16,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13202725',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -32,7 +32,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14273094',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -43,7 +43,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '@[vid="dialogNegative"] +2 [text="打开通知"]',
       snapshotUrls: 'https://i.gkd.li/i/14273121',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -57,7 +57,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13997011',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

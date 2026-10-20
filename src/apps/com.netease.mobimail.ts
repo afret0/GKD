@@ -53,7 +53,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12683511',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -61,7 +61,7 @@ export default defineGkdApp({
       activityIds: 'com.netease.mail.biz.main.MainITabActivity',
       rules: '@LinearLayout > TextView[text^="跳过"]',
       snapshotUrls: 'https://i.gkd.li/i/12685745',
-      enable: false,
+      enable: true,
     },
   ],
 });

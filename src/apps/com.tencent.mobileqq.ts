@@ -71,7 +71,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -153,7 +153,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14732983',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -203,7 +203,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15136939',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -219,7 +219,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12855048',
         'https://i.gkd.li/i/13228108',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -251,7 +251,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -294,7 +294,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14752519',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -303,7 +303,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: 'RelativeLayout > [text^="当前无法接收"] + ImageView',
       snapshotUrls: 'https://i.gkd.li/i/12855441',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -325,7 +325,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12708844',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -344,7 +344,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13295142',
         'https://i.gkd.li/i/13476247',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -358,7 +358,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14757735',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -382,7 +382,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12847821',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -436,7 +436,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 17,
@@ -458,7 +458,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14724108',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -481,7 +481,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -498,7 +498,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13526551',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -522,7 +522,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/13699701'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 21,
@@ -546,7 +546,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14207286',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 22,
@@ -588,7 +588,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14549504',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 23,
@@ -615,7 +615,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15137056',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 24,
@@ -636,7 +636,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 25,
@@ -654,7 +654,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14188983',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 26,
@@ -673,7 +673,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14235163',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

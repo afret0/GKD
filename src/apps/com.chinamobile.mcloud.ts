@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.chinamobile.mcloud:id/bn_cancel"] + [id="com.chinamobile.mcloud:id/upgrade_title"]',
       snapshotUrls: 'https://i.gkd.li/i/12774833',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -41,7 +41,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13627832',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -56,7 +56,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13627834',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -66,7 +66,7 @@ export default defineGkdApp({
       rules:
         '[text="开启自动备份"] +n [id="com.chinamobile.mcloud:id/tv_skip"]',
       snapshotUrls: 'https://i.gkd.li/i/13627830',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -78,7 +78,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[vid="btn_push_notice_close_dialog"]',
       snapshotUrls: 'https://i.gkd.li/i/14882447',
-      enable: false,
+      enable: true,
     },
   ],
 });

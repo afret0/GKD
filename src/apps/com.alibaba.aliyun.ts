@@ -10,7 +10,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text^="打开手机消息通知"] + * >2 [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13446162',
-      enable: false,
+      enable: true,
     },
   ],
 });

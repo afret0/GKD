@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.hihonor.magichome.business.MainActivity',
       rules: '[id="com.hihonor.magichome:id/item_close_image"]',
       snapshotUrls: 'https://i.gkd.li/i/12843930',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       rules:
         '[text$="推荐服务声明"] < LinearLayout < LinearLayout + LinearLayout > [id="com.hihonor.magichome:id/negative_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/12843976',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -31,7 +31,7 @@ export default defineGkdApp({
       rules:
         'TextView[text="立即更新"] -2 [id="com.hihonor.magichome:id/negative_btn"][text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/12916700',
-      enable: false,
+      enable: true,
     },
   ],
 });

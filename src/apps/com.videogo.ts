@@ -49,7 +49,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13255697',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -59,7 +59,7 @@ export default defineGkdApp({
       rules:
         '[text="了解并试用服务"] <<n ViewGroup[index=0][childCount=2] > ViewGroup[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14065785',
-      enable: false,
+      enable: true,
     },
   ],
 });

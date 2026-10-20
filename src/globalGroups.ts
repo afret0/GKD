@@ -37,1447 +37,1447 @@ export default defineGkdGlobalGroups([
     apps: [
       {
         id: 'com.tencent.mm',
-        enable: false,
+        enable: true,
       },
       {
         id: 'li.songe.gkd',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eg.android.AlipayGphone',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.wetype',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tmri.app.main',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.telegram.messenger',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.twitter.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.aistra.hail',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.heyanle.easybangumi4',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.perol.pixez',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.perol.play.pixez',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.magicalstory.videos',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.magicalstory.installer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.guozhigq.pilipala',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.salt.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xuncorp.qinalt.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.wgh136.pica_comic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yenaly.han1meviewer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'ru.zdevs.zarchiver',
-        enable: false,
+        enable: true,
       },
       {
         id: 'ru.zdevs.zarchiver.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.zhanghai.android.files',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xjcheng.musictageditor',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.lalilu.lmusic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ktls.fileinfo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'idm.internet.download.manager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'idm.internet.download.manager.plus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mxtech.videoplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mxtech.videoplayer.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.kr328.clash',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.x8bit.bitwarden',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.localsend.localsend_app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.shizuku.privileged.api',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ktls.automation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.deepl.mobiletranslator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.accessibilitymanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.tasy5kg.cutegif',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.absinthe.libchecker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.metacubex.clash.meta',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.jd1378.otphelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.valvesoftware.android.steam.community',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.legado.app.release',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.getsurfboard',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.nb4a',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.v2ray.ang',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaoyv.bangumi',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.funny.translation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.looker.droidify',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.eleven.com.fastfiletransfer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.idaodan.clean.master',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.agc.gcam84',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wsw.cospa',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.mihon',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.installer.x',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.rikka.savecopy',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.dhizuku',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.accounts',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dv.adm',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.assistant.ongoingclear',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.koitharu.kotatsu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.ash.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huanchengfly.tieba.post',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.example.c001apk',
-        enable: false,
+        enable: true,
       },
       {
         id: 'dev.anilbeesetti.nextplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.kde.kdeconnect_tp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xyz.adproqwq.GKDTool',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alibaba.aliyun',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alicloud.databox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xyz.nextalone.nagram',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.openai.chatgpt',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.telegram.group',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.chrome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.firefox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.firefox_beta',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.fenix',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.focus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.youtube',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xunmeng.pinduoduo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.byyoung.setting',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mixplorer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xjs.ehviewer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'rikka.appops',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.vrem.wifianalyzer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'remix.myplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.arn.scrobble',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.videolan.vlc',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.geogebra.android.calculator.suite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.azure.authenticator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.officehub',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.officehubrow',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.outlook',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.onenote',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sonkins.tguitar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eumlab.android.prometronome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.edu.buaa.wxwork',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.muntashirakon.AppManager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.shizuku.redirectstorage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'web1n.stopapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.shatyuka.zhiliao',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.adobe.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.wikipedia',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.kiwix.kiwixmobile',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.brakefield.painter',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.iacn.biliroaming',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.termux',
-        enable: false,
+        enable: true,
       },
       {
         id: 'oss.krtirtho.spotube',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.merxury.blocker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.minamigo.miuigms',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mufanc.tools.applock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.gankes.tsbattery',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.oasisfeng.nevo.xposed',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.reddit.frontpage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ghostflying.locationreportenabler',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zyc.zcontrol',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.nobody.multitts',
-        enable: false,
+        enable: true,
       },
       {
         id: 'deltazero.amarok',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.canghai.haoka',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xy.td',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.bug.hookvip',
-        enable: false,
+        enable: true,
       },
       {
         id: 'one.yufz.hmspush',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.huskydg.magisk',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xzr.konabess',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.lsposed.manager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'bin.mt.plus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'tw.nekomimi.nekogram',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.qauxv',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rezvorck.tiktokplugin',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zhiliaoapp.musically',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.tianma8023.xposed.smscode',
-        enable: false,
+        enable: true,
       },
       {
         id: 'Han.GJZS',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.adblockplus.adblockplussbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.viewblocker.jrsen',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tsng.hidemyapplist',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.pittvandewitt.wavelet',
-        enable: false,
+        enable: true,
       },
       {
         id: 'one.yufz.onebox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.Wecrane.Scar.pubg',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.bmax.apatch',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tubevpn.client',
-        enable: false,
+        enable: true,
       },
       {
         id: 'github.tornaco.android.thanos.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.omarea.vtools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.litebyte.samhelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.nurke.perfectone',
-        enable: false,
+        enable: true,
       },
       {
         id: 'qlenlen.OneDesign',
-        enable: false,
+        enable: true,
       },
       {
         id: 'icu.nullptr.nativetest',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.vvb2060.mahoshojo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.memoryguardian',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.music.khkj',
-        enable: false,
+        enable: true,
       },
       {
         id: 'Hook.JiuWu.Xp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.weishu.kernelsu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.franco.kernel',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.themedesigner',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.game.gamehome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.tmgp.sgame',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yangyanghuzhou.heijuan',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.sbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.game.gamelab',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.Twilight.tools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.securitymanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.documentsui',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.settings',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.creation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.scanner',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.gallery',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yozo.office',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.video',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.wpslauncher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sevtinge.hyperceiler',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dna.tools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'flar2.devcheck',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.gstarmc.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.capntrips.kernelflasher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.googlequicksearchbox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'qyz.onedesign',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.repaircal',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yhchat.app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.skyhand.sinahelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rong862.bear',
-        enable: false,
+        enable: true,
       },
       {
         id: 'be.mygod.vpnhotspot',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.bixby.agent',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.huanji',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.weather2',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.calculator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.soundrecorder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.email',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.screenrecorder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.deskclock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.newmidrive',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.wps.moffice_eng.xiaomi.lite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.mediaeditor',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.notes',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.cleanmaster',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.compass',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.duokan.phone.remotecontroller',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mfashiongallery.emag',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.thirdappassistant',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.cajlauncher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mi.car.padapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.calendar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.cameraassistant',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.galaxyraw',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.appbooster',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.samsung.utilityapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.goodlock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.thermalguardian',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.calendar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.notes',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jv.samsungeshop',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.sreminder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.watchmanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.reminder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.adguard.android.contentblocker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.voicenote',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.futuremark.dmandroid.application',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.clockpackage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mark.via',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mark.via.gp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mmbox.xbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mmbox.xbrowser.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mycompany.app.soulbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.taptap',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sankuai.meituan',
-        enable: false,
+        enable: true,
       },
       {
         id: 'info.muge.appshare',
-        enable: false,
+        enable: true,
       },
       {
         id: 'make.more.r2d2.cellular_z',
-        enable: false,
+        enable: true,
       },
       {
         id: 'net.csdn.csdnplus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiangzi.dislikecn',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eco.global.app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jiaohua_browser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.vgjump.jump',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.lofter.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.superrhino.rarering',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cyl.musiccy.ou',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ksf.yyx',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.picacomic.fregata',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.mobileqq',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.soulapp.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dubox.drive',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.myzaker.ZAKER_Phone',
-        enable: false,
+        enable: true,
       },
       {
         id: 'dxwt.questionnaire.ui',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mfcloudcalculate.networkdisk',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.excean.na',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.qiyi.video',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.qiyi.video.lite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.hanweb.android.sdzwfw.activity',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.shanghaionstar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'tw.com.gamer.android.activecenter',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.baidu.input_huawei',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.baidu.tieba',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.baidu.netdisk.samsung',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.byfen.market',
-        enable: false,
+        enable: true,
       },
       {
         id: 'tv.danmaku.bili',
-        enable: false,
+        enable: true,
       },
       {
         id: 'tv.danmaku.bilibilihd',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.csmbcx.candada',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.skyworthdigital.picamera',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.kuangxiangciweimao.novel',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.damai',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zmzx.college.search',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yoloho.dayima',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.delicloud.app.smartoffice',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mxchip.petmarvel',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.didapinche.booking',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dianxinai.mobile',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zlfcapp.batterymanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dongqiudi.news',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.citiccard.mobilebank',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.diershoubing.erbing',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.feeyo.vz.pro.cdm',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.fbank.mobile',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.autonavi.minimap',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xpx365.projphoto',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wallstreetcn.news',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huawei.browser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huawei.himovie',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huawei.android.totemweather',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.mediacenter',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huawei.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huawei.health',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huawei.android.thememanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dongao.kaoqian.phone',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jihuanshe',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.handsgo.jiakao.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tipsoon.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jd.app.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.coolapk.market',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.kugou.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.kkeji.news.client',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.app.lantt.xs',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mm.android.lc',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ecellsz.watch.guard',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.antfortune.wealth',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.manmanbuy.bijia',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.paokeji.yiqu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.motoband',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mostone.life',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.nowcoder.app.florida',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaohu.olevodmobile',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.qiekj.user',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.gentle.ppcat',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sup.android.superb',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.luna.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.tmgp.kgame.ppcr',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.example.pptv',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mci.smagazine',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.samsclub.app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.fan.app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.flyersoft.seekbooks',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mymoney',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.leixun.taofen8',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.taobao.movie.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.taobao.litetao',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.qqlive',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.qqsports',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.qq.qcloud',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.docs',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.chan.cwallpaper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wacai365',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.waimaiii.waimaiii',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.netease.snailread',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.netease.mobimail',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.netease.mail',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.netease.cloudmusic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.weico.international',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.example.maintenancemaster',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wls.weex',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.realtech.xiaocan',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.baidu.duer.superapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaoenai.app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.craftvpn.craft',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaote',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.firebear.androil',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.zhouzhuo810.zznote',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.iftech.android.box',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moc.nauxuoyoaixoaix.www',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.uanmi.miaojiaccount',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xunlei.downloadprovider',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.wsds.gamemaster',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cctv.yangshipin.app.androidp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.samsungapps',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.videogo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ky.medical.reference',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cmstop.shaoxing',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.djcity',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mygolbs.mybus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zgnet.eClass',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.crirp.zhipu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ct.client',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.mil.junhao',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.bankabc',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dfsly.bbs',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.chunqiu.ah',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.njh.biubiu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.systemAdSolution',
-        enable: false,
+        enable: true,
       },
       {
         id: 'gov.pianzong.androidnga',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.heytap.market',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xyhui',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.mtt',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.androidqqmail',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.qq.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.midea.vm.washer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.UCMobile',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.upupoo.apu.mobile',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.bbk.appstore',
@@ -1524,1287 +1524,1287 @@ export default defineGkdGlobalGroups([
     apps: [
       {
         id: 'com.tencent.mm',
-        enable: false,
+        enable: true,
       },
       {
         id: 'li.songe.gkd',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eg.android.AlipayGphone',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.wetype',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tmri.app.main',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.telegram.messenger',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.twitter.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.aistra.hail',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.heyanle.easybangumi4',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.perol.pixez',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.perol.play.pixez',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.magicalstory.videos',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.magicalstory.installer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.guozhigq.pilipala',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.salt.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xuncorp.qinalt.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.wgh136.pica_comic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yenaly.han1meviewer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'ru.zdevs.zarchiver',
-        enable: false,
+        enable: true,
       },
       {
         id: 'ru.zdevs.zarchiver.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.zhanghai.android.files',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xjcheng.musictageditor',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.lalilu.lmusic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ktls.fileinfo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'idm.internet.download.manager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'idm.internet.download.manager.plus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mxtech.videoplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mxtech.videoplayer.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.kr328.clash',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.x8bit.bitwarden',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.localsend.localsend_app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.shizuku.privileged.api',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ktls.automation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.deepl.mobiletranslator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.accessibilitymanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.tasy5kg.cutegif',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.absinthe.libchecker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.metacubex.clash.meta',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.jd1378.otphelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.valvesoftware.android.steam.community',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.legado.app.release',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.getsurfboard',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.nb4a',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.v2ray.ang',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaoyv.bangumi',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.funny.translation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.looker.droidify',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.eleven.com.fastfiletransfer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.idaodan.clean.master',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.agc.gcam84',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wsw.cospa',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.mihon',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.installer.x',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.rikka.savecopy',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.dhizuku',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.accounts',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dv.adm',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.assistant.ongoingclear',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.koitharu.kotatsu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.ash.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huanchengfly.tieba.post',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.example.c001apk',
-        enable: false,
+        enable: true,
       },
       {
         id: 'dev.anilbeesetti.nextplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.kde.kdeconnect_tp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xyz.adproqwq.GKDTool',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alibaba.aliyun',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alicloud.databox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xyz.nextalone.nagram',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.openai.chatgpt',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.telegram.group',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.chrome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.firefox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.firefox_beta',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.fenix',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.focus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.youtube',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xunmeng.pinduoduo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.byyoung.setting',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mixplorer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xjs.ehviewer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'rikka.appops',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.vrem.wifianalyzer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'remix.myplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.arn.scrobble',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.videolan.vlc',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.geogebra.android.calculator.suite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.azure.authenticator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.officehub',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.officehubrow',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.outlook',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.onenote',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sonkins.tguitar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eumlab.android.prometronome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.edu.buaa.wxwork',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.muntashirakon.AppManager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.shizuku.redirectstorage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'web1n.stopapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.shatyuka.zhiliao',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.adobe.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.wikipedia',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.kiwix.kiwixmobile',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.brakefield.painter',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.iacn.biliroaming',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.termux',
-        enable: false,
+        enable: true,
       },
       {
         id: 'oss.krtirtho.spotube',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.merxury.blocker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.minamigo.miuigms',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mufanc.tools.applock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.gankes.tsbattery',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.oasisfeng.nevo.xposed',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.reddit.frontpage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ghostflying.locationreportenabler',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zyc.zcontrol',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.nobody.multitts',
-        enable: false,
+        enable: true,
       },
       {
         id: 'deltazero.amarok',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.canghai.haoka',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xy.td',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.bug.hookvip',
-        enable: false,
+        enable: true,
       },
       {
         id: 'one.yufz.hmspush',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.huskydg.magisk',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xzr.konabess',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.lsposed.manager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'bin.mt.plus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'tw.nekomimi.nekogram',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.qauxv',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rezvorck.tiktokplugin',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zhiliaoapp.musically',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.tianma8023.xposed.smscode',
-        enable: false,
+        enable: true,
       },
       {
         id: 'Han.GJZS',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.adblockplus.adblockplussbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.viewblocker.jrsen',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tsng.hidemyapplist',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.pittvandewitt.wavelet',
-        enable: false,
+        enable: true,
       },
       {
         id: 'one.yufz.onebox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.Wecrane.Scar.pubg',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.bmax.apatch',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tubevpn.client',
-        enable: false,
+        enable: true,
       },
       {
         id: 'github.tornaco.android.thanos.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.omarea.vtools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.litebyte.samhelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.nurke.perfectone',
-        enable: false,
+        enable: true,
       },
       {
         id: 'qlenlen.OneDesign',
-        enable: false,
+        enable: true,
       },
       {
         id: 'icu.nullptr.nativetest',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.vvb2060.mahoshojo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.memoryguardian',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.music.khkj',
-        enable: false,
+        enable: true,
       },
       {
         id: 'Hook.JiuWu.Xp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.weishu.kernelsu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.franco.kernel',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.themedesigner',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.game.gamehome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.tmgp.sgame',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yangyanghuzhou.heijuan',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.sbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.game.gamelab',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.Twilight.tools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.securitymanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.documentsui',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.settings',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.creation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.scanner',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.gallery',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yozo.office',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.video',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.wpslauncher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sevtinge.hyperceiler',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dna.tools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'flar2.devcheck',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.gstarmc.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.capntrips.kernelflasher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.googlequicksearchbox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'qyz.onedesign',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.repaircal',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yhchat.app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.skyhand.sinahelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rong862.bear',
-        enable: false,
+        enable: true,
       },
       {
         id: 'be.mygod.vpnhotspot',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.bixby.agent',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.huanji',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.weather2',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.calculator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.soundrecorder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.email',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.screenrecorder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.deskclock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.newmidrive',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.wps.moffice_eng.xiaomi.lite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.mediaeditor',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.notes',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.cleanmaster',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.compass',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.duokan.phone.remotecontroller',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mfashiongallery.emag',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.thirdappassistant',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.cajlauncher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mi.car.padapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.calendar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.cameraassistant',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.galaxyraw',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.appbooster',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.samsung.utilityapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.goodlock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.thermalguardian',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.calendar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.notes',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jv.samsungeshop',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.sreminder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.watchmanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.reminder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.adguard.android.contentblocker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.voicenote',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.futuremark.dmandroid.application',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.clockpackage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mark.via',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mark.via.gp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mmbox.xbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mmbox.xbrowser.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mycompany.app.soulbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'info.muge.appshare',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ylmf.androidclient',
-        enable: false,
+        enable: true,
       },
       {
         id: 'net.csdn.csdnplus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.igpsport.igpsportandroid',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.mobileqq',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.taptap',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.telegram.messenger.web',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.wps.moffice_eng',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alibaba.wireless',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.giraffe',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.baidu.searchbox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.baidu.BaiduMap',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.boohee.one',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.byd.aeri.caranywhere',
-        enable: false,
+        enable: true,
       },
       {
         id: 'tv.danmaku.bili',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wibo.bigbang.ocr',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cainiao.wireless',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zmzx.college.search',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.hpbr.directhires',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alibaba.android.rimet',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eastmoney.android.berlin',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dongqiudi.news',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cf.dubaji',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wm.dmall',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yaerxing.fkst',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.autonavi.minimap',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.guwendao.gwd',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cebbank.mobile.cemb',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jingyao.easybike',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.haier.uhome.uplus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xmcy.hykb',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.redfinger.app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.duowan.kiwi',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huaban.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huawei.health',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huabenapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.fileunzip.zxwknight',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ss.android.article.news',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jin10',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jingdong.pdj',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.kugou.android.lite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'world.letsgo.booster.android.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.woapp.hebei',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.lenovo.browser.hd',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.lenovo.leos.appstore',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.lolaage.tbulu.tools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sankuai.movie',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mt.mtxx.mtxx',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sankuai.meituan',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sankuai.meituan.takeoutnew',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cmcc.cmvideo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sjm.zhuanzhuan.mcy',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.paokeji.yiqu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.csg.palmhall',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sup.android.superb',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dw.btime',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.smzdm.client.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cnki.client',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sf.activity',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.taobao.taobao',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.docs',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alibaba.ailabs.tg',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eastmoney.android.fund',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cn21.ecloud',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wacai365',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.lezhi.speedtest',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.speedtest.lite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.netease.gl',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.netease.newsreader.activity',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.youdao.dict',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.netease.cloudmusic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.com.ruijie.magicbox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ss.android.article.video',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.daimajia.gold',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ximalaya.ting.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xingin.xhs',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.vipaccount',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.gamecenter.sdk.service',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.okii.watch.global',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.firebear.androil',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.iftech.android.box',
-        enable: false,
+        enable: true,
       },
       {
         id: 'ctrip.android.view',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.baidu.youavideo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.heytap.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.lphtsccft',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.seebaby',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.hanweb.android.zhejiang.activity',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zhihu.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.cnki.view',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaolian.prometheus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yipiao',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sinovatech.unicom.ui',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.bankabc',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.chinamobile.mcloud',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wuba.zhuanzhuan',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.xiaochuankeji.tieba',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.heytap.market',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xyhui',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.qqlite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.qqmusic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.qq.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.hihonor.phoneservice',
@@ -2833,919 +2833,919 @@ export default defineGkdGlobalGroups([
     apps: [
       {
         id: 'com.tencent.mm',
-        enable: false,
+        enable: true,
       },
       {
         id: 'li.songe.gkd',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eg.android.AlipayGphone',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.wetype',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tmri.app.main',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.telegram.messenger',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.twitter.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.aistra.hail',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.heyanle.easybangumi4',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.perol.pixez',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.perol.play.pixez',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.magicalstory.videos',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.magicalstory.installer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.guozhigq.pilipala',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.salt.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xuncorp.qinalt.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.wgh136.pica_comic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yenaly.han1meviewer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'ru.zdevs.zarchiver',
-        enable: false,
+        enable: true,
       },
       {
         id: 'ru.zdevs.zarchiver.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.zhanghai.android.files',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xjcheng.musictageditor',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.lalilu.lmusic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ktls.fileinfo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'idm.internet.download.manager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'idm.internet.download.manager.plus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mxtech.videoplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mxtech.videoplayer.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.kr328.clash',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.x8bit.bitwarden',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.localsend.localsend_app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.shizuku.privileged.api',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ktls.automation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.deepl.mobiletranslator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.accessibilitymanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.tasy5kg.cutegif',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.absinthe.libchecker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.metacubex.clash.meta',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.jd1378.otphelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.valvesoftware.android.steam.community',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.legado.app.release',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.getsurfboard',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.nb4a',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.v2ray.ang',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaoyv.bangumi',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.funny.translation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.looker.droidify',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.eleven.com.fastfiletransfer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.idaodan.clean.master',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.agc.gcam84',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.wsw.cospa',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.mihon',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.installer.x',
-        enable: false,
+        enable: true,
       },
       {
         id: 'app.rikka.savecopy',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.dhizuku',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rosan.accounts',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dv.adm',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.assistant.ongoingclear',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.koitharu.kotatsu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.ash.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.huanchengfly.tieba.post',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.example.c001apk',
-        enable: false,
+        enable: true,
       },
       {
         id: 'dev.anilbeesetti.nextplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.kde.kdeconnect_tp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xyz.adproqwq.GKDTool',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alibaba.aliyun',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.alicloud.databox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xyz.nextalone.nagram',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.openai.chatgpt',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.telegram.group',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.chrome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.firefox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.firefox_beta',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.fenix',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.mozilla.focus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.youtube',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xunmeng.pinduoduo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.byyoung.setting',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mixplorer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xjs.ehviewer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'rikka.appops',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.vrem.wifianalyzer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'remix.myplayer',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.arn.scrobble',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.videolan.vlc',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.geogebra.android.calculator.suite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.azure.authenticator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.officehub',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.officehubrow',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.outlook',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.microsoft.office.onenote',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sonkins.tguitar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.eumlab.android.prometronome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.edu.buaa.wxwork',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.muntashirakon.AppManager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.shizuku.redirectstorage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'web1n.stopapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.shatyuka.zhiliao',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.adobe.reader',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.wikipedia',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.kiwix.kiwixmobile',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.brakefield.painter',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.iacn.biliroaming',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.termux',
-        enable: false,
+        enable: true,
       },
       {
         id: 'oss.krtirtho.spotube',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.merxury.blocker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'moe.minamigo.miuigms',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mufanc.tools.applock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.gankes.tsbattery',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.oasisfeng.nevo.xposed',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.reddit.frontpage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ghostflying.locationreportenabler',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zyc.zcontrol',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.nobody.multitts',
-        enable: false,
+        enable: true,
       },
       {
         id: 'deltazero.amarok',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.canghai.haoka',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xy.td',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.bug.hookvip',
-        enable: false,
+        enable: true,
       },
       {
         id: 'one.yufz.hmspush',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.huskydg.magisk',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xzr.konabess',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.lsposed.manager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'bin.mt.plus',
-        enable: false,
+        enable: true,
       },
       {
         id: 'tw.nekomimi.nekogram',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.qauxv',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rezvorck.tiktokplugin',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zhiliaoapp.musically',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.tianma8023.xposed.smscode',
-        enable: false,
+        enable: true,
       },
       {
         id: 'Han.GJZS',
-        enable: false,
+        enable: true,
       },
       {
         id: 'org.adblockplus.adblockplussbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.viewblocker.jrsen',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tsng.hidemyapplist',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.pittvandewitt.wavelet',
-        enable: false,
+        enable: true,
       },
       {
         id: 'one.yufz.onebox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.Wecrane.Scar.pubg',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.bmax.apatch',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tubevpn.client',
-        enable: false,
+        enable: true,
       },
       {
         id: 'github.tornaco.android.thanos.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.omarea.vtools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.litebyte.samhelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.nurke.perfectone',
-        enable: false,
+        enable: true,
       },
       {
         id: 'qlenlen.OneDesign',
-        enable: false,
+        enable: true,
       },
       {
         id: 'icu.nullptr.nativetest',
-        enable: false,
+        enable: true,
       },
       {
         id: 'io.github.vvb2060.mahoshojo',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.memoryguardian',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.music.khkj',
-        enable: false,
+        enable: true,
       },
       {
         id: 'Hook.JiuWu.Xp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'me.weishu.kernelsu',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.franco.kernel',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.themedesigner',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.game.gamehome',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.tencent.tmgp.sgame',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yangyanghuzhou.heijuan',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.sbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.game.gamelab',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.Twilight.tools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.securitymanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.documentsui',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.settings',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.creation',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.scanner',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.gallery',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yozo.office',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.video',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.wpslauncher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sevtinge.hyperceiler',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.dna.tools',
-        enable: false,
+        enable: true,
       },
       {
         id: 'flar2.devcheck',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.gstarmc.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.github.capntrips.kernelflasher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.google.android.googlequicksearchbox',
-        enable: false,
+        enable: true,
       },
       {
         id: 'qyz.onedesign',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.repaircal',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.yhchat.app',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.skyhand.sinahelper',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.rong862.bear',
-        enable: false,
+        enable: true,
       },
       {
         id: 'be.mygod.vpnhotspot',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.bixby.agent',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.huanji',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.weather2',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.calculator',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.soundrecorder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.email',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.screenrecorder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.deskclock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.newmidrive',
-        enable: false,
+        enable: true,
       },
       {
         id: 'cn.wps.moffice_eng.xiaomi.lite',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.mediaeditor',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.notes',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.cleanmaster',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.compass',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.duokan.phone.remotecontroller',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mfashiongallery.emag',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.miui.thirdappassistant',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.xiaomi.cajlauncher',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mi.car.padapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.calendar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.cameraassistant',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.galaxyraw',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.appbooster',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.android.samsung.utilityapp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.goodlock',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.thermalguardian',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.calendar',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.notes',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.jv.samsungeshop',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.sreminder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.watchmanager',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.samsung.android.app.reminder',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.adguard.android.contentblocker',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.voicenote',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.futuremark.dmandroid.application',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.sec.android.app.clockpackage',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mark.via',
-        enable: false,
+        enable: true,
       },
       {
         id: 'mark.via.gp',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mmbox.xbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mmbox.xbrowser.pro',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.mycompany.app.soulbrowser',
-        enable: false,
+        enable: true,
       },
       {
         id: 'xxx.pornhub.fuck',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.netease.cloudmusic',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.zhihu.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.luna.music',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.taptap',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ss.android.ugc.aweme',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.example.pptv',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.ximalaya.ting.android',
-        enable: false,
+        enable: true,
       },
       {
         id: 'com.qq.reader',
-        enable: false,
+        enable: true,
       },
     ],
   },

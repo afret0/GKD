@@ -26,7 +26,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13195645',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -58,7 +58,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -98,7 +98,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -155,7 +155,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -200,7 +200,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14456101',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -227,7 +227,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14596990',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -261,7 +261,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15140800',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -278,7 +278,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13804657',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -294,7 +294,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14549415',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -323,7 +323,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13205634',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -359,7 +359,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13852257',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -372,7 +372,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13925378',
         'https://i.gkd.li/i/13925380',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -417,7 +417,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15025702',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -435,7 +435,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14964851',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.ctm.home.page.MainActivity',
       rules: '[id="com.ctm:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13350575',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.ctm.home.page.MainActivity',
       rules: '[id="com.ctm:id/btn_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13350612',
-      enable: false,
+      enable: true,
     },
   ],
 });

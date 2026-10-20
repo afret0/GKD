@@ -14,7 +14,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12865481',
         'https://i.gkd.li/i/12865488',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -26,7 +26,7 @@ export default defineGkdApp({
       activityIds: 'com.cn21.ecloud.activity.MainPageActivity',
       rules: '[id="com.cn21.ecloud:id/ivCancel"]',
       snapshotUrls: 'https://i.gkd.li/i/13399488',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

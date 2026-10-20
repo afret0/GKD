@@ -43,7 +43,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: 'TextView[text*="新版本"] +3 TextView[text="下次提醒"]',
       snapshotUrls: 'https://i.gkd.li/i/12620586',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -73,7 +73,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12620788',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -83,7 +83,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.dongqiudi.news:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13260467',
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -115,7 +115,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12620588',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

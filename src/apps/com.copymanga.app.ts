@@ -116,7 +116,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12925095',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -151,7 +151,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -163,7 +163,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12851627',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -177,7 +177,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13233179',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -191,7 +191,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13233180',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

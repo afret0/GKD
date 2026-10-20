@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         '@FrameLayout[desc^="dislike"] <<n [id="com.doc360.client:id/fl_ad_container"]',
       snapshotUrls: 'https://i.gkd.li/i/13485051',
-      enable: false,
+      enable: true,
     },
   ],
 });

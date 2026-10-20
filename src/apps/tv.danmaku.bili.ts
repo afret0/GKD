@@ -36,7 +36,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12785461',
         'https://i.gkd.li/i/12775156',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -57,7 +57,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12700243',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -94,7 +94,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -114,7 +114,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -136,7 +136,7 @@ export default defineGkdApp({
       ],
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/110db806-3f8b-4cd2-a445-06c5f5eb21eb',
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -161,7 +161,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14782965',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -175,7 +175,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13229159',
         'https://i.gkd.li/i/13614090',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -232,7 +232,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13625309',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -245,7 +245,7 @@ export default defineGkdApp({
       rules:
         '[text="开启个性化内容推荐"] +3 [id="tv.danmaku.bili:id/close_button"]',
       snapshotUrls: 'https://i.gkd.li/i/13448905',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -305,7 +305,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -324,7 +324,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15858057',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

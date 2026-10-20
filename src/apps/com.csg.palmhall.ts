@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: ['com.csg.palmhall.MainActivity'],
       rules: '@[text="关闭"] + [text="升级"]',
       snapshotUrls: ['https://i.gkd.li/i/12700060'],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -19,7 +19,7 @@ export default defineGkdApp({
       activityIds: ['com.csg.palmhall.MainActivity'],
       rules: 'View > Image +(3) [text="不再显示"][clickable=true]',
       snapshotUrls: ['https://i.gkd.li/i/12700075'],
-      enable: false,
+      enable: true,
     },
   ],
 });

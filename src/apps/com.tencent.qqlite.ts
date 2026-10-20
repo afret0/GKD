@@ -14,7 +14,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/14428054'],
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

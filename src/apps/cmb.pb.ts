@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'cmb.pb.app.mainframe.container.PBMainActivity',
       rules: '[vid="float_window"] > [vid="ivCancle"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14208669',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -31,7 +31,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14208693',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -46,7 +46,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13897345',
         'https://i.gkd.li/i/14208717',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

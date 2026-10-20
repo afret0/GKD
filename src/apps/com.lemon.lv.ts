@@ -26,7 +26,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14648626',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -35,7 +35,7 @@ export default defineGkdApp({
       rules:
         '[vid="gallery_layout_below_category_view"] >3 [text="立即下载"] -n LynxFlattenUI[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14122865',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -45,7 +45,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[vid="tv_title_resume_design"] +2 [vid="tvResumeNow"]',
       snapshotUrls: 'https://i.gkd.li/i/14292755',
-      enable: false,
+      enable: true,
     },
   ],
 });

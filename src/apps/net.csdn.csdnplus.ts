@@ -50,7 +50,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -78,7 +78,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -89,7 +89,7 @@ export default defineGkdApp({
       activityIds: 'net.csdn.csdnplus.activity.MainActivity',
       rules: '[id="net.csdn.csdnplus:id/tv_cancel"][text="残忍拒绝"]',
       snapshotUrls: 'https://i.gkd.li/i/13251085',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -106,7 +106,7 @@ export default defineGkdApp({
         ],
         snapshotUrls: ['https://i.gkd.li/i/12673638'],
       },
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -129,7 +129,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13830858',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -31,7 +31,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -43,7 +43,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12642795',
         'https://i.gkd.li/i/13197877',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -58,7 +58,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13521702',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -71,7 +71,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/101449500/a9e21a7d-ab16-4ba4-b678-9fe8dcbb6c72',
       snapshotUrls: 'https://i.gkd.li/i/14471660',
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -87,7 +87,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13455424',
         'https://i.gkd.li/i/15104645',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -103,7 +103,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13197553',
         'https://i.gkd.li/i/13197546',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -112,7 +112,7 @@ export default defineGkdApp({
       rules:
         'View[id=null] > [text="立即参加"] + TextView[id=null][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12642813',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -120,7 +120,7 @@ export default defineGkdApp({
       activityIds: 'com.taobao.tao.welcome.Welcome',
       rules: '@View[clickable=true] - View > View > TextView[text="立即签到"]',
       snapshotUrls: 'https://i.gkd.li/i/12642798',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -134,7 +134,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13695520',
         'https://i.gkd.li/i/14899863',
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -145,7 +145,7 @@ export default defineGkdApp({
       activityIds: 'com.alipay.android.msp.ui.views.MspContainerActivity',
       rules: '@[text="关闭"] < * <3 * < * + * >3 [text$="小额免密支付"]',
       snapshotUrls: 'https://i.gkd.li/i/13438414',
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -163,7 +163,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 15,
@@ -183,7 +183,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13588165',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 16,
@@ -215,7 +215,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13898735',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 17,
@@ -223,7 +223,7 @@ export default defineGkdApp({
       activityIds: 'com.taobao.search.sf.MainSearchResultActivity',
       rules: '[desc="不喜欢这个商品"]',
       snapshotUrls: 'https://i.gkd.li/i/14142196',
-      enable: false,
+      enable: true,
     },
     {
       key: 18,
@@ -240,7 +240,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15124094',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

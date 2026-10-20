@@ -11,7 +11,7 @@ export default defineGkdApp({
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: '@Image[text=""] < View +n View > View > TextView[text="广告"]',
       snapshotUrls: 'https://i.gkd.li/i/12841081',
-      enable: false,
+      enable: true,
     },
   ],
 });

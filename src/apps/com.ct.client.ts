@@ -29,7 +29,7 @@ export default defineGkdApp({
       activityIds: 'com.ct.client.activity.UserGuideActivity',
       rules: '[id="com.ct.client:id/tvSkip"]',
       snapshotUrls: 'https://i.gkd.li/i/12508971',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -51,7 +51,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -59,7 +59,7 @@ export default defineGkdApp({
       activityIds: 'com.ct.client.common.webview.OnlineBusinessWebkitActivity',
       rules: 'Image[text="tishi-close"]',
       snapshotUrls: 'https://i.gkd.li/i/12913804',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -82,7 +82,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15209597',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -105,7 +105,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13043345',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -123,7 +123,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15137220',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

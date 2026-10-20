@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules:
         '[id="com.sina.weibo:id/rl_account_title_bar"] > [id="com.sina.weibo:id/tv_title_bar_skip"][text="跳过"]',
       snapshotUrls: 'https://i.gkd.li/i/12531405',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -29,7 +29,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12531433',
         'https://i.gkd.li/i/12531434',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -66,7 +66,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13787207',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -97,7 +97,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -107,7 +107,7 @@ export default defineGkdApp({
       rules:
         '[id="com.sina.weibo:id/tvGuide"] + [id="com.sina.weibo:id/v_close"] + [id="com.sina.weibo:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12705972',
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -150,7 +150,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14033735',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -163,7 +163,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.sina.weibo:id/bt_cancel"][text="暂不开启"] + [id="com.sina.weibo:id/bt_confirm"]',
       snapshotUrls: 'https://i.gkd.li/i/12705979',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -174,7 +174,7 @@ export default defineGkdApp({
       rules:
         '[text^="打开通知"] < LinearLayout + ImageView[id="com.sina.weibo:id/right_icon"]',
       snapshotUrls: 'https://i.gkd.li/i/12705986',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -185,7 +185,7 @@ export default defineGkdApp({
       rules:
         '[id="com.sina.weibo:id/ll_check_in_container"] < FrameLayout - FrameLayout > TextView + [id="com.sina.weibo:id/v_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12749876',
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -229,7 +229,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13482960',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -254,7 +254,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13255595',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 17,
@@ -316,7 +316,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14730274',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 18,
@@ -328,7 +328,7 @@ export default defineGkdApp({
       activityIds: 'com.sina.weibo.MainTabActivity',
       rules: '@[text="不了，谢谢"] +4 [text="喜欢，给好评"]',
       snapshotUrls: 'https://i.gkd.li/i/13620220',
-      enable: false,
+      enable: true,
     },
     {
       key: 19,
@@ -341,7 +341,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13929119',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 20,
@@ -352,7 +352,7 @@ export default defineGkdApp({
       activityIds: 'com.sina.weibo.feed.MPDialogActivity',
       rules: '[vid="container"] >n [text="close"]',
       snapshotUrls: 'https://i.gkd.li/i/13837867',
-      enable: false,
+      enable: true,
     },
     {
       key: 21,
@@ -392,7 +392,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

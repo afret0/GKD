@@ -13,7 +13,7 @@ export default defineGkdApp({
       matchTime: 10000,
       rules: '[id="com.tencent.qt.sns:id/closebtn"]',
       snapshotUrls: 'https://i.gkd.li/i/13497978',
-      enable: false,
+      enable: true,
     },
   ],
 });

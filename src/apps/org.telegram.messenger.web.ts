@@ -17,7 +17,7 @@ export default defineGkdApp({
         },
       ],
       snapshotUrls: 'https://i.gkd.li/i/13847837',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -28,7 +28,7 @@ export default defineGkdApp({
       activityIds: 'org.telegram.ui.LaunchActivity',
       rules: '[text="打开通知"] +n [text="继续"]',
       snapshotUrls: 'https://i.gkd.li/i/14048218',
-      enable: false,
+      enable: true,
     },
   ],
 });

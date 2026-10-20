@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '@[id="cn.speedtest.lite:id/iv_close"] - [id="cn.speedtest.lite:id/ll_main_pane"] >2 [id="cn.speedtest.lite:id/tv_upgrade_content"]',
       snapshotUrls: 'https://i.gkd.li/i/12715483',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -21,7 +21,7 @@ export default defineGkdApp({
       rules:
         '@[id="cn.speedtest.lite:id/iv_close"] - RelativeLayout >n [id="cn.speedtest.lite:id/ad_banner"]',
       snapshotUrls: 'https://i.gkd.li/i/12715511',
-      enable: false,
+      enable: true,
     },
   ],
 });

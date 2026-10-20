@@ -13,7 +13,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.shangfang.gylm:id/iv_upgrade_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13643599',
-      enable: false,
+      enable: true,
     },
   ],
 });

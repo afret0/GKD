@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'co.notix.interstitial.InterstitialActivity',
       rules: '[vid="tv_button"]',
       snapshotUrls: 'https://i.gkd.li/i/13842558',
-      enable: false,
+      enable: true,
     },
   ],
 });

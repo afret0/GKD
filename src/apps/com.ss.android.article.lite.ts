@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
       rules: '@[desc="关闭"] + [text$="现金红包"]',
       snapshotUrls: 'https://i.gkd.li/i/12705414',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -19,7 +19,7 @@ export default defineGkdApp({
       rules:
         'FrameLayout[id!=null] > @ImageView[id!=null][clickable=true] + ImageView[id!=null]',
       snapshotUrls: 'https://i.gkd.li/i/12705452',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -27,7 +27,7 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
       rules: '[text="你可能感兴趣的人"] + [desc="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/12705427',
-      enable: false,
+      enable: true,
     },
     {
       key: 20,
@@ -41,7 +41,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12705439',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 21,
@@ -49,7 +49,7 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
       rules: 'UIScrollView + UIView + UISvg',
       snapshotUrls: 'https://i.gkd.li/i/12705447',
-      enable: false,
+      enable: true,
     },
     {
       key: 22,
@@ -63,7 +63,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12705456',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 30,
@@ -76,7 +76,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12705468',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

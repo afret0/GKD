@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         '@[id="cn.TuHu.android:id/imgClose"] - [id="cn.TuHu.android:id/rlContent"] > [id="cn.TuHu.android:id/img_jump"]',
       snapshotUrls: 'https://i.gkd.li/i/13228818',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -24,7 +24,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13228796',
         'https://i.gkd.li/i/13256535',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

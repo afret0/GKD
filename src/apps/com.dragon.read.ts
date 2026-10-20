@@ -53,7 +53,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -72,7 +72,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -118,7 +118,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15223416',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -132,7 +132,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13399505',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -172,7 +172,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -181,7 +181,7 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.widget.ConfirmDialogBuilder',
       rules: '@[text="取消"] < * -2 * > [text="开启推送提醒"]',
       snapshotUrls: 'https://i.gkd.li/i/12716592',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -191,7 +191,7 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.reader.ui.ReaderActivity',
       rules: 'TextView[text="广告"] +2 Button[id="com.dragon.read:id/close"]',
       snapshotUrls: 'https://i.gkd.li/i/13191156',
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -201,7 +201,7 @@ export default defineGkdApp({
       activityIds: 'com.dragon.read.pages.main.MainFragmentActivity',
       rules: '[vid="container"] > ImageView',
       snapshotUrls: 'https://i.gkd.li/i/14031943',
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -210,7 +210,7 @@ export default defineGkdApp({
       rules:
         '[id="com.dragon.read:id/readFlowNonRoundEntranceLayout"] [id="com.dragon.read:id/relativeRight"]',
       snapshotUrls: 'https://i.gkd.li/i/13674556',
-      enable: false,
+      enable: true,
     },
     {
       key: 16,
@@ -220,7 +220,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: '@ImageView[clickable=true] +3 * > [text="五星好评"]',
       snapshotUrls: 'https://i.gkd.li/i/14395088',
-      enable: false,
+      enable: true,
     },
     {
       key: 17,
@@ -234,7 +234,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/101449500/0c6e8831-9cde-47f1-8e4b-25ecfa5b2881',
       snapshotUrls: 'https://i.gkd.li/i/14539504',
-      enable: false,
+      enable: true,
     },
     {
       key: 19,
@@ -252,7 +252,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

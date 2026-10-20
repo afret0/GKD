@@ -12,7 +12,7 @@ export default defineGkdApp({
       activityIds: 'com.netease.mkey.activity.NtSecActivity',
       rules: '[id="com.netease.mkey:id/tv_cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/13421302',
-      enable: false,
+      enable: true,
     },
   ],
 });

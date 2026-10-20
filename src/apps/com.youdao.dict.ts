@@ -30,7 +30,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -78,7 +78,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14296482',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -93,7 +93,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13263706',
         'https://i.gkd.li/i/14381735',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -105,7 +105,7 @@ export default defineGkdApp({
       matchDelay: 10000,
       rules: '[id="com.youdao.dict:id/btn_never"][text*="不再提醒"]',
       snapshotUrls: 'https://i.gkd.li/i/13540941',
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -116,7 +116,7 @@ export default defineGkdApp({
       rules:
         '[id="com.youdao.dict:id/tv_version"] + [id="com.youdao.dict:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13627912',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -125,7 +125,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[vid="home_ad_close"]',
       snapshotUrls: 'https://i.gkd.li/i/14037717',
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -137,7 +137,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/14292588',
         'https://i.gkd.li/i/14292587',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -196,7 +196,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14895765',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -223,7 +223,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14586448',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

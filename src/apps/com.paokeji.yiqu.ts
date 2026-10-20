@@ -128,7 +128,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13829312',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -146,7 +146,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14140265',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -173,7 +173,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14717730',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -190,7 +190,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14572053',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

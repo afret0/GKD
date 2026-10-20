@@ -13,7 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '@ImageView[clickable=true] + [text="检测到新版本"]',
       snapshotUrls: 'https://i.gkd.li/i/14987173',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

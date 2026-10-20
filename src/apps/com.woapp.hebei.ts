@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'net.smartont.we.wohome.ui.main.view.MainActivity',
       rules: '@[text="忽略更新"] + [text="立即更新"]',
       snapshotUrls: ['https://i.gkd.li/i/12707746'],
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

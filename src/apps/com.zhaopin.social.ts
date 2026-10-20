@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.zhaopin.social.homepage.ZSC_MainTabActivity',
       rules: '[id="com.zhaopin.social:id/rl_banner_close"][clickable=true]',
       snapshotUrls: ['https://i.gkd.li/i/12706181'],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -19,7 +19,7 @@ export default defineGkdApp({
       rules:
         'ImageView[clickable=true&&focusable=true] < FrameLayout + FrameLayout > ImageView[clickable=false&&focusable=false]',
       snapshotUrls: 'https://i.gkd.li/i/13063442',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -29,7 +29,7 @@ export default defineGkdApp({
       activityIds: ['com.zhaopin.social.homepage.ZSC_MainTabActivity'],
       rules: '[id="com.zhaopin.social:id/message_pushlayout_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13063427',
-      enable: false,
+      enable: true,
     },
   ],
 });

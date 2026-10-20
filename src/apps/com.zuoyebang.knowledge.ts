@@ -13,7 +13,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[id="com.zuoyebang.knowledge:id/cancel_button"]',
       snapshotUrls: 'https://i.gkd.li/i/13695522',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -22,7 +22,7 @@ export default defineGkdApp({
       activityIds: 'com.baidu.homework.activity.init.InitActivity',
       rules: 'TextView[id="com.zuoyebang.knowledge:id/btn_cancle"]',
       snapshotUrls: 'https://i.gkd.li/i/13043228',
-      enable: false,
+      enable: true,
     },
   ],
 });

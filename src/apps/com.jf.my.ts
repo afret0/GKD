@@ -30,7 +30,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13786867',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -38,7 +38,7 @@ export default defineGkdApp({
       activityIds: 'com.jf.my.main.ui.dialog.HomeRedPackageDialog',
       rules: '[id="com.jf.my:id/iv_back"]',
       snapshotUrls: 'https://i.gkd.li/i/12840619',
-      enable: false,
+      enable: true,
     },
   ],
 });

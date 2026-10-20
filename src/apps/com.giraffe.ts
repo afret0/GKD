@@ -14,7 +14,7 @@ export default defineGkdApp({
       activityIds: 'com.speed.shadowsocks.ui.main.MainActivity',
       rules: '[vid="iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13998233',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

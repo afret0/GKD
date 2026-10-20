@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.cubic.autohome.MainActivity',
       rules: '[id="com.cubic.autohome:id/operate_show_exit_layout"]',
       snapshotUrls: 'https://i.gkd.li/i/12836324',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -25,7 +25,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13885414',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

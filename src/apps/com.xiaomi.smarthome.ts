@@ -15,7 +15,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12639658'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -24,7 +24,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/12639671',
       rules:
         '[text*="检测到"&&text*="升级"] < ViewGroup + ViewGroup > Button > [text = "取消"]',
-      enable: false,
+      enable: true,
     },
   ],
 });

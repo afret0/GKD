@@ -14,7 +14,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: '[vid="close_img_banner"]',
       snapshotUrls: 'https://i.gkd.li/i/13874219',
-      enable: false,
+      enable: true,
     },
   ],
 });

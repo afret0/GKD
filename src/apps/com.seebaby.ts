@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: ['com.seebaby.login.ui.activity.LauncherActivity'],
       rules: '@[id="com.seebaby:id/btn_later"] + [text$="新版本"]',
       snapshotUrls: ['https://i.gkd.li/i/12705351'],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -43,7 +43,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12705358'],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -17,7 +17,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13402746',
         'https://i.gkd.li/i/12701230',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -25,7 +25,7 @@ export default defineGkdApp({
       activityIds: 'com.ecitic.bank.mobile.ui.MainActivity',
       rules: '@[text="取消"] + [text="立即开启"]',
       snapshotUrls: 'https://i.gkd.li/i/13399102',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -33,7 +33,7 @@ export default defineGkdApp({
       activityIds: 'com.ecitic.bank.mobile.ui.MainActivity',
       rules: '@[clickable=true] +2 [text="恭喜您关注到宝藏基金"]',
       snapshotUrls: 'https://i.gkd.li/i/14208637',
-      enable: false,
+      enable: true,
     },
   ],
 });

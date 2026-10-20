@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.youloft.icloser.view.dialog.VipRetainPacketDialog',
       rules: '[id="com.youloft.icloser:id/tv_later_buy"]',
       snapshotUrls: 'https://i.gkd.li/i/13067183',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.youloft.icloser.activity.MainActivity',
       rules: '[id="com.youloft.icloser:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13164387',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.dtchuxing.main.MainActivity',
       rules: '[id="com.dtdream.publictransit:id/ifv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12830113',
-      enable: false,
+      enable: true,
     },
   ],
 });

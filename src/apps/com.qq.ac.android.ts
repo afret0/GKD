@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.qq.ac.android:id/operation_ad_view"] > [id="com.qq.ac.android:id/btn_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12707756',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -29,7 +29,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14730335',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -11,7 +11,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.leduoworks.gpstoolbox:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13062612',
-      enable: false,
+      enable: true,
     },
   ],
 });

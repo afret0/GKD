@@ -17,7 +17,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12707733',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -32,7 +32,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13771774',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -40,7 +40,7 @@ export default defineGkdApp({
       activityIds: 'com.qinlin.edoor.MainActivity',
       rules: '[desc="开门有奖"] +2 [desc="立即领取"] + ImageView',
       snapshotUrls: 'https://i.gkd.li/i/12707736',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -48,7 +48,7 @@ export default defineGkdApp({
       activityIds: 'com.qinlin.edoor.MainActivity',
       rules: ['[desc="获得金币"] +3 [desc="开心收下"] + ImageView'],
       snapshotUrls: ['https://i.gkd.li/i/12707738'],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -56,7 +56,7 @@ export default defineGkdApp({
       desc: '来自【腾讯广告sdk】',
       rules: '[vid="interact_ad_root"] >2 [vid="iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13932707',
-      enable: false,
+      enable: true,
     },
   ],
 });

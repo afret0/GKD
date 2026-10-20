@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.hnair.airlines.ui.main.MainActivity',
       rules: 'ImageView[id*="com.rytong.hnair:id/iv_cloes"]',
       snapshotUrls: 'https://i.gkd.li/i/12846381',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.jd.jdlite.MainFrameActivity',
       rules: '@[desc="关闭页面"] - FrameLayout >n [text="极速版弹窗"]',
       snapshotUrls: 'https://i.gkd.li/i/12727396',
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -19,7 +19,7 @@ export default defineGkdApp({
       rules:
         '@ImageView[clickable=true] - LinearLayout > [text="开启消息通知"]',
       snapshotUrls: 'https://i.gkd.li/i/13062969',
-      enable: false,
+      enable: true,
     },
   ],
 });

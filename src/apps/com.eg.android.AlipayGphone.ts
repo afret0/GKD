@@ -45,7 +45,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -56,7 +56,7 @@ export default defineGkdApp({
       activityIds: 'com.eg.android.AlipayGphone.AlipayLogin',
       rules: '@[desc="关闭"] - * >4 [text*="开启定位权限"]',
       snapshotUrls: 'https://i.gkd.li/i/12792688',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -91,7 +91,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -125,7 +125,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13490797',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -153,7 +153,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16427922',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -168,7 +168,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13915022',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -182,7 +182,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14008852',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -201,7 +201,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 16,
@@ -232,7 +232,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 18,
@@ -251,7 +251,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 19,
@@ -277,7 +277,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14787585',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 20,
@@ -294,7 +294,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14893122',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 21,
@@ -330,7 +330,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15144844',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 22,
@@ -348,7 +348,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15289022',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 23,
@@ -365,7 +365,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16106615',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

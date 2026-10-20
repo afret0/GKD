@@ -13,7 +13,7 @@ export default defineGkdApp({
       ],
       rules: '[id="com.hihonor.vmall:id/gift_close_iv"]',
       snapshotUrls: 'https://i.gkd.li/i/13060881',
-      enable: false,
+      enable: true,
     },
   ],
 });

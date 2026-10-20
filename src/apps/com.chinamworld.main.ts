@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.chinamworld.main:id/indicator_container_container"] + [id="com.chinamworld.main:id/close"]',
       snapshotUrls: 'https://i.gkd.li/i/12726961',
-      enable: false,
+      enable: true,
     },
   ],
 });

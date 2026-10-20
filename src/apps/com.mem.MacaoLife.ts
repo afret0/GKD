@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.mem.life.ui.launch.LaunchActivity',
       rules: '[id="com.mem.MacaoLife:id/cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/13350665',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.mem.life.ui.home.HomeActivity',
       rules: '[id="com.mem.MacaoLife:id/close"]',
       snapshotUrls: 'https://i.gkd.li/i/13350685',
-      enable: false,
+      enable: true,
     },
   ],
 });

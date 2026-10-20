@@ -38,7 +38,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14964913',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -53,7 +53,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14622506',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -62,7 +62,7 @@ export default defineGkdApp({
       activityIds: 'com.wifitutu.ui.tools.SpeedUpActivity',
       rules: '[vid="success_desc"] + [vid="back_layout"]',
       snapshotUrls: 'https://i.gkd.li/i/14811492',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -76,7 +76,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15284722',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -90,7 +90,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15284730',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -22,7 +22,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13070974',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -44,7 +44,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14586427',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -68,7 +68,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13634882',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -82,7 +82,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12695736',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -98,7 +98,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13440341',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -109,7 +109,7 @@ export default defineGkdApp({
       rules:
         '[id="com.unionpay:id/container"] + [id="com.unionpay:id/image"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13440341',
-      enable: false,
+      enable: true,
     },
     {
       key: 15,
@@ -124,7 +124,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13848688',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

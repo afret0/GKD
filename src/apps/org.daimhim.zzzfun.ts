@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'org.daimhim.zzzfun.ui.home.video.VideoDetailsActivity',
       rules: 'ImageView -2 ImageView + FrameLayout > ImageView',
       snapshotUrls: 'https://i.gkd.li/i/13402608',
-      enable: false,
+      enable: true,
     },
   ],
 });

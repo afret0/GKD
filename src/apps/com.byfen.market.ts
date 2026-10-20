@@ -30,7 +30,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.byfen.market:id/idIvClose"]',
       snapshotUrls: 'https://i.gkd.li/i/13801613',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -53,7 +53,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13771773',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -14,7 +14,7 @@ export default defineGkdApp({
       matchTime: 10000,
       rules: '[id="com.dmzj.manhua:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13542503',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -28,7 +28,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.dmzj.manhua:id/ivAdClose"] - [id="com.dmzj.manhua:id/ivFloatAd"]',
       snapshotUrls: 'https://i.gkd.li/i/13542506',
-      enable: false,
+      enable: true,
     },
   ],
 });

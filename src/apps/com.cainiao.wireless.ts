@@ -60,7 +60,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16118155',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -102,7 +102,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16024305',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -113,7 +113,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text="确认"] - [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/13042207',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -126,7 +126,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.cainiao.wireless:id/gg_dialog_base_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13068573',
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -139,7 +139,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13692761',
         'https://i.gkd.li/i/14969859',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -156,7 +156,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14913359',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -172,7 +172,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15879126',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

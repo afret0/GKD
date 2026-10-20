@@ -14,7 +14,7 @@ export default defineGkdApp({
       activityIds: 'com.cebbank.mobile.cemb.view.CustomizedDialog',
       rules: '@[text="不再提示"] +2 [text="立即更新"]',
       snapshotUrls: 'https://i.gkd.li/i/12727241',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -33,7 +33,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12727248',
         'https://i.gkd.li/i/13471080',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

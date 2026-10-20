@@ -33,7 +33,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '@[text="我知道了"] - * > [text="未成年模式"]',
       snapshotUrls: 'https://i.gkd.li/i/13761159',
-      enable: false,
+      enable: true,
       order: -8,
     },
   ],

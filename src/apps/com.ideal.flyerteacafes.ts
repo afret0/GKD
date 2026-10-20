@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.ideal.flyerteacafes:id/close"] - FrameLayout > [id="com.ideal.flyerteacafes:id/tv_time_down"]',
       snapshotUrls: 'https://i.gkd.li/i/13466119',
-      enable: false,
+      enable: true,
     },
   ],
 });

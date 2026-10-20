@@ -12,7 +12,7 @@ export default defineGkdApp({
       activityIds: 'com.mihoyo.cloudgame.main.MiHoYoCloudMainActivity',
       rules: '[text="使用流量进行游戏"]',
       snapshotUrls: 'https://i.gkd.li/i/14783168',
-      enable: false,
+      enable: true,
     },
   ],
 });

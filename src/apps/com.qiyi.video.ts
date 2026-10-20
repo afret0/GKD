@@ -31,7 +31,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13546555',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -42,7 +42,7 @@ export default defineGkdApp({
       rules: [
         '@[id="com.qiyi.video:id/unused_res_a"][clickable=true] > [id="com.qiyi.video:id/close"]',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -51,7 +51,7 @@ export default defineGkdApp({
       activityIds: 'org.qiyi.android.video.MainActivity',
       snapshotUrls: 'https://i.gkd.li/i/12838152',
       rules: ['[id="com.qiyi.video:id/cancel_btn"][text="暂时不要"]'],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -69,7 +69,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12838158',
         'https://i.gkd.li/i/13684912',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -86,7 +86,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

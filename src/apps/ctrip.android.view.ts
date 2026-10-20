@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'ctrip.android.publicproduct.home.view.CtripHomeActivity',
       rules: '[text*="用户已升级"] < * + [desc="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/13218347',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

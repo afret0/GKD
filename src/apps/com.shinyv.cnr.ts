@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.shinyv.cnr:id/iv_ad"] + [id="com.shinyv.cnr:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12817933',
-      enable: false,
+      enable: true,
     },
   ],
 });

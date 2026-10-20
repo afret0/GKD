@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
       rules: '[id="com.baidu.xin.aiqicha:id/notice_dialog_cancel_iv"]',
       snapshotUrls: 'https://i.gkd.li/i/12755733',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.baidu.newbridge.fast.MainFastActivity',
       rules: '@[id="com.baidu.xin.aiqicha:id/close"] +2 [text="打开消息通知"]',
       snapshotUrls: 'https://i.gkd.li/i/12755756',
-      enable: false,
+      enable: true,
     },
   ],
 });

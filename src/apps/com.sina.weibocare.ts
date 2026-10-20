@@ -12,7 +12,7 @@ export default defineGkdApp({
       activityIds: 'com.weico.international.activity.MainFragmentActivity',
       rules: '[id="com.sina.weibocare:id/ed_btn_positive"][text="播放"]',
       snapshotUrls: 'https://i.gkd.li/i/13253223',
-      enable: false,
+      enable: true,
     },
   ],
 });

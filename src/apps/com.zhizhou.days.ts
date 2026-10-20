@@ -47,7 +47,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -55,7 +55,7 @@ export default defineGkdApp({
       activityIds: 'com.huawei.android.launcher.unihome.UniHomeLauncher',
       rules: '@[text="以后再说"] + [text="马上评价"]',
       snapshotUrls: 'https://i.gkd.li/i/12744951',
-      enable: false,
+      enable: true,
     },
   ],
 });

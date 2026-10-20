@@ -14,7 +14,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/57941037/1fb3d32f-961d-4026-9f02-10da392fca92',
       snapshotUrls: 'https://i.gkd.li/i/14107951',
-      enable: false,
+      enable: true,
     },
   ],
 });

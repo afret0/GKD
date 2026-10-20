@@ -53,7 +53,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13694864',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -62,7 +62,7 @@ export default defineGkdApp({
       activityIds: 'com.realtech.xiaocan.MainActivity',
       rules: '[desc="开启提醒"] - ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14196198',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -70,7 +70,7 @@ export default defineGkdApp({
       activityIds: 'com.realtech.xiaocan.MainActivity',
       rules: '[desc*="今日最新红包已更新"] > ImageView[index=4]',
       snapshotUrls: 'https://i.gkd.li/i/14196232',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -80,7 +80,7 @@ export default defineGkdApp({
       rules:
         'View[childCount=6][desc!=""] > View[index=4] + ImageView[index=5][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/14290847',
-      enable: false,
+      enable: true,
     },
   ],
 });

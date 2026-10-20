@@ -40,7 +40,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -51,7 +51,7 @@ export default defineGkdApp({
         'com.heytap.cdo.client.cards.page.main.maintab.MainTabActivity',
       rules: '@[desc="关闭"][clickable=true] <2 [vid="view_id_float_ad"]',
       snapshotUrls: 'https://i.gkd.li/i/14469932',
-      enable: false,
+      enable: true,
     },
   ],
 });

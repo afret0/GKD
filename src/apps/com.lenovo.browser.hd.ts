@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules:
         '[text="发现新版本"] - * > [id="com.lenovo.browser.hd:id/fl_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13401982',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -24,7 +24,7 @@ export default defineGkdApp({
       rules:
         '[text="开启消息通知"] +n * > [id="com.lenovo.browser.hd:id/tv_cancle"]',
       snapshotUrls: 'https://i.gkd.li/i/13401980',
-      enable: false,
+      enable: true,
     },
   ],
 });

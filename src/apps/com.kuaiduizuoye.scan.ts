@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.hihonor.android.launcher.drawer.DrawerLauncher',
       rules: '[id="com.kuaiduizuoye.scan:id/iv_advertisement_widget_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12716285',
-      enable: false,
+      enable: true,
     },
   ],
 });

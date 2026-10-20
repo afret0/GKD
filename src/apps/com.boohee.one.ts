@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.boohee.one:id/tv_ignore"] + [id="com.boohee.one:id/tv_update"]',
       snapshotUrls: 'https://i.gkd.li/i/12716918',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -21,10 +21,10 @@ export default defineGkdApp({
       rules:
         'LinearLayout[childCount=2] > @ImageView[id=null][clickable=true] + ImageView',
       snapshotUrls: 'https://i.gkd.li/i/12716970',
-      enable: false,
+      enable: true,
     },
     {
-      enable: false,
+      enable: true,
       key: 10,
       name: '未分类-请求开启通知权限弹窗',
       desc: '自动点击x按钮',

@@ -12,7 +12,7 @@ export default defineGkdApp({
       activityIds: 'com.github.catvod.app.MainActivity',
       rules: '[desc*="本软件仅供学习"] + [desc="同意"]',
       snapshotUrls: 'https://i.gkd.li/i/13938918',
-      enable: false,
+      enable: true,
     },
   ],
 });

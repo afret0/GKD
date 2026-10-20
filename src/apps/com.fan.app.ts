@@ -62,7 +62,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14548514',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -73,7 +73,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: '[id="com.fan.app:id/tv_nj_later"]',
       snapshotUrls: 'https://i.gkd.li/i/13601734',
-      enable: false,
+      enable: true,
     },
   ],
 });

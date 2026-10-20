@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.ruanmei.ithome.ui.MainActivity',
       rules: '[id="hongbaotips"] +n @View > [text="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/13167193',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -38,7 +38,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14734987',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

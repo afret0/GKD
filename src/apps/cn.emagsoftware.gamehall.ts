@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules:
         '[id="cn.emagsoftware.gamehall:id/btn_update"] -2 [id="cn.emagsoftware.gamehall:id/btn_cancle"]',
       snapshotUrls: 'https://i.gkd.li/i/13448894',
-      enable: false,
+      enable: true,
     },
   ],
 });

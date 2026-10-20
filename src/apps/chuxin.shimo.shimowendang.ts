@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'chuxin.shimo.shimowendang.MainActivity',
       rules: '[desc="banner-desktop-announcement-close"]',
       snapshotUrls: 'https://i.gkd.li/i/13627960',
-      enable: false,
+      enable: true,
     },
   ],
 });

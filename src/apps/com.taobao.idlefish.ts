@@ -12,7 +12,7 @@ export default defineGkdApp({
         'com.idlefish.flutterbridge.flutterboost.boost.FishFlutterBoostTransparencyActivity',
       rules: '[desc^="开启系统通知"] > ImageView[clickable=true][desc=null]',
       snapshotUrls: 'https://i.gkd.li/i/13538351',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -22,7 +22,7 @@ export default defineGkdApp({
       rules:
         '@Button[text="取消"] <<n FrameLayout >n TextView[text*="手机信息"]',
       snapshotUrls: 'https://i.gkd.li/i/13620277',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -39,7 +39,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14551046',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -67,7 +67,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14723632',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

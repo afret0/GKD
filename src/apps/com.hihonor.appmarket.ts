@@ -17,7 +17,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13063815',
         'https://i.gkd.li/i/13168440',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -26,7 +26,7 @@ export default defineGkdApp({
       activityIds: 'com.hihonor.appmarket.module.main.MainActivity',
       rules: '[id="com.hihonor.appmarket:id/iv_floating_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13063928',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -36,7 +36,7 @@ export default defineGkdApp({
       rules:
         'TextView[text="接收通知"] < LinearLayout < LinearLayout +n [id="android:id/buttonPanel"] Button[text="否"]',
       snapshotUrls: 'https://i.gkd.li/i/13073319',
-      enable: false,
+      enable: true,
     },
   ],
 });

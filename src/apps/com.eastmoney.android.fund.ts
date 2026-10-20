@@ -13,7 +13,7 @@ export default defineGkdApp({
         'FrameLayout > FrameLayout > ImageView + FrameLayout[childCount=1] > ImageView',
       ],
       snapshotUrls: 'https://i.gkd.li/i/12642387',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -24,7 +24,7 @@ export default defineGkdApp({
         '[desc="表示场内基金的最新价和折价率"] -(2) FrameLayout < FrameLayout + ImageView',
       ],
       snapshotUrls: 'https://i.gkd.li/i/12642387',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -33,7 +33,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '@FrameLayout[clickable=true] - * >2 [desc="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/i/13546927',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -43,7 +43,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[desc="五星好评"] - [desc="下次再说"]',
       snapshotUrls: 'https://i.gkd.li/i/14179501',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -62,7 +62,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14149452',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

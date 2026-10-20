@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.ximalaya.ting.android.host.activity.MainActivity',
       rules: '[id="com.ximalaya.ting.android:id/main_ad_broadside_close_real"]',
       snapshotUrls: ['https://i.gkd.li/i/12472620'],
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -33,7 +33,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12927110',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -66,7 +66,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -81,7 +81,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12506250',
         'https://i.gkd.li/i/12520626',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -127,7 +127,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14019835',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -139,7 +139,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12506270',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -147,7 +147,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.ximalaya.ting.android:id/host_tv_update_later"]',
       snapshotUrls: 'https://i.gkd.li/i/12506287',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -162,7 +162,7 @@ export default defineGkdApp({
           '[id="com.ximalaya.ting.android:id/host_dialog_close"]',
         ],
       },
-      enable: false,
+      enable: true,
       order: -8,
     },
     {
@@ -173,7 +173,7 @@ export default defineGkdApp({
       rules:
         '[id="com.ximalaya.ting.android:id/main_ad_close_real"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/i/12869426',
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -202,7 +202,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13194839',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -215,7 +215,7 @@ export default defineGkdApp({
       rules:
         '[text="你可能感兴趣的专辑"] + [id="com.ximalaya.ting.android:id/main_iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13251713',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -225,7 +225,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.ximalaya.ting.android:id/host_close_firework"] +2 [id="com.ximalaya.ting.android:id/host_firework_ad_tag"]',
       snapshotUrls: 'https://i.gkd.li/i/13263421',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -243,7 +243,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13389145',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -252,7 +252,7 @@ export default defineGkdApp({
       exampleUrls:
         'https://m.gkd.li/6328439/ea870e6f-07c9-4167-ab62-03e52838110b',
       snapshotUrls: 'https://i.gkd.li/i/13546642',
-      enable: false,
+      enable: true,
     },
     {
       key: 14,
@@ -260,7 +260,7 @@ export default defineGkdApp({
       activityIds: 'com.ximalaya.ting.android.host.activity.SplashAdActivity',
       rules: '[id="com.ximalaya.ting.android:id/main_iv_dislike"]',
       snapshotUrls: 'https://i.gkd.li/i/13334685',
-      enable: false,
+      enable: true,
     },
   ],
 });

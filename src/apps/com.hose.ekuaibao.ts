@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         'View[childCount=2] > TextView + TextView[text="不感兴趣"][clickable=true]',
       snapshotUrls: ['https://i.gkd.li/i/12649616'],
-      enable: false,
+      enable: true,
     },
   ],
 });

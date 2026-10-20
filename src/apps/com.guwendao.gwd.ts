@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.guwendao.gwd.MainActivity',
       rules: '[text="应用升级提醒"] +n LinearLayout > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/12776605',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -51,7 +51,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12781327',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -13,7 +13,7 @@ export default defineGkdApp({
       activityIds: 'cn.nlyuming.duanju.ting.MainActivity',
       rules: '[desc="了解更多"] - [desc="我知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/14151009',
-      enable: false,
+      enable: true,
     },
   ],
 });

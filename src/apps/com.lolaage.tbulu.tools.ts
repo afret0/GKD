@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules:
         '[id="com.lolaage.tbulu.tools:id/tvFullUpgrade"] + [id="com.lolaage.tbulu.tools:id/tvCancel"]',
       snapshotUrls: 'https://i.gkd.li/i/12882550',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -44,7 +44,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14952807',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -60,7 +60,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14952803',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

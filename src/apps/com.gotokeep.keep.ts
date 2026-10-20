@@ -20,7 +20,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -30,7 +30,7 @@ export default defineGkdApp({
       rules:
         '[id="com.gotokeep.keep:id/textAdTag"] + [id="com.gotokeep.keep:id/imgClose"]',
       snapshotUrls: 'https://i.gkd.li/i/12706115',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -53,7 +53,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13766358',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -63,7 +63,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '@[text="暂不开启"] +2 [text="开启通知权限"]',
       snapshotUrls: 'https://i.gkd.li/i/13761671',
-      enable: false,
+      enable: true,
     },
   ],
 });

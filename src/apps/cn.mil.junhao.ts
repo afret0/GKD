@@ -22,7 +22,7 @@ export default defineGkdApp({
       rules:
         '[vid="fragment_containerx"] > FrameLayout > ImageView[index=2][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13806894',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -30,7 +30,7 @@ export default defineGkdApp({
       activityIds: 'com.mediacloud.app.nav2.AppHome21Style',
       rules: '[vid="float_feedback"] > ImageView[index=2][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13806896',
-      enable: false,
+      enable: true,
     },
   ],
 });

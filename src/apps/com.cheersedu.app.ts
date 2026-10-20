@@ -14,7 +14,7 @@ export default defineGkdApp({
       activityIds: 'com.cheersedu.app.main.MainActivity',
       rules: '[id="com.cheersedu.app:id/iv_version_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13315712',
-      enable: false,
+      enable: true,
     },
   ],
 });

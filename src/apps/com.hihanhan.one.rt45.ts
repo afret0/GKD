@@ -10,7 +10,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[vid="ivClose"]',
       snapshotUrls: 'https://i.gkd.li/i/14099393',
-      enable: false,
+      enable: true,
     },
   ],
 });

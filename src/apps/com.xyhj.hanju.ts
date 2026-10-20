@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules: '[vid="unified_ad_close"]',
       exampleUrls: 'https://e.gkd.li/b94e7ce3-16ba-42e0-9e93-882ceb5e6ab0',
       snapshotUrls: 'https://i.gkd.li/i/17265226',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -16,7 +16,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14731003',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -51,7 +51,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -77,7 +77,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12839865',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -123,7 +123,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -159,7 +159,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15229577',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -168,7 +168,7 @@ export default defineGkdApp({
       activityIds: 'com.jingdong.app.mall.WebActivity',
       rules: '[text="京东登录"] > [desc="确认登录"]',
       snapshotUrls: 'https://i.gkd.li/i/12901734',
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -178,7 +178,7 @@ export default defineGkdApp({
         'com.jd.lib.settlement.fillorder.activity.NewFillOrderActivity',
       rules: 'ImageView[clickable=true && desc="关闭"]',
       snapshotUrls: 'https://i.gkd.li/i/13191146',
-      enable: false,
+      enable: true,
     },
     {
       key: 12,
@@ -192,7 +192,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13446362',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 13,
@@ -206,7 +206,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15047243',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

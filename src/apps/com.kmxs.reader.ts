@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="com.kmxs.reader:id/ll_ad_native_banner"] > [id="com.kmxs.reader:id/iv_ad_direct_close"]',
       snapshotUrls: ['https://i.gkd.li/i/12640296'],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -31,7 +31,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -40,7 +40,7 @@ export default defineGkdApp({
       rules:
         '@TextView[id=null] < View +(2) TextView[text^="已连签"&&text*="天"]',
       snapshotUrls: ['https://i.gkd.li/i/12640320'],
-      enable: false,
+      enable: true,
     },
     {
       key: 99,
@@ -52,7 +52,7 @@ export default defineGkdApp({
         action: 'clickCenter',
       },
       snapshotUrls: ['https://i.gkd.li/i/12640287'],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -61,7 +61,7 @@ export default defineGkdApp({
       activityIds: 'com.kmxs.reader.home.ui.HomeActivity',
       rules: '[id="com.kmxs.reader:id/bookshelf_book_item_direct_close"]',
       snapshotUrls: ['https://i.gkd.li/i/13489942'],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -89,7 +89,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13459182',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -105,7 +105,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13472957',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -121,7 +121,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13472955',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

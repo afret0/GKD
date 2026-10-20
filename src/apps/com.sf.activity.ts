@@ -21,7 +21,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13291144',
         },
       ],
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -30,7 +30,7 @@ export default defineGkdApp({
       activityIds: 'com.sf.activity.MainActivity',
       rules: ['[id="MonthReportDialogCloseBtn"] > ImageView'],
       snapshotUrls: 'https://i.gkd.li/i/12642441',
-      enable: false,
+      enable: true,
     },
   ],
 });

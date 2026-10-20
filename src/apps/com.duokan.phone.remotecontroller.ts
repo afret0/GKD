@@ -16,7 +16,7 @@ export default defineGkdApp({
       rules:
         '[id="com.duokan.phone.remotecontroller:id/ll_permission"] [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/13642080',
-      enable: false,
+      enable: true,
     },
   ],
 });

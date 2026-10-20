@@ -11,7 +11,7 @@ export default defineGkdApp({
         'com.netease.yanxuan.module.mainpage.activity.MainPageActivity',
       rules: '[id="com.netease.yanxuan:id/trans_cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/12840641',
-      enable: false,
+      enable: true,
     },
   ],
 });

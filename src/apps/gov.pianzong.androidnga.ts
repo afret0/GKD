@@ -35,7 +35,7 @@ export default defineGkdApp({
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: ['[id="gov.pianzong.androidnga:id/iv_close_ad"]'],
       snapshotUrls: 'https://i.gkd.li/i/12482727',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -62,7 +62,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13303236',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -70,7 +70,7 @@ export default defineGkdApp({
       activityIds: 'com.donews.nga.activitys.MainActivity',
       rules: '[id="gov.pianzong.androidnga:id/iv_close_community_ad"]',
       snapshotUrls: ['https://i.gkd.li/i/12706132'],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -86,7 +86,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14126934',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

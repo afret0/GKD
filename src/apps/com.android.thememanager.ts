@@ -12,7 +12,7 @@ export default defineGkdApp({
       rules:
         '[id="com.android.thememanager:id/ad_close_btn"][visibleToUser=true]',
       snapshotUrls: 'https://i.gkd.li/i/13227330',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -27,7 +27,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13215038',
         'https://i.gkd.li/i/15286330',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -52,7 +52,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

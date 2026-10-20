@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules:
         '@[text="取消"] <<n [id="com.dataoke.union:id/parentPanel"] [text^="你还没有打开通知哦"]',
       snapshotUrls: 'https://i.gkd.li/i/13446826',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -19,7 +19,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13331268',
         'https://i.gkd.li/i/14751210',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -31,7 +31,7 @@ export default defineGkdApp({
       activityIds: 'com.sinovatech.unicom.basic.ui.activity.MainActivity',
       rules: '[id="com.sinovatech.unicom.ui:id/custom_dialog_cancel_button"]',
       snapshotUrls: 'https://i.gkd.li/i/13511386',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -48,7 +48,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13761130',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -62,7 +62,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13930543',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

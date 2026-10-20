@@ -13,7 +13,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.okii.watch.global:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13630943',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -25,7 +25,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[id="com.okii.watch.global:id/photo_sensitive_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13630944',
-      enable: false,
+      enable: true,
     },
   ],
 });

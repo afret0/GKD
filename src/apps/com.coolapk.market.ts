@@ -107,7 +107,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -116,7 +116,7 @@ export default defineGkdApp({
       activityIds: 'com.coolapk.market.view.main.MainActivity',
       rules: '[text="去开启"] - [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13296465',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -126,7 +126,7 @@ export default defineGkdApp({
       activityIds: 'com.coolapk.market.view.photo.PhotoViewActivity',
       rules: '[vid="load_source_button"][checked=false]',
       snapshotUrls: 'https://i.gkd.li/i/14913023',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: ['com.cnki.client.core.navigator.main.HomeActivity'],
       rules: '[id="com.cnki.client:id/update_undo"]',
       snapshotUrls: 'https://i.gkd.li/i/12854857',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

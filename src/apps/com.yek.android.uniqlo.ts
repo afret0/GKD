@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.yek.android.uniqlo.uiux.Home.activity.HomeActivity',
       rules: 'ImageView[id="com.yek.android.uniqlo:id/pop_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13212320',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -28,7 +28,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13446421',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

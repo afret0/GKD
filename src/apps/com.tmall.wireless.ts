@@ -19,7 +19,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13258201',
         'https://i.gkd.li/i/13399536',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -36,7 +36,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13222500',
         'https://i.gkd.li/i/13222510',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -47,7 +47,7 @@ export default defineGkdApp({
         'com.tmall.wireless.messagebox.activity.TMMsgboxMainActivity',
       rules: 'View[text="开启系统通知"] - View[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13258215',
-      enable: false,
+      enable: true,
     },
   ],
 });

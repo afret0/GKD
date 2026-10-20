@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.netease.gl:id/iv_close"] +2 LinearLayout >n [id="com.netease.gl:id/btn_update"]',
       snapshotUrls: 'https://i.gkd.li/i/12883135',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -26,7 +26,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12883277',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -34,7 +34,7 @@ export default defineGkdApp({
       activityIds: 'com.netease.gl.compfeed.widget.CommonWebPopupDialog',
       rules: '@[id="com.netease.gl:id/iv_close"] + [text="开启推送"]',
       snapshotUrls: 'https://i.gkd.li/i/13072071',
-      enable: false,
+      enable: true,
     },
   ],
 });

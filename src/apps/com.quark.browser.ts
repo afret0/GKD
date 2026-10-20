@@ -13,7 +13,7 @@ export default defineGkdApp({
       activityIds: 'com.ucpro.BrowserActivity',
       rules: '@Button[text="取消"] + Button[text="去设置"]',
       snapshotUrls: 'https://i.gkd.li/i/13249469',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -23,7 +23,7 @@ export default defineGkdApp({
       activityIds: 'com.ucpro.BrowserActivity',
       rules: 'ImageView[id="com.quark.browser:id/close_img"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13292571',
-      enable: false,
+      enable: true,
     },
   ],
 });

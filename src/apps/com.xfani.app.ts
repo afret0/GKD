@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.xfani.app.MainActivity',
       rules: 'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView',
       snapshotUrls: 'https://i.gkd.li/i/13188550',
-      enable: false,
+      enable: true,
     },
   ],
 });

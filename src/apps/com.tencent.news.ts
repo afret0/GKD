@@ -33,7 +33,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12755852',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -46,7 +46,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12755872',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -54,7 +54,7 @@ export default defineGkdApp({
       activityIds: 'com.tencent.news.activity.SplashActivity',
       rules: '[text="开启通知"] + [text="先不了"]',
       snapshotUrls: 'https://i.gkd.li/i/12755824',
-      enable: false,
+      enable: true,
     },
   ],
 });

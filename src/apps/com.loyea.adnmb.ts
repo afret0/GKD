@@ -11,7 +11,7 @@ export default defineGkdApp({
       activityIds: 'com.loyea.adnmb.activity.MainActivity',
       rules: 'LinearLayout > Button[text="确定"]',
       snapshotUrls: 'https://i.gkd.li/i/13623450',
-      enable: false,
+      enable: true,
     },
   ],
 });

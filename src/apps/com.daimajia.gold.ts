@@ -14,7 +14,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.daimajia.gold:id/iv_close"] -n LinearLayout [id="com.daimajia.gold:id/tv_title"][text="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/i/13498703',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

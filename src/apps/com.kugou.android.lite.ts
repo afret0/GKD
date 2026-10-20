@@ -25,7 +25,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14321700',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -50,7 +50,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14321724',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -60,7 +60,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '@ImageView - * > [text="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/i/14622566',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

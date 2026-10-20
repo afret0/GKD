@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '@[text="稍后安装"] < LinearLayout - ScrollView >(4) [text="发现新版本"]',
       snapshotUrls: 'https://i.gkd.li/i/12642466',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
       rules: '[text="closeGray"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12642459',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -28,7 +28,7 @@ export default defineGkdApp({
       activityIds: 'com.xiaomi.vipaccount.newbrowser.NormalWebActivity',
       rules: '[text="签到赢权益"] +n Image[text*="cancel_circle"]',
       snapshotUrls: 'https://i.gkd.li/i/13328271',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -37,7 +37,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[desc="公告版弹窗"] +2 [id="com.xiaomi.vipaccount:id/close"]',
       snapshotUrls: 'https://i.gkd.li/i/13400617',
-      enable: false,
+      enable: true,
     },
   ],
 });

@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules:
         '[id="com.wisedu.cpdaily:id/btn_update"] + [id="com.wisedu.cpdaily:id/tv_ignore"]',
       snapshotUrls: 'https://i.gkd.li/i/13643565',
-      enable: false,
+      enable: true,
     },
   ],
 });

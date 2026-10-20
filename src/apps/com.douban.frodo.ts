@@ -28,7 +28,7 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12508777'],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -46,7 +46,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12509476',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -101,7 +101,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -127,7 +127,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12548116',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -138,7 +138,7 @@ export default defineGkdApp({
         matches: '[text="下次再说"][id="com.douban.frodo:id/neutral"]',
         snapshotUrls: 'https://i.gkd.li/i/12548314',
       },
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -192,7 +192,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 9,
@@ -204,7 +204,7 @@ export default defineGkdApp({
           '[id="com.douban.frodo:id/info"][text^="开启个性化推荐"] - [id="com.douban.frodo:id/close"]',
         snapshotUrls: 'https://i.gkd.li/i/12836798',
       },
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -231,7 +231,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 11,
@@ -254,7 +254,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

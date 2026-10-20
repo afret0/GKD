@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         '[id="cn.lezhi.speedtest:id/rl_update_dialog_layout"] >n [id="cn.lezhi.speedtest:id/iv_close"]',
       snapshotUrls: 'https://i.gkd.li/i/12727619',
-      enable: false,
+      enable: true,
       order: -9,
     },
   ],

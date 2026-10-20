@@ -35,7 +35,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -46,7 +46,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '[id="com.sina.weibolite:id/ed_btn_negative"]',
       snapshotUrls: 'https://i.gkd.li/i/13727728',
-      enable: false,
+      enable: true,
     },
   ],
 });

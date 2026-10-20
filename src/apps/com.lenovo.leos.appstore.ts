@@ -13,7 +13,7 @@ export default defineGkdApp({
       rules:
         '@[id="com.lenovo.leos.appstore:id/dialog_cancel"] + [text$="版本更新"]',
       snapshotUrls: 'https://i.gkd.li/i/13401992',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -24,7 +24,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text$="打开应用中心通知"] +n [text="知道了"]',
       snapshotUrls: 'https://i.gkd.li/i/13401991',
-      enable: false,
+      enable: true,
     },
   ],
 });

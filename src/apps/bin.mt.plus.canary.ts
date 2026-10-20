@@ -14,7 +14,7 @@ export default defineGkdApp({
       activityIds: 'bin.mt.plus.Main',
       rules: 'LinearLayoutCompat @[text="取消"] + [text="更新"]',
       snapshotUrls: 'https://i.gkd.li/i/13561226',
-      enable: false,
+      enable: true,
     },
   ],
 });

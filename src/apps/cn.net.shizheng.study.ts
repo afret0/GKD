@@ -11,7 +11,7 @@ export default defineGkdApp({
       rules:
         'View[childCount=2] > ImageView[id=""] + Button[id=""][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12708731',
-      enable: false,
+      enable: true,
     },
   ],
 });

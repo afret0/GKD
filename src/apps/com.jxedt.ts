@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.jxedt.ui.activitys.exercise.OrderExerciseActivity',
       rules: '[id="com.jxedt:id/img_question_banner_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13195641',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -24,7 +24,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13476741',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

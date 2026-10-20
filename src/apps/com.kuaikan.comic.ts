@@ -10,7 +10,7 @@ export default defineGkdApp({
       activityIds: 'com.kuaikan.comic.infinitecomic.view.ComicInfiniteActivity',
       rules: '[id="com.kuaikan.comic:id/adBannerClose"]',
       snapshotUrls: 'https://i.gkd.li/i/12910268',
-      enable: false,
+      enable: true,
     },
   ],
 });

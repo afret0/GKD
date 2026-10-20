@@ -13,7 +13,7 @@ export default defineGkdApp({
       activityIds: 'com.yunxiang.wuyu.MainActivity',
       rules: '[desc^="人生嘛"] +4 ImageView[clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/13455634',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -39,7 +39,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13455629',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

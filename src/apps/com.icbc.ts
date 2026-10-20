@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '未分类-第一次启动提示',
       activityIds: 'com.icbc.activity.init.SplashActivity',
       rules: '[id="com.icbc:id/close_btn"]',
-      enable: false,
+      enable: true,
     },
     {
       key: 1,
@@ -17,7 +17,7 @@ export default defineGkdApp({
       activityIds: 'com.icbc.activity.main.MainActivity',
       rules: '[id="com.icbc:id/tv_time"][text*="跳过"][text.length<=6]',
       snapshotUrls: 'https://i.gkd.li/i/13330431',
-      enable: false,
+      enable: true,
     },
   ],
 });

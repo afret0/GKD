@@ -17,7 +17,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/12715702',
         'https://i.gkd.li/i/12744973',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -25,7 +25,7 @@ export default defineGkdApp({
       activityIds: 'com.huatu.handheld_huatu.business.main.MainTabActivity',
       rules: '[text*="开启通知提示"] +2 LinearLayout > [text="取消"]',
       snapshotUrls: 'https://i.gkd.li/i/12715719',
-      enable: false,
+      enable: true,
     },
   ],
 });

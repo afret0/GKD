@@ -35,7 +35,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13475994',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -62,7 +62,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13523033',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -72,7 +72,7 @@ export default defineGkdApp({
       rules:
         '[text="开启专属学习资料推送"] + [id="com.handsgo.jiakao.android:id/closeIv"]',
       snapshotUrls: 'https://i.gkd.li/i/13520296',
-      enable: false,
+      enable: true,
     },
   ],
 });

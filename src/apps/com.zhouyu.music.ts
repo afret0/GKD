@@ -16,7 +16,7 @@ export default defineGkdApp({
       ],
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/798afc53-4aaf-481f-acb1-7c193bd8e6d6',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -25,7 +25,7 @@ export default defineGkdApp({
       activityIds: 'com.zhouyu.music.activities.MainActivity',
       rules: '[id="com.zhouyu.music:id/ksad_ad_dislike"]',
       snapshotUrls: ['https://i.gkd.li/i/13245859'],
-      enable: false,
+      enable: true,
     },
   ],
 });

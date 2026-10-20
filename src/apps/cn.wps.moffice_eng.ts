@@ -32,7 +32,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -47,7 +47,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13259097',
         'https://i.gkd.li/i/12882712',
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -59,7 +59,7 @@ export default defineGkdApp({
       rules:
         '[id="cn.wps.moffice_eng:id/close_new_func_guide_dialog_imageView"]',
       snapshotUrls: 'https://i.gkd.li/i/12882371',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -87,7 +87,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12882554',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -108,7 +108,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13513914',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -117,7 +117,7 @@ export default defineGkdApp({
       activityIds: 'cn.wps.moffice.main.local.HomeRootActivity',
       rules: '[id="cn.wps.moffice_eng:id/home_banner_ad_spread_close"]',
       snapshotUrls: 'https://i.gkd.li/i/13804525',
-      enable: false,
+      enable: true,
     },
     {
       key: 7,
@@ -130,7 +130,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13945839',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 8,
@@ -144,7 +144,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13945835',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

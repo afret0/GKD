@@ -18,7 +18,7 @@ export default defineGkdApp({
       ],
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/61d335f0-a85a-4e26-80fe-6bc0d1742bc0',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -29,7 +29,7 @@ export default defineGkdApp({
       snapshotUrls: 'https://i.gkd.li/i/13207785',
       exampleUrls:
         'https://github.com/gkd-kit/inspect/assets/38517192/071e5512-e1aa-4a8c-8440-009d6f0f35ff',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -37,7 +37,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text="是否确认退出向日葵？"] + LinearLayout > [vid="button_ok"]',
       snapshotUrls: 'https://i.gkd.li/i/13927148',
-      enable: false,
+      enable: true,
     },
   ],
 });

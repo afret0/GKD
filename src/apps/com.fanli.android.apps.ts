@@ -11,7 +11,7 @@ export default defineGkdApp({
         'com.fanli.android.module.webview.ui.activity.TransparentBrowserInnerActivity',
       rules: '[id="J_poplayer_box"] >n @View + [text="main_bkg"]',
       snapshotUrls: 'https://i.gkd.li/i/13245808',
-      enable: false,
+      enable: true,
     },
   ],
 });

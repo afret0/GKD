@@ -11,7 +11,7 @@ export default defineGkdApp({
         'com.miui.cloudservice.hybrid.SignDeductDialogHybridActivity',
       rules: 'View > [text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/12847374',
-      enable: false,
+      enable: true,
     },
   ],
 });

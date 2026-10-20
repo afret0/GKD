@@ -12,7 +12,7 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: '@[desc="关闭"] - LinearLayout > [text="立即升级"]',
       snapshotUrls: 'https://i.gkd.li/i/13328430',
-      enable: false,
+      enable: true,
       order: -9,
     },
     {
@@ -24,7 +24,7 @@ export default defineGkdApp({
       rules:
         '@TextView[id="com.ss.android.article.video:id/sj"][text="暂不开启"]',
       snapshotUrls: 'https://i.gkd.li/i/13456568',
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -36,7 +36,7 @@ export default defineGkdApp({
       activityIds: 'com.ss.android.article.video.activity.SplashActivity',
       rules: '@FlattenUIImage[clickable=true] -2 [text="开心收下"]',
       snapshotUrls: 'https://i.gkd.li/i/13620299',
-      enable: false,
+      enable: true,
     },
   ],
 });

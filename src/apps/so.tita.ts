@@ -86,7 +86,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 10,
@@ -94,7 +94,7 @@ export default defineGkdApp({
       activityIds: 'so.tita.view.activity.HomeActivity',
       rules: '@[text="取 消"] + View + [text="确 定"]',
       snapshotUrls: 'https://i.gkd.li/i/12800350',
-      enable: false,
+      enable: true,
     },
   ],
 });

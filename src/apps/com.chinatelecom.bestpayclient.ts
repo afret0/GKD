@@ -54,7 +54,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14603126',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -65,7 +65,7 @@ export default defineGkdApp({
       rules:
         '[id="com.chinatelecom.bestpayclient:id/best_h5_container"] View[childCount=2] > @View[clickable=true] +  View[clickable=true] > Image[text!=null]',
       snapshotUrls: 'https://i.gkd.li/i/13402711',
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -79,7 +79,7 @@ export default defineGkdApp({
         'https://i.gkd.li/i/13543032',
         'https://i.gkd.li/i/13625037',
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

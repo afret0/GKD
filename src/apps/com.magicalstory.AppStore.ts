@@ -56,7 +56,7 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -73,7 +73,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13437553',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -84,7 +84,7 @@ export default defineGkdApp({
       activityIds: 'com.magicalstory.AppStore.user.sign.signActivity',
       rules: '[text="签到"][vid="button"]',
       snapshotUrls: 'https://i.gkd.li/i/14168441',
-      enable: false,
+      enable: true,
     },
   ],
 });

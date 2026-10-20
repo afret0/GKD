@@ -13,7 +13,7 @@ export default defineGkdApp({
       actionMaximum: 1,
       rules: '[text="现在升级"] - TextView[text="以后再说"]',
       snapshotUrls: 'https://i.gkd.li/i/13766557',
-      enable: false,
+      enable: true,
     },
   ],
 });

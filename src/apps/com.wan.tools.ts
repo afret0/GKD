@@ -12,7 +12,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: 'LinearLayout[childCount=2] > @[text="取消"] + [text="确认"]',
       snapshotUrls: 'https://i.gkd.li/i/13392027',
-      enable: false,
+      enable: true,
     },
     {
       key: 2,
@@ -20,7 +20,7 @@ export default defineGkdApp({
       activityIds: 'com.one.downloadtools.ui.activity.HomeActivity',
       rules: '@[text="识别解析"] -2 * > [text^="检测到你复制链接"]',
       snapshotUrls: 'https://i.gkd.li/i/13392085',
-      enable: false,
+      enable: true,
     },
     {
       key: 3,
@@ -28,7 +28,7 @@ export default defineGkdApp({
       activityIds: 'com.one.downloadtools.ui.activity.HomeActivity',
       rules: '[text^="开通会员"] < * +n * > [text="暂不"]',
       snapshotUrls: 'https://i.gkd.li/i/13392112',
-      enable: false,
+      enable: true,
     },
   ],
 });

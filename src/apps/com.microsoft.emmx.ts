@@ -13,7 +13,7 @@ export default defineGkdApp({
       fastQuery: true,
       rules: '[text="允许通知"] + [text="不，谢谢"]',
       snapshotUrls: 'https://i.gkd.li/i/13646187',
-      enable: false,
+      enable: true,
     },
     {
       key: 4,
@@ -29,7 +29,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14325653',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 5,
@@ -44,7 +44,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14614992',
         },
       ],
-      enable: false,
+      enable: true,
     },
     {
       key: 6,
@@ -60,7 +60,7 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14610025',
         },
       ],
-      enable: false,
+      enable: true,
     },
   ],
 });

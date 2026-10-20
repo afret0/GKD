@@ -14,7 +14,7 @@ export default defineGkdApp({
       activityIds: 'com.xueqiu.fund.commonlib.FundHomeActivityV2',
       rules: '[vid="image_cancel"]',
       snapshotUrls: 'https://i.gkd.li/i/14163901',
-      enable: false,
+      enable: true,
     },
   ],
 });
