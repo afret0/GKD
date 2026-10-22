@@ -15,7 +15,7 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '[vid="iv_control_type_blue"]',
+          matches: '[vid="fl_ble_sts"]',
         },
       ],
       enable: true,
