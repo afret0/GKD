@@ -11,7 +11,7 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'ui.main.MainActivity',
+      activityIds: '.ui.main.MainActivity',
       rules: [
         {
           key: 0,
