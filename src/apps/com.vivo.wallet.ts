@@ -6,19 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-通知权限授权弹窗',
-      activityIds: 'com.vivo.wallet.bookkeep.activity.BookKeepMainActivity',
+      name: '权限提示-通知权限',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       rules: [
         {
-          matches: '@Button[text*="取消"]',
+          activityIds: '.bookkeep.activity.BookKeepMainActivity',
+          matches: '@[clickable=true] > [text="取消"]',
           snapshotUrls: 'https://i.gkd.li/i/13440881',
         },
       ],
-      enable: true,
     },
   ],
 });

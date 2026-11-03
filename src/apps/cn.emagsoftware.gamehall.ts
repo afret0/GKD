@@ -6,16 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-版本更新',
+      name: '更新提示',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.migugame.home_module.ui.activity.HomeActivity',
-      rules:
-        '[id="cn.emagsoftware.gamehall:id/btn_update"] -2 [id="cn.emagsoftware.gamehall:id/btn_cancle"]',
-      snapshotUrls: 'https://i.gkd.li/i/13448894',
-      enable: true,
+      rules: [
+        {
+          activityIds: 'com.migugame.home_module.ui.activity.HomeActivity',
+          matches: '[vid="btn_update"] -2 [vid="btn_cancle"]',
+          snapshotUrls: 'https://i.gkd.li/i/13448894', //旧快照 (无vid)
+        },
+      ],
     },
   ],
 });

@@ -6,26 +6,37 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-首页广告弹窗',
-      activityIds: [
-        'com.huatu.handheld_huatu.view.MainPopDialog',
-        'com.huatu.handheld_huatu.business.main.MainTabActivity',
+      name: '全屏广告-首页弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: [
+            '.view.MainPopDialog',
+            '.business.main.MainTabActivity',
+          ],
+          matches: '[vid="main_img_adv_bg"] + [vid="main_img_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12715702',
+            'https://i.gkd.li/i/12744973',
+          ],
+        },
       ],
-      rules:
-        '[id="com.huatu.handheld_huatu:id/main_img_adv_bg"] + [id="com.huatu.handheld_huatu:id/main_img_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12715702',
-        'https://i.gkd.li/i/12744973',
-      ],
-      enable: true,
     },
     {
       key: 10,
-      name: '未分类-请求通知权限弹窗',
-      activityIds: 'com.huatu.handheld_huatu.business.main.MainTabActivity',
-      rules: '[text*="开启通知提示"] +2 LinearLayout > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/12715719',
-      enable: true,
+      name: '权限提示-通知权限',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.business.main.MainTabActivity',
+          matches: '[text*="开启通知提示"] +2 LinearLayout > [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715719',
+        },
+      ],
     },
   ],
 });

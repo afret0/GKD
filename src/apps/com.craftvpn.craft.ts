@@ -7,11 +7,11 @@ export default defineGkdApp({
     {
       key: 1,
       name: '开屏广告',
-      desc: '点击X',
       fastQuery: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
           matches:
@@ -19,7 +19,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13914788',
         },
       ],
-      order: -10,
     },
   ],
 });

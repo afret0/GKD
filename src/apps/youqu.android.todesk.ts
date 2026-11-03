@@ -6,24 +6,43 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-广告卡片',
-      desc: '设备列表和连接界面中的广告卡片',
-      activityIds: [
-        'youqu.android.todesk.activity.WelcomeActivity',
-        'youqu.android.todesk.activity.MainActivity',
-      ],
-      fastQuery: true,
+      name: '局部广告-卡片广告',
+      desc: '关闭卡片广告',
       rules: [
-        '[id="youqu.android.todesk:id/sivDeviceBanner"] + [id="youqu.android.todesk:id/llClose"]',
-        '[vid="layoutMainBottomBanner"] > [vid="ivAdClose"]',
+        {
+          key: 0,
+          fastQuery: true,
+          activityIds: ['.activity.WelcomeActivity', '.activity.MainActivity'],
+          matches: '[vid="ivAdClose" || vid="llClose"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/7535a849-b4a7-4dd5-a6c1-4d3def042d70',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14175556',
+            'https://i.gkd.li/i/13228546',
+          ],
+        },
       ],
-      snapshotUrls: [
-        'https://i.gkd.li/i/13228546',
-        'https://i.gkd.li/i/13256552',
-        'https://i.gkd.li/i/13296380',
-        'https://i.gkd.li/i/14175557',
+    },
+    {
+      key: 2,
+      name: '通知提示-套餐到期',
+      desc: '①选[不再提示] ②点击x掉',
+      fastQuery: true,
+      activityIds: '.activity.MainActivity',
+      rules: [
+        {
+          key: 0,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          matches: '[vid="tvNotNotice"]',
+          // snapshotUrls: 'https://i.gkd.li/i/27383310', // 参考key1快照
+        },
+        {
+          key: 1,
+          matches: '[vid="ivClose"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/27383310',
+        },
       ],
-      enable: true,
     },
   ],
 });

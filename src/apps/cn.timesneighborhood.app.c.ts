@@ -6,19 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动点击签到',
+      name: '功能类-自动签到',
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.zkty.modules.engine.activity.XEngineWebActivity',
       rules: [
         {
+          activityIds: 'com.zkty.modules.engine.activity.XEngineWebActivity',
           matches: '[text="立即签到"]',
           exampleUrls:
-            'https://m.gkd.li/101449500/58bc6789-3015-450f-9f3d-d98a02edc7f6',
-          snapshotUrls: 'https://i.gkd.li/i/14545000',
+            'https://m.gkd.li/57941037/e02dac87-41dc-45eb-bf7e-8daa0b69f517',
+          snapshotUrls: 'https://i.gkd.li/i/14545251',
         },
       ],
-      enable: true,
     },
   ],
 });

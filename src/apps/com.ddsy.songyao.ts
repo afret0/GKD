@@ -6,17 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-优惠卷提示',
+      name: '全屏广告-优惠卷提示',
       fastQuery: true,
-      activityIds: 'com.ddsy.songyao.activity.SplashActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[id="com.ddsy.songyao:id/iv_coupon_bottom"] + [id="com.ddsy.songyao:id/iv_close"]',
+          activityIds: '.activity.SplashActivity',
+          matches: '[vid="iv_coupon_bottom"] + [vid="iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13048720',
         },
       ],
-      enable: true,
     },
   ],
 });

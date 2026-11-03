@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-应用内广告弹窗',
+      name: '其他-应用内广告弹窗',
       rules: [
         {
           key: 0,

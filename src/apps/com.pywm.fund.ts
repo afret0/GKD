@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-版本更新',
+      name: '其他-版本更新',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,

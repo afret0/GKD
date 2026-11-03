@@ -6,23 +6,32 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-更新提醒',
+      name: '更新提示',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.zuoyebang.knowledge:id/cancel_button"]',
-      snapshotUrls: 'https://i.gkd.li/i/13695522',
-      enable: true,
+      rules: [
+        {
+          matches: '[vid="cancel_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/13695522',
+        },
+      ],
     },
     {
       key: 3,
-      name: '未分类-赏好评弹窗',
+      name: '评价提示-赏好评弹窗',
       fastQuery: true,
-      activityIds: 'com.baidu.homework.activity.init.InitActivity',
-      rules: 'TextView[id="com.zuoyebang.knowledge:id/btn_cancle"]',
-      snapshotUrls: 'https://i.gkd.li/i/13043228',
-      enable: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.baidu.homework.activity.init.InitActivity',
+          matches: 'TextView[vid="btn_cancle"]',
+          snapshotUrls: 'https://i.gkd.li/i/13043228',
+        },
+      ],
     },
   ],
 });

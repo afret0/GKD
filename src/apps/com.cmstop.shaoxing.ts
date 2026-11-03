@@ -8,12 +8,16 @@ export default defineGkdApp({
       key: 0,
       name: '开屏广告',
       fastQuery: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.cmstop.shaoxing:id/roundProgressBar"]',
-      snapshotUrls: 'https://i.gkd.li/i/13611775',
-      order: -10,
+      priorityTime: 10000,
+      rules: [
+        {
+          matches: '[vid="roundProgressBar"]',
+          snapshotUrls: 'https://i.gkd.li/i/13611775',
+        },
+      ],
     },
   ],
 });

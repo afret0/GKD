@@ -6,16 +6,19 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-开启推送通知',
+      name: '权限提示-通知权限',
+      fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          name: '通知提示-开启推送通知提示弹窗',
-          fastQuery: true,
-          actionMaximum: 1,
           matchTime: 30000,
-          resetMatch: 'app',
-          matches: '[id="com.tencent.weread:id/open_notification_close"]',
+          activityIds: [
+            '.module.bottomSheet.BottomSheetForFragment',
+            '.WeReadFragmentActivity',
+          ],
+          matches: '[vid="open_notification_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12642247',
             'https://i.gkd.li/i/13233735',
@@ -23,15 +26,12 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '通知提示-开启推送通知提示信息',
-          actionMaximum: 1,
-          resetMatch: 'app',
+          activityIds: '.WeReadFragmentActivity',
           matches:
             '[text="开启推送通知"] +3 [clickable=true][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14190089',
         },
       ],
-      enable: true,
     },
   ],
 });

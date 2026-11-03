@@ -6,16 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-版本更新',
+      name: '更新提示',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.sohu.sohuvideo.ui.homepage.MainActivity',
-      rules:
-        '@[id="com.sohu.sohuvideo:id/ivClose"] + LinearLayout [text="新版本上线啦"]',
-      snapshotUrls: 'https://i.gkd.li/i/13435504',
-      enable: true,
+      rules: [
+        {
+          activityIds: '.ui.homepage.MainActivity',
+          matches: '@[vid="ivClose"] + LinearLayout [text="新版本上线啦"]',
+          snapshotUrls: 'https://i.gkd.li/i/13435504',
+        },
+      ],
     },
   ],
 });

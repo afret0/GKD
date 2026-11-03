@@ -7,35 +7,45 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      activityIds: ['com.jin10.lgd.update.UpdateActivity'],
-      rules: '@[id="com.jin10:id/update_cancel"] + [id="com.jin10:id/iv_pic"]',
-      snapshotUrls: ['https://i.gkd.li/i/12706043'],
-      enable: true,
-      order: -9,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.lgd.update.UpdateActivity',
+          matches: '@[vid="update_cancel"] + [vid="iv_pic"]',
+          snapshotUrls: 'https://i.gkd.li/i/12706043',
+        },
+      ],
     },
     {
       key: 2,
-      name: '未分类-首页广告弹窗',
-      activityIds: ['com.jin10.lgd.biz.MainActivity'],
-      rules: '[id="com.jin10:id/iv_body"] + [id="com.jin10:id/iv_close"]',
-      snapshotUrls: ['https://i.gkd.li/i/12706045'],
-      enable: true,
-    },
-    {
-      key: 3,
-      name: '未分类-快讯页面-广告弹窗',
-      activityIds: ['com.jin10.lgd.biz.MainActivity'],
-      rules: '@[id="com.jin10:id/iv_close"] + [id="com.jin10:id/iv_pic"]',
-      snapshotUrls: ['https://i.gkd.li/i/12706047'],
-      enable: true,
+      name: '全屏广告-弹窗广告',
+      desc: '点击x掉',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.lgd.biz.MainActivity',
+          matches:
+            '[id$="iv_body" || id$="iv_pic" || vid="body_ad"] <n [visibleToUser=true] > [vid="iv_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12706045', //旧快照 iv_body
+            'https://i.gkd.li/i/12706047', //旧快照 iv_pic
+            'https://i.gkd.li/i/31375320', // body_ad
+          ],
+        },
+      ],
     },
     {
       key: 10,
-      name: '未分类-会员页面-顶部广告',
-      activityIds: ['com.jin10.lgd.biz.MainActivity'],
-      rules: '[id="com.jin10:id/iv_header"] + [id="com.jin10:id/iv_close"]',
-      snapshotUrls: ['https://i.gkd.li/i/12706051'],
-      enable: true,
+      name: '局部广告-会员页面顶部广告',
+      rules: [
+        {
+          activityIds: '.lgd.biz.MainActivity',
+          matches: '[vid="iv_header"] + [vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/12706051',
+        },
+      ],
     },
   ],
 });

@@ -6,21 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '未分类-广告弹窗',
+      name: '全屏广告-弹窗广告',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.gvsoft.gofun.module.home.activity.HomeActivity',
       rules: [
         {
-          action: 'clickCenter',
-          matches:
-            '[id="com.gvsoft.gofun:id/cardView"] + [id="com.gvsoft.gofun:id/iv_close"]',
+          activityIds: '.module.home.activity.HomeActivity',
+          matches: '[vid="cardView"] + [vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13497777',
         },
       ],
-      snapshotUrls: 'https://i.gkd.li/i/13497777',
-      enable: true,
     },
   ],
 });

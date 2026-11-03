@@ -11,14 +11,9 @@ export default defineGkdApp({
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
+      ignoreGlobalGroupMatch: true,
       rules: [
-        {
-          key: 0,
-          fastQuery: true,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true][visibleToUser=true] + TextView[text=null] <<n [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/i/13188653',
-        },
         {
           key: 1,
           matches:
@@ -32,13 +27,11 @@ export default defineGkdApp({
             left: 'width * 0.9',
             top: 'width * 0.1676',
           },
-          activityIds: 'com.uc.browser.InnerUCMobile',
           matches: '[id="com.UCMobile.adn_jingdong_sdk:id/animation_view"]',
           exampleUrls: 'https://e.gkd.li/92da64ad-5b08-4343-bec2-bb6a7e0bb92d',
           snapshotUrls: 'https://i.gkd.li/i/16494884',
         },
       ],
-      order: -10,
     },
     {
       key: 0,
@@ -51,7 +44,7 @@ export default defineGkdApp({
             'TextView[text="广告"] +n ImageView[desc="不感兴趣"][visibleToUser=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12880737',
-            'https://i.gkd.li/i/12881751',
+            'https://i.gkd.li/i/12881751', // 限定 visibleToUser=true，尽量减少对正常浏览信息的干扰
           ],
         },
         {
@@ -64,7 +57,6 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 10,
@@ -72,20 +64,25 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@ImageView - LinearLayout >n [text="开启消息通知"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12880812',
-        'https://i.gkd.li/i/12880802',
+      rules: [
+        {
+          activityIds: 'com.uc.browser.InnerUCMobile',
+          matches: '@ImageView - LinearLayout >n [text="开启消息通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/12880812',
+        },
       ],
-      enable: true,
     },
     {
       key: 11,
-      name: '功能类-请求添加桌面快捷方式权限弹窗',
-      activityIds: 'com.uc.browser.InnerUCMobile',
-      rules: '@ImageView + [text^="添加"][text$="到桌面"]',
-      snapshotUrls: 'https://i.gkd.li/i/12880983',
-      enable: true,
+      name: '其他-请求添加桌面快捷方式弹窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: 'com.uc.browser.InnerUCMobile',
+          matches: '@ImageView + [text^="添加"][text$="到桌面"]',
+          snapshotUrls: 'https://i.gkd.li/i/12880983',
+        },
+      ],
     },
   ],
 });

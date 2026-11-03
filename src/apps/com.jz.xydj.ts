@@ -6,18 +6,20 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-视频观看页下方广告',
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
-          name: '腾讯SDK',
+          name: '底部卡片广告',
           fastQuery: true,
           activityIds: 'com.jz.jzdj.ui.activity.shortvideo.ShortVideoActivity2',
-          matches: '[vid="ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/14391606',
+          matches: '[vid="ad_close"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/c6e1dfa9-388e-417f-9ab2-d3ea63d3eb8a',
+          snapshotUrls: 'https://i.gkd.li/i/14391204',
         },
       ],
-      enable: true,
     },
   ],
 });

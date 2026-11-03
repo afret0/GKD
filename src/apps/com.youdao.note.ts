@@ -6,19 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-卡片式广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 1,
           name: '首页上方卡片广告',
-          activityIds: 'com.youdao.note.activity2.MainActivity',
           fastQuery: true,
-          matches:
-            '[id="com.youdao.note:id/recycle_view"] + [id="com.youdao.note:id/close_ad"]',
+          activityIds: '.activity2.MainActivity',
+          matches: '[vid="recycle_view"] + [vid="close_ad"]',
           snapshotUrls: 'https://i.gkd.li/i/13379524',
         },
       ],
-      enable: true,
     },
   ],
 });

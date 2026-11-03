@@ -6,53 +6,47 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-信息流广告',
+      name: '分段广告-信息流广告',
+      desc: '右滑删除⚠️该规则需v1.12.0及以上版本可使用',
+      fastQuery: true,
+      rules: [
+        {
+          key: 1,
+          matches:
+            '@[childCount=7][vid$="ad_teaser_item"] >2 [vid="ad_badge_text"]',
+          action: 'swipe',
+          swipeArg: {
+            start: {
+              left: 'width * 0.15',
+              top: 'width * 0.08',
+            },
+            end: {
+              left: 'width * 0.64',
+              top: 'width * 0.08',
+            },
+            duration: 114,
+          },
+          snapshotUrls: [
+            'https://i.gkd.li/i/13255698', // 旧快照 节点还未引进 vid 属性
+            'https://i.gkd.li/i/25542293',
+          ],
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '局部广告-首页卡片',
+      desc: '邮件页顶部[试用Google Woekspace]',
       rules: [
         {
           fastQuery: true,
-          key: -1,
-          name: '点击广告扩展-1',
+          activityIds: 'com.google.android.gm.ui.MailActivityGmail',
           matches:
-            '[id="com.google.android.gm:id/button_chip_ad_teaser_info_icon"]',
-          snapshotUrls: 'https://i.gkd.li/i/13255698',
-        },
-        {
-          fastQuery: true,
-          key: 0,
-          name: '点击广告扩展-2',
-          matches: '[id="com.google.android.gm:id/basic_ad_teaser_info_icon"]',
-          snapshotUrls: 'https://i.gkd.li/i/13255698',
-        },
-        {
-          preKeys: [-1, 0],
-          key: 1,
-          name: '广告中心-点击屏蔽',
-          matches: 'Button[text="屏蔽此广告"||text^="Block"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13255700',
-            'https://i.gkd.li/i/13724271',
-          ],
-        },
-        {
-          preKeys: 1,
-          key: 2,
-          name: '点击继续确认屏蔽',
-          matches: 'Button[text="继续"||text="Continue"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13255701',
-            'https://i.gkd.li/i/13724287',
-          ],
-        },
-        {
-          preKeys: 2,
-          key: 3,
-          fastQuery: true,
-          name: '关闭弹窗',
-          matches: '[id="com.google.android.gm:id/my_ad_center_close_icon"]',
-          snapshotUrls: 'https://i.gkd.li/i/13263279',
+            'Button - View[desc=""] < @View[childCount=2][clickable=true][width=102 && height=102][visibleToUser=true] - TextView <n View[childCount>5 && childCount<10] <<3 ComposeView - LinearLayout <<2 [vid="thread_list_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/30378474',
+          exampleUrls: 'https://e.gkd.li/357dc3c9-cf98-40b3-a01d-35bb8219dae8',
         },
       ],
-      enable: true,
     },
   ],
 });

@@ -6,26 +6,31 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-广告弹窗',
-      fastQuery: true,
+      name: '全屏广告-弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.ddyc.lotterytool.module.main.MainActivity',
-      rules:
-        'ImageView - ImageButton[id="com.ddyc.lotterytool:id/arg"][text=null]',
-      snapshotUrls: 'https://i.gkd.li/i/13324555',
-      enable: true,
+      activityIds: '.module.main.MainActivity',
+      rules: [
+        {
+          matches:
+            '@ImageButton[clickable=true][childCount=0] < LinearLayout < FrameLayout < [parent=null]',
+          snapshotUrls: 'https://i.gkd.li/i/13324555',
+        },
+      ],
     },
     {
       key: 2,
-      name: '未分类-请求推送通知弹窗',
+      name: '权限提示-通知权限',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text^="开启推送通知"] +2 LinearLayout [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/13325888',
-      enable: true,
+      rules: [
+        {
+          matches: '[text^="开启推送通知"] +2 LinearLayout [text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/13325888',
+        },
+      ],
     },
   ],
 });

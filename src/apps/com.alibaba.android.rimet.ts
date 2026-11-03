@@ -14,12 +14,10 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches:
-            '@FrameLayout > [id="com.alibaba.android.rimet:id/icft_close"]',
+          matches: '@FrameLayout > [vid="icft_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13325125',
         },
       ],
-      enable: true,
     },
     {
       key: 2,
@@ -32,32 +30,29 @@ export default defineGkdApp({
         {
           key: 0,
           matches:
-            '@FrameLayout[id="com.alibaba.android.rimet:id/layout_close"] -2 TextView[text="文件即将过期请备份"]',
+            '@FrameLayout[vid="layout_close"] -2 TextView[text="文件即将过期请备份"]',
           action: 'clickCenter',
           snapshotUrls: 'https://i.gkd.li/i/13325125',
         },
       ],
-      enable: true,
     },
     {
-      name: '功能类-自动点击原图',
       key: 3,
-      actionMaximum: 1,
+      name: '功能类-自动点击原图',
       fastQuery: true,
+      actionMaximum: 1,
       activityIds:
         'com.alibaba.android.dingtalk.photoui.activitys.AlbumActivity',
       rules: [
         {
           key: 0,
-          matches:
-            'CheckBox[id="com.alibaba.android.rimet:id/cb_send_origin"][text="原图"][checked=false]',
+          matches: 'CheckBox[vid="cb_send_origin"][text="原图"][checked=false]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13309648',
-            'https://i.gkd.li/i/13309845',
+            'https://i.gkd.li/i/13309648', //未选中 [checked=false]
+            'https://i.gkd.li/i/13309845', //已选中 [checked=true]
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 4,
@@ -73,13 +68,10 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13402478',
         },
         {
-          matches:
-            'TextView[id="com.alibaba.android.rimet:id/dialog_close_button"]',
+          matches: 'TextView[vid="dialog_close_button"]',
           snapshotUrls: 'https://i.gkd.li/i/13772151',
         },
       ],
-      enable: true,
-      order: -9,
     },
     {
       key: 5,
@@ -91,11 +83,10 @@ export default defineGkdApp({
       activityIds: 'com.alibaba.android.user.qrcode.WebLoginActivity',
       rules: [
         {
-          matches: '[id="com.alibaba.android.rimet:id/btn_login"]',
+          matches: '[vid="btn_login"]',
           snapshotUrls: 'https://i.gkd.li/i/13433981',
         },
       ],
-      enable: true,
     },
   ],
 });

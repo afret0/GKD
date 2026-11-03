@@ -7,24 +7,32 @@ export default defineGkdApp({
     {
       key: 0,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
-      rules:
-        '@[id="com.lenovo.leos.appstore:id/dialog_cancel"] + [text$="版本更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/13401992',
-      enable: true,
-      order: -9,
+      rules: [
+        {
+          activityIds: 'com.zui.launcher.drawer.NormalLauncher',
+          matches: '@[vid="dialog_cancel"] + [text$="版本更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/13401992',
+        },
+      ],
     },
     {
       key: 1,
-      name: '未分类-请求通知权限弹窗',
-      activityIds:
-        'com.lenovo.leos.appstore.activities.NotificationGuideActivity',
+      name: '权限提示-通知权限',
       fastQuery: true,
-      rules: '[text$="打开应用中心通知"] +n [text="知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/13401991',
-      enable: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.activities.NotificationGuideActivity',
+          matches: ['[text$="打开应用中心通知"]', '[text="知道了"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13401991',
+        },
+      ],
     },
   ],
 });

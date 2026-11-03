@@ -7,28 +7,33 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
-      rules:
-        '[id="com.redfinger.app:id/btn_update"] + [id="com.redfinger.app:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13761821',
-      enable: true,
-      order: -9,
+      rules: [
+        {
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="btn_update"] + [vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13761821',
+        },
+      ],
     },
     {
       key: 2,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          activityIds: 'com.redfinger.app.activity.MainActivity',
           fastQuery: true,
-          matches: '[id="com.redfinger.app:id/rl_screen_ad_close"]',
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="rl_screen_ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13761825',
         },
       ],
-      enable: true,
     },
   ],
 });

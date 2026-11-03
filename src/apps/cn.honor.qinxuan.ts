@@ -6,16 +6,19 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
+      name: '全屏广告-首页弹窗广告',
+      desc: '点击关闭',
       fastQuery: true,
-      name: '全屏广告-首页广告弹窗',
-      desc: '点击X',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id="cn.honor.qinxuan:id/iv_close_dlg"]',
-          snapshotUrls: 'https://i.gkd.li/i/13930613',
+          activityIds: '.MainActivity',
+          matches: '[vid="iv_close_dlg"]',
+          snapshotUrls: 'https://i.gkd.li/i/13930613', //无vid旧快照
         },
       ],
-      enable: true,
     },
     {
       key: 2,
@@ -30,7 +33,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14946137',
         },
       ],
-      enable: true,
     },
   ],
 });

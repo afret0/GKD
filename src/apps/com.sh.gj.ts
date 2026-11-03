@@ -6,36 +6,38 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告',
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
-          name: '腾讯SDK',
           fastQuery: true,
-          activityIds: [
-            'com.sh.gj.MainActivity',
-            'com.sh.gj.activity.LineDetailActivity',
-          ],
-          matches: 'ImageView < @FrameLayout <<n [vid="bannerContainer"]',
+          activityIds: ['.MainActivity', '.activity.LineDetailActivity'],
+          matches:
+            'ImageView[visibleToUser=true] - FrameLayout[childCount=1] > @ImageView[visibleToUser=true] <<n [vid="bannerContainer"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/36771be2-e3fd-498c-9adb-458e9f487b9b',
           snapshotUrls: [
-            'https://i.gkd.li/i/14883107',
-            'https://i.gkd.li/i/14883157',
+            'https://i.gkd.li/i/14883102',
+            'https://i.gkd.li/i/14883152',
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 2,
       name: '功能类-退出软件时的确认弹窗',
       desc: '点击[确认退出]',
-      fastQuery: true,
-      activityIds: 'com.sh.gj.MainActivity',
-      rules: '[text="确认退出"]',
-      exampleUrls:
-        'https://m.gkd.li/57941037/38c20d82-947e-4e46-aba8-80e1a773552b',
-      snapshotUrls: 'https://i.gkd.li/i/14883160',
-      enable: true,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainActivity',
+          matches: '[text="确认退出"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/38c20d82-947e-4e46-aba8-80e1a773552b',
+          snapshotUrls: 'https://i.gkd.li/i/14883160',
+        },
+      ],
     },
   ],
 });

@@ -5,32 +5,13 @@ export default defineGkdApp({
   name: '古文岛',
   groups: [
     {
-      key: 1,
-      name: '更新提示',
-      activityIds: 'com.guwendao.gwd.MainActivity',
-      rules: '[text="应用升级提醒"] +n LinearLayout > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/12776605',
-      enable: true,
-      order: -9,
-    },
-    {
       key: 2,
-      name: '未分类-第三方 SDK 广告弹窗',
-      activityIds: 'com.guwendao.gwd.MainActivity',
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: '.MainActivity',
       rules: [
-        {
-          key: 0,
-          matches: 'ImageView - FrameLayout > FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://i.gkd.li/i/12776607',
-        },
-        {
-          activityIds:
-            'com.android.systemui.media.MediaProjectionPermissionActivity',
-          key: 1,
-          matches:
-            'ImageView - LinearLayout - FrameLayout > FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://i.gkd.li/i/12777151',
-        },
         {
           key: 2,
           matches:
@@ -39,10 +20,21 @@ export default defineGkdApp({
         },
         {
           key: 3,
+          fastQuery: true,
+          activityIds: [
+            '.MainActivity',
+            'com.android.systemui.media.MediaProjectionPermissionActivity',
+          ],
           matches:
-            'ImageView < FrameLayout + FrameLayout > FrameLayout > ImageView[id=null]',
-          snapshotUrls: 'https://i.gkd.li/i/12924728',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12776607',
+            'https://i.gkd.li/i/12777151',
+            'https://i.gkd.li/i/12924728',
+          ],
         },
+
+        // 字节广告
         {
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
@@ -51,7 +43,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12781327',
         },
       ],
-      enable: true,
     },
   ],
 });

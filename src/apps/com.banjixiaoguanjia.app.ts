@@ -6,8 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-应用内广告卡片',
-      activityIds: 'com.banjixiaoguanjia.app.MainActivity',
+      name: '分段广告-卡片广告',
+      activityIds: '.MainActivity',
       rules: [
         {
           key: 0,
@@ -21,7 +21,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12906196',
         },
       ],
-      enable: true,
     },
   ],
 });

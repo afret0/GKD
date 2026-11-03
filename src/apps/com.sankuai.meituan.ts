@@ -5,21 +5,44 @@ export default defineGkdApp({
   name: '美团',
   groups: [
     {
-      key: 1,
-      name: '更新提示',
+      key: -1,
+      name: '开屏广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules:
-        'TextView[text^="新版本"] - Button[id="com.sankuai.meituan:id/btn_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12614559',
-        'https://i.gkd.li/i/12673132',
-        'https://i.gkd.li/i/13292635',
+      rules: [
+        {
+          key: 0,
+          matches: 'TextView[text*="跳过"][text.length<8][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/28997249',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/17827264', // 用 TextView 排除
+        },
       ],
-      enable: true,
-      order: -9,
+    },
+    {
+      key: 1,
+      name: '更新提示',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: [
+            'com.meituan.android.upgrade.UpgradeDialogActivity',
+            'com.meituan.android.pt.homepage.activity.MainActivity',
+          ],
+          matches: [
+            '[vid="update_logo" || text="立即升级"]',
+            '[vid="btn_close" || text="暂不升级"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/18375410',
+            'https://i.gkd.li/i/23165455',
+          ],
+        },
+      ],
     },
     {
       key: 2,
@@ -52,10 +75,11 @@ export default defineGkdApp({
         {
           key: 3,
           name: '超市便利-弹窗广告',
+          fastQuery: true,
           activityIds:
             'com.sankuai.waimai.store.poi.list.newp.PoiVerticalityHomeActivity',
           matches:
-            'FrameLayout[childCount=2] > FrameLayout + FrameLayout[childCount=1] > ImageView[childCount=0][clickable=true]',
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=2] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < FrameLayout[childCount=1] < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13694877',
         },
         {
@@ -80,37 +104,52 @@ export default defineGkdApp({
           name: '邀请好友提现弹窗',
           activityIds: 'com.meituan.msc.modules.container.MSCActivity',
           matches:
-            'WebView > View > View[childCount=1] >(1,2) View[childCount=2] > View + Image[text=""][childCount=0][left>0]',
+            'WebView > View > View[childCount=1] >(1,2) View[childCount=2] > View + Image[text=""][childCount=0][left>0][width<200]',
           snapshotUrls: [
             'https://i.gkd.li/i/14964911',
             'https://i.gkd.li/i/15400951',
-            'https://i.gkd.li/i/16487898',
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/16487898', // 避免误触 add [left>0]
+            'https://i.gkd.li/i/20553947', // 避免误触 add [width<200]
           ],
         },
+        {
+          key: 7,
+          name: '首页-半价神券弹窗',
+          fastQuery: true,
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          matches:
+            '@ViewGroup[clickable=true][width <120 && width<120][childCount=0] <2 ViewGroup < ViewGroup < ViewGroup < FrameLayout < FrameLayout < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/24842488',
+        },
       ],
-      enable: true,
     },
     {
       key: 3,
       name: '评价提示-订单调查弹窗',
-      matchTime: 10000,
-      actionMaximum: 1,
       fastQuery: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          key: 1,
           name: '我的页面-小调查',
           action: 'back',
+          activityIds: 'com.meituan.retail.c.android.mrn.mrn.MallMrnModal',
           matches: 'TextView[text="小调查"]',
           snapshotUrls: 'https://i.gkd.li/i/12639723',
         },
         {
+          key: 2,
           name: '订单详情页匿名调查',
           action: 'back',
-          matches: '[id="com.sankuai.meituan:id/questionnaireTitle"]',
+          activityIds:
+            'com.sankuai.waimai.bussiness.order.detail.WMOrderDetailActivity',
+          matches: '[vid="questionnaireTitle"]',
           snapshotUrls: 'https://i.gkd.li/i/13682336',
         },
       ],
-      enable: true,
     },
     {
       key: 4,
@@ -136,8 +175,31 @@ export default defineGkdApp({
           matches: '[vid="marking_sidebar_close"]',
           snapshotUrls: 'https://i.gkd.li/i/16079638',
         },
+        {
+          key: 2,
+          fastQuery: true,
+          activityIds:
+            'com.sankuai.waimai.business.restaurant.poicontainer.WMRestaurantActivity',
+          matches: '@ImageView[visibleToUser=true] - [text^="收藏店铺领"]',
+          exampleUrls: 'https://e.gkd.li/20bbae61-859b-478d-9032-8213c79dec39',
+          snapshotUrls: 'https://i.gkd.li/i/16632959',
+        },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.sankuai.waimai.store.drug.home.NewDrugHomeActivity',
+          matches:
+            '@ImageView[width<80 && height<80][clickable=true] <n * < [vid="novel_float_view_new"]',
+          snapshotUrls: 'https://i.gkd.li/i/23165473',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.sankuai.waimai.store.drug.home.NewDrugHomeActivity',
+          matches: '[vid="live_float_view_container"] > [vid="close_btn"]',
+          snapshotUrls: 'https://i.gkd.li/i/23165473',
+        },
       ],
-      enable: true,
     },
     {
       key: 7,
@@ -160,21 +222,20 @@ export default defineGkdApp({
           key: 1,
           activityIds:
             'com.sankuai.waimai.business.page.homepage.TakeoutActivity',
-          matches: '[id="com.sankuai.meituan:id/location_layer_close"]',
+          matches: '[vid="location_layer_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/3071d3a4-f8ca-4c6f-8aa2-cf9573dbed3d',
           snapshotUrls: 'https://i.gkd.li/i/12910211',
         },
         {
           key: 2,
-          activityIds: 'com.sankuai.meituan.MPMainActivity',
+          activityIds: '.MPMainActivity',
           matches: '[text="定位服务尚未开启"] +3 TextView',
           exampleUrls:
             'https://m.gkd.li/57941037/3bb08a42-5d88-4f9d-8cbe-cb913e136ec6',
           snapshotUrls: 'https://i.gkd.li/i/14472614',
         },
       ],
-      enable: true,
     },
     {
       key: 8,
@@ -186,47 +247,53 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
-          matches: '@[vid="iv_close" || text="跳过"] <n * > [text^="开启通知"]',
+          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          matches: '@[vid="iv_close" || text="跳过"] -(1,2) [text^="开启通知"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13439134',
             'https://i.gkd.li/i/15047918',
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 10,
       name: '全屏广告-新人返场特惠',
-      desc: '点击右上角返回',
-      activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
-      matchTime: 10000,
-      rules: '[id="shareNav"] > [text=""]',
-      snapshotUrls: 'https://i.gkd.li/i/13800691',
-      enable: true,
+      desc: '点击左上角返回',
+      rules: [
+        {
+          matchTime: 10000,
+          fastQuery: true,
+          activityIds: 'com.meituan.android.base.knb.KNBWebViewActivity',
+          matches:
+            '@TextView[text=""][clickable=true][childCount=0] < View[id="shareNav"] <2 View < View < WebView < WebView < [vid="mil_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/13800691',
+        },
+      ],
     },
     {
       key: 11,
       name: '全屏广告-视频页弹窗广告',
       desc: '点击X',
+      fastQuery: true,
+      activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
       rules: [
         {
           key: 0,
-          name: '签到弹窗',
-          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
-          matches: 'ViewGroup[childCount=17] > ImageView[index=5]',
+          name: '视频页-签到弹窗',
+          matches:
+            '@ImageView[index=5] +n ViewGroup[clickable=true] >n [text="签到必得现金"]',
           snapshotUrls: 'https://i.gkd.li/i/14033982',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/24705788', // @ImageView[index=5] +n ViewGroup[clickable=true] 会误触
         },
         {
           key: 1,
-          name: '看视频领现金弹窗',
-          activityIds: 'com.meituan.android.pt.homepage.activity.MainActivity',
+          name: '视频页-领现金弹窗',
           matches:
-            '@ImageView[visibleToUser=true] - ViewGroup[childCount=3] [text="看视频继续领现金"]',
+            '@ImageView[visibleToUser=true] - ViewGroup[childCount=3] > [text^="签到成功"]',
           snapshotUrls: 'https://i.gkd.li/i/14034073',
         },
       ],
-      enable: true,
     },
     {
       key: 12,
@@ -237,22 +304,62 @@ export default defineGkdApp({
           key: 0,
           activityIds:
             'com.sankuai.waimai.platform.machpro.container.WMMPActivity',
-          matches: [
-            '[text="商家已接单"][visibleToUser=true]',
-            '[text="完成"][visibleToUser=true]',
+          matches:
+            '@[text="完成"] -n ViewGroup >(1,7) [text="商家已接单" || text="等待商家接单"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14163717',
+            'https://i.gkd.li/i/17158063',
           ],
-          snapshotUrls: 'https://i.gkd.li/i/14163717',
         },
         {
           key: 1,
+          action: 'clickCenter', // https://github.com/AIsouler/GKD_subscription/issues/1028
           activityIds:
             'com.meituan.android.hybridcashier.HybridCashierActivity',
           matches:
-            '[text="支付成功"] >5 @[clickable=true][text="完成"] <<n [vid="mil_container"]',
-          snapshotUrls: 'https://i.gkd.li/i/14392284',
+            '[text="支付成功"] >(5,7) @[visibleToUser=true][text="完成"] <<n [vid="mil_container"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14392284',
+            'https://i.gkd.li/i/26628762',
+          ],
         },
       ],
-      enable: true,
+    },
+    {
+      key: 13,
+      name: '局部广告-直播讲解悬浮窗',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.sankuai.waimai.business.restaurant.poicontainer.WMRestaurantActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true] + [text="正在讲解"]',
+          exampleUrls: 'https://e.gkd.li/42b1d2c5-ca75-4a89-adca-9e5c4f489165',
+          snapshotUrls: 'https://i.gkd.li/i/17182888',
+        },
+      ],
+    },
+    {
+      key: 14,
+      name: '全屏广告-下单后开通月付提示',
+      desc: '出现后-按[返回键]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.meituan.android.hybridcashier.HybridCashierActivity',
+          matches:
+            '@[text*="美团月付"][parent.childCount=6] <<n [childCount=2][getChild(1).text^="确认"] <<n [text="支付成功"] < WebView < [vid="mil_container"]',
+          action: 'back',
+          snapshotUrls: [
+            'https://i.gkd.li/i/27426053',
+            'https://i.gkd.li/i/28056764',
+          ],
+          exampleUrls: 'https://e.gkd.li/9f1b0006-c4c2-4234-9cea-94ee97f48ae3',
+        },
+      ],
     },
   ],
 });

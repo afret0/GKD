@@ -6,17 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
       fastQuery: true,
-      activityIds: 'com.ilike.cartoon.activities.HomeActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[id="com.jisu.manhua:id/iv_promotion"] + [id="com.jisu.manhua:id/iv_close"]',
+          activityIds: 'com.ilike.cartoon.activities.HomeActivity',
+          matches: '[vid="iv_promotion"] + [vid="iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13688186',
         },
       ],
-      enable: true,
     },
   ],
 });

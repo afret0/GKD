@@ -6,12 +6,14 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-谷歌广告-全屏广告',
+      name: '全屏广告-谷歌广告',
       activityIds: 'com.google.android.gms.ads.AdActivity',
       rules: [
         {
           key: 1,
           matches: 'View > [text="关闭"]',
+          // 快照里可以选择 @[text="关闭"] < View + View > [text="安装"||text="打开"]
+          // 但是实际执行选择器却无法点击, 原因未知, 需要后续排查
           snapshotUrls: [
             'https://i.gkd.li/i/12642909',
             'https://i.gkd.li/i/12643316',
@@ -33,11 +35,10 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 2,
-      name: '未分类-谷歌广告-视频广告',
+      name: '全屏广告-视频广告',
       desc: '点击跳过视频-点击关闭按钮',
       activityIds: ['com.google.android.gms.ads.AdActivity'],
       rules: [
@@ -54,10 +55,11 @@ export default defineGkdApp({
         {
           key: 3,
           matches: [
-            'Button[id=null][clickable=true] < @View - * < View - View >(n) View[desc="安装"]',
+            'Button[id=null][clickable=true] < @View - * < View - View >(n) View[desc="安装"]', // 点中间的View才会关闭广告，最后两个 View 之间的距离不确定
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/12642952',
+            // https://github.com/gkd-kit/subscription/pull/136#issuecomment-1723186711
             'https://i.gkd.li/i/12668298',
           ],
         },
@@ -68,16 +70,15 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12642983'],
         },
       ],
-      enable: true,
     },
     {
       key: 3,
-      name: '未分类-谷歌广告-页面底部广告',
-      activityIds: 'com.daysko.safp.MainActivity',
+      name: '局部广告-页面底部广告',
+      activityIds: '.MainActivity',
       rules: [
         {
           matches:
-            '[id!="why_this_ad_btn"] -2 View[id="mys-wrapper"] + View >2 Button[clickable=true]',
+            '[!(id="why_this_ad_btn")] -2 View[id="mys-wrapper"] + View >2 Button[clickable=true]',
           snapshotUrls: [
             'https://i.gkd.li/i/12642993',
             'https://i.gkd.li/i/12643229',
@@ -88,7 +89,6 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12643001'],
         },
       ],
-      enable: true,
     },
   ],
 });

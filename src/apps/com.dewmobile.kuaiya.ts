@@ -6,18 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-卡片式广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 0,
           name: '腾讯广告',
-          activityIds: 'com.dewmobile.kuaiya.act.MainActivity',
+          fastQuery: true,
+          activityIds: '.act.MainActivity',
           matches:
-            'ImageView - FrameLayout[childCount=1] > ImageView[childCount=0]',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView[childCount=0][visibleToUser=true] <<n [vid="sdk_container"]',
           snapshotUrls: 'https://i.gkd.li/i/13477048',
         },
       ],
-      enable: true,
     },
   ],
 });

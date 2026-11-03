@@ -7,12 +7,19 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[text="忽略本次"] + [text="立即升级"]',
-      snapshotUrls: 'https://i.gkd.li/i/13797203',
-      enable: true,
-      order: -9,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.igpsport.globalapp.main.MainActivity',
+          matches:
+            '@[visibleToUser=true][text="忽略本次"] <<n [vid="updateComposeView"]',
+          exampleUrls: 'https://e.gkd.li/57341233-2547-4469-869c-e05fdebb20fc',
+          snapshotUrls: 'https://i.gkd.li/i/13797203',
+        },
+      ],
     },
   ],
 });

@@ -11,13 +11,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
-          matches: '[id="com.xiaote:id/ad_close"][text*="关闭"]',
+          matches: '[vid="ad_close"][text*="关闭"]',
           snapshotUrls: 'https://i.gkd.li/i/14035706',
         },
       ],
-      order: -10,
     },
   ],
 });

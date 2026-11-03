@@ -6,12 +6,15 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-首页-底部广告',
-      fastQuery: true,
-      activityIds: 'com.xiaomi.hm.health.activity.ChannelMainTabActivity',
-      rules: 'ImageView[id="com.xiaomi.hm.health:id/close_icon"]',
-      snapshotUrls: 'https://i.gkd.li/i/13695424',
-      enable: true,
+      name: '局部广告-首页-底部广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.ChannelMainTabActivity',
+          matches: 'ImageView[vid="close_icon"]',
+          snapshotUrls: 'https://i.gkd.li/i/13695424',
+        },
+      ],
     },
   ],
 });

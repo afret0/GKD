@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -22,7 +22,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13696205',
         },
       ],
-      enable: true,
     },
   ],
 });

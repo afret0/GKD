@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-应用内第三方 SDK 广告',
+      name: '其他-应用内第三方 SDK 广告',
       rules: [
         {
           key: 0,
@@ -90,7 +90,7 @@ export default defineGkdApp({
     },
     {
       key: 10,
-      name: '未分类-观看视频去除广告提示弹窗',
+      name: '其他-观看视频去除广告提示弹窗',
       activityIds: 'so.tita.view.activity.HomeActivity',
       rules: '@[text="取 消"] + View + [text="确 定"]',
       snapshotUrls: 'https://i.gkd.li/i/12800350',

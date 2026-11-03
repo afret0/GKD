@@ -10,9 +10,13 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.shanghaionstar:id/jump_view"]',
-      snapshotUrls: 'https://i.gkd.li/i/13071523',
-      order: -10,
+      priorityTime: 10000,
+      rules: [
+        {
+          matches: '[vid="jump_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/13071523',
+        },
+      ],
     },
   ],
 });

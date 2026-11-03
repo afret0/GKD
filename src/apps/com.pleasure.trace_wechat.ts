@@ -6,36 +6,38 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '未分类-我的-卡片式广告',
+      name: '分段广告-我的页面卡片广告',
       desc: '需点击二次弹窗确认',
       fastQuery: true,
       activityIds: 'com.camellia.trace.activity.MainActivity',
       rules: [
         {
           key: 0,
-          name: '点击【x】',
+          name: '点击关闭',
           matches:
-            'View < @FrameLayout[desc^="dislike"] <<n [id="com.pleasure.trace_wechat:id/adsuyi_id_view_response"]',
+            'View < @FrameLayout[desc^="dislike"] <<n [vid="adsuyi_id_view_response"]',
           snapshotUrls: 'https://i.gkd.li/i/13479466',
         },
         {
-          preKeys: 0,
-          name: '关闭原因【不感兴趣】',
+          preKeys: [0],
+          name: '关闭原因"不感兴趣"',
           matches:
             '@LinearLayout > [id="com.byted.pangle:id/tt_item_tv"][text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13479469',
         },
       ],
-      enable: true,
     },
     {
       key: 11,
-      name: '未分类-【字节】广告弹窗',
-      activityIds:
-        'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-      rules: '[text="反馈"] -2 @View > Image',
-      snapshotUrls: 'https://i.gkd.li/i/13479468',
-      enable: true,
+      name: '全屏广告-弹窗广告',
+      rules: [
+        {
+          activityIds:
+            'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
+          matches: '[text="反馈"] -2 @View > Image',
+          snapshotUrls: 'https://i.gkd.li/i/13479468',
+        },
+      ],
     },
   ],
 });

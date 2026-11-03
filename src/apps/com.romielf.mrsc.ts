@@ -5,21 +5,23 @@ export default defineGkdApp({
   name: '每日赛车',
   groups: [
     {
-      name: '未分类-新闻页面摇一摇广告',
       key: 1,
-      activityIds: 'com.romielf.mrsc.MainActivity',
+      name: '分段广告-新闻页面摇一摇广告',
       desc: '点击准确率灵敏度不太高',
+      activityIds: '.MainActivity',
       rules: [
         {
+          key: 1,
           matches: '@Image < View -n View >2 View[text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/12667539',
         },
         {
+          preKeys: [1],
+          key: 2,
           matches: '[id="com.byted.pangle:id/tt_item_tv"][text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/12667549',
         },
       ],
-      enable: true,
     },
   ],
 });

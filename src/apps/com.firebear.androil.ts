@@ -5,36 +5,9 @@ export default defineGkdApp({
   name: '小熊油耗',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionCdKey: 0,
-      actionMaximumKey: 0,
-      fastQuery: true,
-      rules: [
-        {
-          key: 0,
-          matches: '[text*="跳过"][text.length<=10]',
-          snapshotUrls: 'https://i.gkd.li/i/12712742',
-        },
-        {
-          matches:
-            '@View <2 * <2 * < [id="com.firebear.androil:id/adContainerLay"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13088169',
-            'https://i.gkd.li/i/12855707',
-            'https://i.gkd.li/i/13927561',
-          ],
-        },
-      ],
-      order: -10,
-    },
-    {
       key: 1,
       name: '全屏广告',
-      desc: '来自第三方SDK【穿山甲】',
+      desc: '来自第三方SDK"穿山甲"',
       activityIds:
         'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
       rules: [
@@ -60,17 +33,21 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/13175439'],
         },
       ],
-      enable: true,
     },
     {
       key: 2,
       name: '更新提示',
-      activityIds: 'com.firebear.androil.app.home.MainActivity',
-      rules:
-        '@[id="com.firebear.androil:id/dismissNtfImgView"] < RelativeLayout - [id="com.firebear.androil:id/contentLay"] >3 TextView[text^="升级"]',
-      snapshotUrls: 'https://i.gkd.li/i/12755032',
-      enable: true,
-      order: -9,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.app.home.MainActivity',
+          matches:
+            '@[vid="dismissNtfImgView"] < RelativeLayout - [vid="contentLay"] >3 TextView[text^="升级"]',
+          snapshotUrls: 'https://i.gkd.li/i/12755032',
+        },
+      ],
     },
   ],
 });

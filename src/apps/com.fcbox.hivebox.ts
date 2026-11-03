@@ -6,19 +6,20 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
           name: '首页弹窗广告',
-          activityIds: 'com.fcbox.hivebox.business.main.MainActivity',
           fastQuery: true,
-          matches:
-            '[id="com.fcbox.hivebox:id/fl_content_container"] + [id="com.fcbox.hivebox:id/iv_close"]',
+          activityIds: '.business.main.MainActivity',
+          matches: '[vid="fl_content_container"] + [vid="iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13459000',
         },
       ],
-      enable: true,
     },
   ],
 });

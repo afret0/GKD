@@ -6,15 +6,19 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '未分类-首页-弹窗广告',
+      name: '全屏广告-首页弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          activityIds: 'com.mxbc.ohsa.modules.main.MainAbilityShellActivity',
-          matches: 'UIComponentContainer > [id="Id_close"]',
+          fastQuery: true,
+          activityIds: '.modules.main.MainAbilityShellActivity',
+          matches:
+            '@UIComponent[id="Id_close"] <2 UIComponentContainer < UIComponentContainer < UIComponentContainer < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/13728113',
         },
       ],
-      enable: true,
     },
   ],
 });

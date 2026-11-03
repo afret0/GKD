@@ -7,13 +7,20 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      matchTime: 10000,
-      fastQuery: true,
-      rules: '[vid="advert_countdown_view"]',
-      snapshotUrls: 'https://i.gkd.li/i/14586621',
-      order: -10,
+      priorityTime: 10000,
+      ignoreGlobalGroupMatch: true,
+      rules: [
+        {
+          fastQuery: true,
+          matches: '[vid="advert_countdown_view"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b30750e1-92ca-452b-8467-a0074989ec92',
+          snapshotUrls: 'https://i.gkd.li/i/14586621',
+        },
+      ],
     },
   ],
 });

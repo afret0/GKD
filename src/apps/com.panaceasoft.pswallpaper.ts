@@ -6,15 +6,27 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-公告弹窗',
+      name: '通知提示-公告弹窗',
       fastQuery: true,
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
-      rules:
-        '[vid="tv_next"][text="下一条"] <<n LinearLayout - [vid="iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14141561',
-      enable: true,
+      activityIds: '.xiao.MainActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '[vid="cb_ignore"][checked=false]',
+          exampleUrls: 'https://e.gkd.li/b92e4e94-fafc-47b1-9774-3126cfaed981',
+          snapshotUrls: 'https://i.gkd.li/i/14141561',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[vid="iv_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/b92e4e94-fafc-47b1-9774-3126cfaed981',
+          snapshotUrls: 'https://i.gkd.li/i/14141561',
+        },
+      ],
     },
   ],
 });

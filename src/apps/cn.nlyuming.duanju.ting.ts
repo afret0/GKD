@@ -6,14 +6,22 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '通知提示-公告弹窗',
+      name: '其他-[您还未登录]弹窗',
+      desc: '点击关闭',
+      fastQuery: true,
       matchTime: 10000,
-      resetMatch: 'app',
       actionMaximum: 1,
-      activityIds: 'cn.nlyuming.duanju.ting.MainActivity',
-      rules: '[desc="了解更多"] - [desc="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/14151009',
-      enable: true,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches:
+            '@ImageView[childCount=0][visibleToUser=true] < FrameLayout[childCount=1] <2 FrameLayout[childCount=3] < FrameLayout < FrameLayout < FrameLayout < FrameLayout < [id="android:id/content"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/3041769f-b644-460b-b0de-9c2a84518849',
+          snapshotUrls: 'https://i.gkd.li/i/14321891',
+        },
+      ],
     },
   ],
 });

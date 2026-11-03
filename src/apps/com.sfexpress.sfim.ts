@@ -6,18 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '功能类-登录确认',
-      desc: '自动点击 "登录" 按钮',
+      name: '功能类-自动确认登录',
+      desc: '自动点击[登录]按钮',
       fastQuery: true,
       rules: [
         {
           key: 0,
           activityIds: [
-            'com.sfexpress.sfim.scan.view.SfScanActivity',
-            'com.sfexpress.sfim.microservice.commonservice.ui.MicroAppContainerActivity',
-            'com.sfexpress.sfim.sdkuikit.widget.dialog.NoticeDialog',
+            '.scan.view.SfScanActivity',
+            '.microservice.commonservice.ui.MicroAppContainerActivity',
+            '.sdkuikit.widget.dialog.NoticeDialog',
           ],
-          matches: '@[text="登录"] <<n [vid="flContainer"]',
+          matches: '@[visibleToUser=true][text="登录"] <<n [vid="flContainer"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12745239',
             'https://i.gkd.li/i/12745240',
@@ -27,13 +27,11 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          activityIds:
-            'com.sfexpress.sfim.middleplatform.ui.SFMiddlePlatformLoginActivity',
+          activityIds: '.middleplatform.ui.SFMiddlePlatformLoginActivity',
           matches: '[text="登录"]',
           snapshotUrls: 'https://i.gkd.li/i/14830682',
         },
       ],
-      enable: true,
     },
   ],
 });

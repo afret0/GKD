@@ -18,34 +18,59 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16108173',
         },
       ],
-      enable: true,
-      order: -9,
+    },
+    {
+      key: 7,
+      name: '权限提示-悬浮窗权限',
+      desc: '点击[下次再说]',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds:
+            'com.hellobike.business.hitch.common.home.HLPHHomeActivity',
+          matches: ['[text*="悬浮窗"]', '[vid="btnCancel"]'],
+          snapshotUrls: 'https://i.gkd.li/i/29299377',
+        },
+      ],
     },
     {
       key: 8,
       name: '权限提示-通知权限',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[text*="开启通知"] < FrameLayout + FrameLayout >2 [text="取消"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13228735',
-        'https://i.gkd.li/i/13402675',
+      rules: [
+        {
+          activityIds: [
+            'com.yanzhenjie.permission.PermissionActivity',
+            'com.hellobike.atlas.business.portal.PortalActivity',
+          ],
+          matches: ['[text*="开启通知"]', '[text="取消"]'],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13228735',
+            'https://i.gkd.li/i/13402675',
+          ],
+        },
       ],
-      enable: true,
     },
     {
       key: 9,
       name: '权限提示-定位权限',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
-      rules:
-        '[text="系统定位服务已关闭"] < FrameLayout +n FrameLayout >2 [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/13228677',
-      enable: true,
+      rules: [
+        {
+          activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
+          matches: ['[text="系统定位服务已关闭"]', '[text="取消"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13228677',
+        },
+      ],
     },
     {
       key: 10,
@@ -53,23 +78,30 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds: [
             'com.hellobike.ads.widget.insert.dialog.HBAdvertDialog',
             'com.hellobike.atlas.business.portal.PortalActivity',
+            'com.hellobike.hitch.business.homenew.HitchHomeActivity',
+            'com.hellobike.business.hitch.common.home.HLPHHomeActivity',
           ],
           matches: '[vid="actionDialogClose"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12650090',
             'https://i.gkd.li/i/16503613',
+            'https://i.gkd.li/i/23407810',
+            'https://i.gkd.li/i/29299383',
           ],
         },
         {
           key: 1,
           fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           activityIds:
             'com.hellobike.evehicle.business.main.EVehicleHomeManagerActivity',
-          matches:
-            '[id="com.jingyao.easybike:id/lottie_view"] < ViewGroup + [id="com.jingyao.easybike:id/btn_close"]',
+          matches: '[vid="lottie_view"] < ViewGroup + [vid="btn_close"]',
           snapshotUrls: 'https://i.gkd.li/i/12650163',
         },
         {
@@ -85,29 +117,53 @@ export default defineGkdApp({
           matches: '[desc="去使用"] + Button[text=null][visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/12739316',
         },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds:
+            'com.hellobike.moped.platform.offline.web.OhoRealmWebActivity',
+          matches:
+            '@Image[childCount=0][text!=null] - View[childCount=1] > Image[childCount=0][text!=null] <<n [vid="webContainer"]',
+          exampleUrls: 'https://e.gkd.li/c6364646-6d3c-4b2e-80b9-0b356d4cd8b7',
+          snapshotUrls: 'https://i.gkd.li/i/23415363',
+        },
       ],
-      enable: true,
+    },
+    {
+      key: 11,
+      name: '全屏广告-关闭公众号提醒',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.hellobike.hitch.business.match.temp.HitchDriverTempMatchActivity',
+          matches: '[text*="公众号"] - [vid="ivClose"]',
+          snapshotUrls: 'https://i.gkd.li/i/30827751',
+          exampleUrls: 'https://e.gkd.li/84f6f033-7686-439a-b50e-87a2c8409ddf',
+        },
+      ],
     },
     {
       key: 12,
       name: '局部广告-右侧悬浮广告',
       fastQuery: true,
       activityIds: 'com.hellobike.atlas.business.portal.PortalActivity',
-      rules:
-        '@[id="com.jingyao.easybike:id/closeFloatArea"] + [id="com.jingyao.easybike:id/floatADContainer"]',
+      rules: '@[vid="closeFloatArea"] + [vid="floatADContainer"]',
       snapshotUrls: 'https://i.gkd.li/i/12650071',
-      enable: true,
     },
     {
       key: 15,
-      fastQuery: true,
-      name: '功能类-新人教学弹窗',
+      name: '其他-新人教学弹窗',
       desc: '点击跳过',
-      activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
-      rules:
-        '@View[text="跳过"] <2 View <2 View <<n FrameLayout[id="com.jingyao.easybike:id/h5_pc_container"]',
-      snapshotUrls: 'https://i.gkd.li/i/13837543',
-      enable: true,
+      fastQuery: true,
+      rules: [
+        {
+          activityIds: 'com.alipay.mobile.nebulacore.ui.H5Activity',
+          matches:
+            '@View[text="跳过"] <2 View <2 View <<n FrameLayout[vid="h5_pc_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/13837543',
+        },
+      ],
     },
   ],
 });

@@ -7,15 +7,18 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
+      desc: '点击关闭',
       fastQuery: true,
-      actionMaximum: 1,
       matchTime: 10000,
+      actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.speed.shadowsocks.ui.main.MainActivity',
-      rules: '[vid="iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13998233',
-      enable: true,
-      order: -9,
+      rules: [
+        {
+          activityIds: 'com.speed.shadowsocks.ui.main.MainActivity',
+          matches: '[vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14000409',
+        },
+      ],
     },
   ],
 });

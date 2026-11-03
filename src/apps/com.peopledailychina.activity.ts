@@ -11,14 +11,13 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.peopledailychina.activity.activity.MainActivity',
+          activityIds: '.activity.MainActivity',
           matches: '[vid="advert_iv_del"][visibleToUser=true]',
           exampleUrls:
             'https://m.gkd.li/57941037/53c28fe8-9db9-45d8-82b3-7034aa10d2ed',
           snapshotUrls: 'https://i.gkd.li/i/15175151',
         },
       ],
-      enable: true,
     },
   ],
 });

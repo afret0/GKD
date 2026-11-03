@@ -5,30 +5,40 @@ export default defineGkdApp({
   name: '中国农业银行',
   groups: [
     {
-      key: 0,
+      key: 1,
       name: '开屏广告',
+      matchRoot: true,
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
-          matches: '[id="com.android.bankabc:id/close"]',
+          matches: '[vid="close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/67cfc2f8-a108-4382-976a-0da7d13764e9',
           snapshotUrls: 'https://i.gkd.li/i/14179162',
         },
+        {
+          key: 1,
+          matches:
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/a5f6ec81-04f6-4678-b1d5-f2f326521945',
+          snapshotUrls: 'https://i.gkd.li/i/17879768',
+        },
       ],
-      order: -10,
     },
     {
-      key: 1,
+      key: 2,
       name: '更新提示',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      activityIds: '.MainActivity',
       rules: [
         {
           key: 0,
@@ -51,28 +61,36 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/16410094',
         },
       ],
-      enable: true,
-      order: -9,
-    },
-    {
-      key: 2,
-      name: '权限提示-定位权限',
-      fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: '[text="允许获取位置信息"] +n * > [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/14208572',
-      enable: true,
     },
     {
       key: 3,
-      name: '权限提示-通知权限',
+      name: '权限提示-定位权限',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[vid="iv_notification_reminder_dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14208621',
-      enable: true,
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[text="允许获取位置信息"] +n * > [text="取消"]',
+          snapshotUrls: 'https://i.gkd.li/i/14208572',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '权限提示-通知权限',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[vid="iv_notification_reminder_dialog_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14208621',
+        },
+      ],
     },
   ],
 });

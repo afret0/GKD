@@ -6,16 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
-      activityIds: ['com.ukids.client.phone.parent.ParentClientHomeActivity'],
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
-          matches: '[id="com.ukids.client.phone:id/dialog_dismiss_btn_two"]',
-          snapshotUrls: ['https://i.gkd.li/i/13400238'],
+          activityIds: '.parent.ParentClientHomeActivity',
+          matches: '[vid="dialog_dismiss_btn_two"]',
+          snapshotUrls: 'https://i.gkd.li/i/13400238',
         },
       ],
-      enable: true,
     },
   ],
 });

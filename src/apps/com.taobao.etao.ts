@@ -7,52 +7,59 @@ export default defineGkdApp({
     {
       key: 2,
       name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      activityIds: '.app.homev4.HomeV4Activity',
       rules: [
         {
           key: 0,
-          activityIds: [
-            'com.taobao.etao.app.home.view.NewHomeActivity',
-            'com.taobao.etao.app.homev4.HomeV4Activity',
-          ],
           matches:
-            'LinearLayout[childCount=2] > @RelativeLayout[clickable=true][childCount=1] > ImageView[childCount=0]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12739581',
-            'https://i.gkd.li/i/13670025',
-          ],
+            '@ImageView[width<150 && height<150] <2 FrameLayout < [vid="dialog_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/30859236',
         },
         {
           key: 1,
-          activityIds: 'com.taobao.etao.app.homev4.HomeV4Activity',
           matches:
-            '[text="一淘-首页红包升级-2312wf"] >5 View[childCount=3] > View[index=0][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/db5c7761-3a8b-4bc6-a61c-65dd30f61b9f',
-          snapshotUrls: 'https://i.gkd.li/i/14622468',
+            'ImageView[width<150 && height<150] < @[clickable=true] + [vid="dialog_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/30859577',
+        },
+        {
+          key: 2,
+          matches:
+            '@View[id=null][visibleToUser=true][width<150 && height<150][parent.childCount=3] <<n [vid="dialog_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/30859628',
+        },
+        {
+          key: 3,
+          activityIds: '.app.home.view.NewHomeActivity',
+          matches:
+            'ImageView[width<150 && height<150] < @RelativeLayout[clickable=true][childCount=1] <2 [childCount=2] < [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/30859526', //旧快照,无快查 (已转成webp截图)
         },
       ],
-      enable: true,
     },
     {
       key: 10,
-      name: '通知提示-请求打开系统通知提示信息',
-      desc: '自动点击提示信息的 x 按钮',
-      matchTime: 10000,
-      actionMaximum: 1,
+      name: '权限提示-通知权限',
+      desc: '点击x掉',
+      actionMaximum: 3,
       resetMatch: 'app',
       rules: [
         {
+          fastQuery: true,
+          activityIds: [
+            'com.taobao.sns.app.message.MessageActivity',
+            '.mine.MetaXMineActivity',
+            '.app.homev4.HomeV4Activity',
+          ],
           matches:
-            '[text^="打开消息通知"] + [text="去开启"] + ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12684278'],
-        },
-        {
-          matches:
-            '[text^="打开消息通知"] + FrameLayout > [text="去开启"] < FrameLayout + ImageView[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12684351'],
+            '@[text=null][clickable=true][width<150][childCount=0] -(1,2) [text*="开"][text*="通知"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12684278', // 旧快照,无快查属性
+            'https://i.gkd.li/i/12684351', // 旧快照
+            'https://i.gkd.li/i/30634250',
+          ],
         },
       ],
-      enable: true,
     },
   ],
 });

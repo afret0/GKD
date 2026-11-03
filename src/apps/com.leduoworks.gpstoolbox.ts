@@ -6,12 +6,15 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-首页占位广告',
-      activityIds: 'com.leduoworks.gpstoolbox.frmt.MainFrmtActivity',
-      fastQuery: true,
-      rules: '[id="com.leduoworks.gpstoolbox:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13062612',
-      enable: true,
+      name: '局部广告-首页占位广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.frmt.MainFrmtActivity',
+          matches: '[vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13062612',
+        },
+      ],
     },
   ],
 });

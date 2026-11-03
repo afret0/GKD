@@ -6,19 +6,24 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-信息流广告',
+      name: '局部广告-卡片广告',
+      desc: '点击关闭',
       rules: [
         {
           key: 0,
           fastQuery: true,
           activityIds: 'com.yupao.entry.MainActivity',
           matches: '[vid="ad_close"]',
-          snapshotUrls: 'https://i.gkd.li/i/14731762',
+          exampleUrls:
+            'https://m.gkd.li/57941037/42273686-b44a-4964-80a5-84b55e6ad75c',
+          snapshotUrls: 'https://i.gkd.li/i/14731764',
         },
         {
           key: 1,
           activityIds: 'com.yupao.entry.MainActivity',
           matches: '[text="广告"] <2 View +3 View > TextView[clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/123997dd-4783-4aac-a787-e02daccd43da',
           snapshotUrls: 'https://i.gkd.li/i/14732000',
         },
         {
@@ -32,17 +37,22 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14743452',
         },
       ],
-      enable: true,
     },
     {
       key: 2,
-      name: '局部广告-右侧浮窗广告',
-      resetMatch: 'app',
-      fastQuery: true,
-      activityIds: 'com.yupao.entry.MainActivity',
-      rules: '[vid="close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14731762',
-      enable: true,
+      name: '局部广告-悬浮广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          matchTime: 10000,
+          activityIds: 'com.yupao.entry.MainActivity',
+          matches: '@[vid="close"][visibleToUser=true] - [vid="flItemContent"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/42273686-b44a-4964-80a5-84b55e6ad75c',
+          snapshotUrls: 'https://i.gkd.li/i/14731764',
+        },
+      ],
     },
   ],
 });

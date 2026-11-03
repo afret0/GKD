@@ -6,15 +6,40 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-首页-网易云音乐弹窗广告',
-      resetMatch: 'app',
-      actionMaximum: 1,
+      name: '分段广告-推荐页卡片广告',
+      desc: '点击[关闭]-点击[直接关闭]',
+      fastQuery: true,
       activityIds: 'com.netease.cloudmusic.activity.MainActivity',
-      rules: '[vid="dsl_dialog_root"] >4 ImageView[index=1]',
-      exampleUrls:
-        'https://m.gkd.li/101449500/7471ea5e-df20-4340-971f-1acfccbe6fab',
-      snapshotUrls: 'https://i.gkd.li/i/14167946',
-      enable: true,
+      rules: [
+        {
+          key: 0,
+          matches: '[vid="tag_ad_banner"]',
+          snapshotUrls: 'https://i.gkd.li/i/15835795',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '[text="直接关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/15835857',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          action: 'back',
+          activityIds: 'com.netease.cloudmusic.activity.MainActivity',
+          matches: '[vid="dsl_dialog_root"]',
+          snapshotUrls: 'https://i.gkd.li/i/15860430',
+        },
+      ],
     },
   ],
 });

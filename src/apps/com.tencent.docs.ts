@@ -11,36 +11,56 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@LinearLayout > [id="com.tencent.docs:id/tv_gdt_ad_text"]',
-      snapshotUrls: 'https://i.gkd.li/i/13198082',
-      order: -10,
+      priorityTime: 10000,
+      rules: [
+        {
+          key: 0,
+          matches:
+            '@LinearLayout[clickable=true] - [text^="互动广告"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13198082',
+            'https://i.gkd.li/i/23557410',
+          ],
+        },
+      ],
     },
     {
       key: 1,
       name: '更新提示',
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@[desc="暂不更新"] + [desc="现在更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/13198091',
-      enable: true,
-      order: -9,
+      rules: [
+        {
+          activityIds: '.DocsFlutterActivity',
+          matches: '@[desc="暂不更新"] + [desc="现在更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/13198091',
+        },
+      ],
     },
     {
       key: 2,
-      name: '未分类-广告卡片',
-      activityIds: 'com.tencent.docs.DocsFlutterActivity',
-      rules: '[desc="限时购买"] + ImageView[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13198097',
-      enable: true,
+      name: '局部广告-卡片广告',
+      rules: [
+        {
+          activityIds: '.DocsFlutterActivity',
+          matches: '@ImageView[clickable=true] - [desc="限时购买"]',
+          snapshotUrls: 'https://i.gkd.li/i/13198097',
+        },
+      ],
     },
     {
       key: 3,
-      name: '未分类-广告弹窗',
-      actionDelay: 200,
-      activityIds: 'com.tencent.docs.DocsFlutterActivity',
-      rules: 'View[childCount=2] > @TextView[id=null][clickable=true] + View',
-      snapshotUrls: 'https://i.gkd.li/i/13242404',
-      enable: true,
+      name: '全屏广告-弹窗广告',
+      rules: [
+        {
+          actionDelay: 200,
+          activityIds: '.DocsFlutterActivity',
+          matches:
+            'View[childCount=2] > @TextView[id=null][clickable=true] + View',
+          snapshotUrls: 'https://i.gkd.li/i/13242404',
+        },
+      ],
     },
   ],
 });

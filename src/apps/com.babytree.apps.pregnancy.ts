@@ -5,22 +5,45 @@ export default defineGkdApp({
   name: '宝宝树孕育',
   groups: [
     {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      actionMaximumKey: 0,
+      priorityTime: 10000,
+      rules: [
+        {
+          key: 0,
+          matches:
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12614757',
+        },
+        {
+          key: 1,
+          matches:
+            '@View[childCount=0][clickable=true][visibleToUser=true] < RelativeLayout < FrameLayout + RelativeLayout >2 [text^="摇一摇"]',
+          snapshotUrls: 'https://i.gkd.li/i/15566228',
+        },
+      ],
+    },
+    {
       key: 2,
-      name: '未分类-弹出广告(偶发)',
-      activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
+      name: '全屏广告-弹窗广告',
+      activityIds: '.activity.SailfishActivity',
       rules: [
         {
           matches:
-            'ImageView[id="com.babytree.apps.pregnancy:id/bb_referenced_active_dialog_img_2"] + ImageView[id!=null][clickable=true]',
+            'ImageView[vid="bb_referenced_active_dialog_img_2"] + ImageView[id!=null][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12614834',
         },
       ],
-      enable: true,
     },
     {
       key: 3,
-      name: '未分类-首页右侧悬浮广告(偶发)',
-      activityIds: 'com.babytree.apps.pregnancy.activity.SailfishActivity',
+      name: '局部广告-首页右侧悬浮广告',
+      activityIds: '.activity.SailfishActivity',
       rules: [
         {
           matches:
@@ -28,7 +51,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12614838',
         },
       ],
-      enable: true,
     },
   ],
 });

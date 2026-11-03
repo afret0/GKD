@@ -7,19 +7,18 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      matchTime: 20000,
+      fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
-          matches:
-            '[id="com.wibo.bigbang.ocr:id/vivo_upgrade_negative_btn"][text="忽略本次"]',
+          activityIds:
+            'com.vivo.upgradelibrary.upmode.appdialog.VivoUpgradeActivityDialog',
+          matches: '[vid="vivo_upgrade_negative_btn"][text="忽略本次"]',
           snapshotUrls: 'https://i.gkd.li/i/13360281',
         },
       ],
-      enable: true,
-      order: -9,
     },
   ],
 });

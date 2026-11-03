@@ -7,13 +7,17 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      activityIds: 'cn.com.ruijie.wifibox.activity.MainActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
-        '@ImageView[id="cn.com.ruijie.magicbox:id/imageView_close"] +(2) RelativeLayout > LinearLayout > [text*="新版本"]',
+        {
+          activityIds: 'cn.com.ruijie.wifibox.activity.MainActivity',
+          matches:
+            '@ImageView[vid="imageView_close"] +(2) RelativeLayout > LinearLayout > [text*="新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/12642359', //旧快照
+        },
       ],
-      snapshotUrls: 'https://i.gkd.li/i/12642359',
-      enable: true,
-      order: -9,
     },
   ],
 });

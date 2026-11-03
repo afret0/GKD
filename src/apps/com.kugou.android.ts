@@ -10,6 +10,8 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
@@ -22,64 +24,112 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '[desc="createSkipView"]',
           position: {
-            left: 'width * 0.6794',
-            top: 'width * 0.3822',
+            left: 'width * 0.6858',
+            top: 'width * 0.3906',
           },
-          snapshotUrls: 'https://i.gkd.li/i/14606816',
+          matches: '[desc="createSkipView"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/fc4a38c9-20aa-4cfc-9a92-c20e9194418b',
+          snapshotUrls: 'https://i.gkd.li/i/14609953',
         },
       ],
-      order: -10,
     },
     {
       key: 1,
       name: '局部广告-卡片广告',
-      activityIds: 'com.kugou.android.app.MediaActivity',
+      matchRoot: true,
       rules: [
         {
           key: 0,
-          forcedTime: 5000,
+          fastQuery: true,
+          forcedTime: 10000,
+          activityIds: '.app.MediaActivity',
           matches:
-            'ViewGroup[childCount=2] > ImageView + @FrameLayout[clickable=true] > LinearLayout > ImageView',
-          exampleUrls:
-            'https://m.gkd.li/87047583/9e150986-2103-4130-a12f-12ed2b07ef90',
-          snapshotUrls: 'https://i.gkd.li/i/13558426',
+            'ViewGroup[childCount=2] > ImageView + @FrameLayout[clickable=true] > LinearLayout > ImageView <<n [id="android:id/list"]',
+          snapshotUrls: 'https://i.gkd.li/i/16434752',
         },
         {
           key: 1,
+          fastQuery: true,
+          activityIds: '.app.MediaActivity',
           matches:
-            'TextView[text!=null] <2 ViewGroup[childCount=6] > ImageView[desc="关闭"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/adb9a250-d23d-48ef-b1a5-5e828d56cb97',
+            '@ImageView[desc="关闭"][visibleToUser=true][clickable=true] <n ViewGroup < LinearLayout <(2,3) [id="android:id/list"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14964889',
             'https://i.gkd.li/i/15024041',
+            'https://i.gkd.li/i/15468481',
+            'https://i.gkd.li/i/16200618',
+            'https://i.gkd.li/i/26493761',
           ],
         },
         {
           key: 2,
+          activityIds: '.app.MediaActivity',
           matches: '[desc="关闭广告"][clickable=true][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/8bd6dafc-e610-4c0d-a486-02a11535e610',
           snapshotUrls: 'https://i.gkd.li/i/15024812',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: '.app.MediaActivity',
+          matches: '@ImageView[clickable=true] - [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/15520336',
+        },
+        {
+          key: 4,
+          forcedTime: 10000,
+          activityIds: '.app.MediaActivity',
+          matches:
+            'RelativeLayout > @RelativeLayout[clickable=true] > [desc="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/16114590',
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@ImageButton[clickable=true][childCount=0][visibleToUser=true] - LinearLayout > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/fcb3e4d2-73bf-49b5-9157-08cac0c11584',
+          snapshotUrls: 'https://i.gkd.li/i/18207953',
+        },
+        {
+          key: 6,
+          fastQuery: true,
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@ImageButton[childCount=0][clickable=true] < RelativeLayout - LinearLayout > [text="广告"]',
+          exampleUrls: 'https://e.gkd.li/13b95c9a-1e6c-4d63-8372-1cff2261253c',
+          snapshotUrls: 'https://i.gkd.li/i/23687213',
+        },
       ],
-      enable: true,
     },
     {
       key: 2,
       name: '全屏广告-VIP弹窗',
       rules: [
         {
+          key: 0,
+          fastQuery: true,
           matches:
-            'RelativeLayout[childCount=2] > View + RelativeLayout[childCount=2] > @ImageView + RelativeLayout',
-          exampleUrls:
-            'https://m.gkd.li/87047583/84c1379f-5eb1-4982-b27b-35e267594101',
+            '@ImageView[clickable=true][visibleToUser=true] + RelativeLayout >2 [text*="豪华VIP已过期"]',
+          exampleUrls: 'https://e.gkd.li/cab683ac-801d-4089-8b5d-548954761c08',
           snapshotUrls: 'https://i.gkd.li/i/13548005',
         },
+        {
+          key: 1,
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@[id=null][text="退出页面" || text=""][width<200 && height<200] <(1,3) [childCount>3] >(1,2) [visibleToUser=true][text*="会员" || text*="VIP" || text*="支持蝰蛇"]',
+          exampleUrls: 'https://e.gkd.li/86e4a797-5366-4579-81ee-bc5354e95568',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17177377',
+            'https://i.gkd.li/i/18070974',
+            'https://i.gkd.li/i/22310624',
+            'https://i.gkd.li/i/29639642',
+          ],
+        },
       ],
-      enable: true,
     },
     {
       key: 3,
@@ -87,14 +137,13 @@ export default defineGkdApp({
       desc: '点击关闭',
       rules: [
         {
-          activityIds: 'com.kugou.android.app.MediaActivity',
+          activityIds: '.app.MediaActivity',
           matches: '[desc="看广告，免费听会员歌"] +2 [desc="关闭"]',
           exampleUrls:
             'https://m.gkd.li/57941037/dfd70c7c-3200-493e-9afa-404de5fcd2ff',
           snapshotUrls: 'https://i.gkd.li/i/14722104',
         },
       ],
-      enable: true,
     },
     {
       key: 4,
@@ -121,7 +170,73 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14722457',
         },
       ],
-      enable: true,
+    },
+    {
+      key: 5,
+      name: '局部广告-悬浮广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.app.MediaActivity',
+          matches:
+            '@[clickable=true][width<113][height<113] <(1,2) [childCount=2] > ImageView[desc=null][focusable=true][visibleToUser=true][width>120 && width<210][height>120 && height<210]',
+          exampleUrls: 'https://e.gkd.li/2b240676-4dac-4375-b238-2d570962efd1',
+          snapshotUrls: [
+            'https://i.gkd.li/i/17004903',
+            'https://i.gkd.li/i/18057265',
+            'https://i.gkd.li/i/27167415',
+          ],
+        },
+      ],
+    },
+    {
+      key: 6,
+      name: '全屏广告-签到弹窗',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          position: {
+            left: 'width * 0.9287',
+            top: 'width * 0.8935',
+          },
+          activityIds: '.app.flexowebview.uploadvideo.ContributeWebActivity',
+          matches:
+            '@FrameLayout > WebView > WebView[text="金币中心"] > View[id="body"] > TextView[id="root"][childCount=0]',
+          exampleUrls: 'https://e.gkd.li/f2a44161-d0a2-421d-a5e7-26fcf005daf2',
+          snapshotUrls: 'https://i.gkd.li/i/18071067',
+        },
+      ],
+    },
+    {
+      key: 7,
+      name: '功能类-自动关闭速听模式',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      activityIds: '.app.MediaActivity',
+      rules: [
+        {
+          key: 1,
+          fastQuery: true,
+          matches:
+            '@[desc="关闭"][visibleToUser=true] < RelativeLayout < RelativeLayout + FrameLayout >3 ViewGroup[desc="速听卡片"] >2 [text="喜欢"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/e24dda6a-c5fa-4c93-9026-cda7a4d9e205',
+          snapshotUrls: 'https://i.gkd.li/i/18164732',
+        },
+        {
+          preKeys: [1],
+          matches:
+            '@FrameLayout[clickable=true][visibleToUser=true] < RelativeLayout - [desc="暂停"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ffb25ec5-35b0-47ff-9387-54c757c90f29',
+          snapshotUrls: 'https://i.gkd.li/i/18165065',
+        },
+      ],
     },
   ],
 });

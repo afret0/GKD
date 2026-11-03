@@ -2,8 +2,25 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'com.bbk.theme',
-  name: 'i主题',
+  name: '(vivo)主题',
   groups: [
+    {
+      key: 0,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      forcedTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          key: 0,
+          matches: '[text*="跳过"][text.length<10][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/30565834',
+        },
+      ],
+    },
     {
       key: 1,
       name: '全屏广告-推广弹窗',
@@ -11,14 +28,13 @@ export default defineGkdApp({
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.bbk.theme.Theme',
+          activityIds: '.Theme',
           matches: '[vid="card_close_img"]',
           exampleUrls:
             'https://m.gkd.li/57941037/8207ec80-6e9d-4b9e-9880-7370d826c405',
           snapshotUrls: 'https://i.gkd.li/i/14904298',
         },
       ],
-      enable: true,
     },
     {
       key: 2,
@@ -33,7 +49,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14904036',
         },
       ],
-      enable: true,
     },
   ],
 });

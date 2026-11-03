@@ -5,33 +5,6 @@ export default defineGkdApp({
   name: '百度网盘-三星版本',
   groups: [
     {
-      key: -1,
-      name: '开屏广告',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      rules: [
-        {
-          key: 0,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/e88a7ab4-0aeb-4472-a49b-3252da21ae33',
-          snapshotUrls: 'https://i.gkd.li/i/12738323',
-        },
-        {
-          key: 1,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/7f1babd6-7da3-4733-aca9-80ddf3c0a84e',
-          snapshotUrls: 'https://i.gkd.li/i/14596658',
-        },
-      ],
-      order: -10,
-    },
-    {
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
@@ -40,11 +13,10 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          matches: '[id="com.baidu.netdisk.samsung:id/iv_close"]',
+          matches: '[vid="iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/12738331',
         },
       ],
-      enable: true,
     },
     {
       key: 2,
@@ -55,8 +27,7 @@ export default defineGkdApp({
         {
           key: 0,
           fastQuery: true,
-          matches:
-            '[id="com.baidu.netdisk.samsung:id/buy_product_root"] > [id="com.baidu.netdisk.samsung:id/iv_close"]',
+          matches: '[vid="buy_product_root"] > [vid="iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/12738388',
         },
         {
@@ -73,8 +44,24 @@ export default defineGkdApp({
             '@TextView[text=""][clickable=true] - TextView[text="去使用"][clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/12738449',
         },
+        {
+          key: 3,
+          fastQuery: true,
+          activityIds: 'com.baidu.netdisk.ui.transfer.TransferListTabActivity',
+          matches:
+            '[vid="close_probationary_guide_layout"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ab41b402-c4d0-439a-96f3-23029434aec4',
+          snapshotUrls: 'https://i.gkd.li/i/16423129',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.baidu.netdisk.ui.transfer.TransferListTabActivity',
+          matches: '[vid="youa_guide_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/ab41b402-c4d0-439a-96f3-23029434aec4',
+          snapshotUrls: 'https://i.gkd.li/i/16423129',
+        },
       ],
-      enable: true,
     },
     {
       key: 5,
@@ -85,17 +72,17 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.baidu.netdisk.ui.MainActivity',
           matches: '[vid="view_score_style"] > [text="以后再说"]',
           exampleUrls:
             'https://m.gkd.li/57941037/167a8392-23c8-4e84-a55f-4f91e7e560d8',
           snapshotUrls: 'https://i.gkd.li/i/14893286',
         },
       ],
-      enable: true,
     },
     {
       key: 6,
-      name: '通知提示',
+      name: '权限提示-通知权限',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
@@ -108,7 +95,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14893280',
         },
       ],
-      enable: true,
     },
     {
       key: 7,
@@ -125,7 +111,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14893285',
         },
       ],
-      enable: true,
     },
   ],
 });

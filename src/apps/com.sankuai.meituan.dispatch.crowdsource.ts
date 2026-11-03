@@ -22,11 +22,10 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 2,
-      name: '功能类-[保级成功]弹窗',
+      name: '其他-[保级成功]弹窗',
       desc: '点击关闭',
       rules: [
         {
@@ -39,7 +38,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14822280',
         },
       ],
-      enable: true,
     },
   ],
 });

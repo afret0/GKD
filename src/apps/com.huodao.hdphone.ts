@@ -7,24 +7,32 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-超级补贴日弹窗',
-      desc: '点击X',
+      desc: '点击关闭',
       fastQuery: true,
-      rules:
-        '[id="android:id/content"] >2 [id="com.huodao.hdphone:id/dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13927567',
-      enable: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[vid="iv_adv"] + [vid="dialog_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13927567',
+        },
+      ],
     },
     {
       key: 2,
       name: '局部广告-卡片广告',
       desc: '点击关闭',
-      fastQuery: true,
-      activityIds: 'com.huodao.hdphone.mvp.view.main.NewMainActivity',
-      rules: '[vid="iv_recycle_close"]',
-      exampleUrls:
-        'https://m.gkd.li/57941037/dc1534ca-9ab1-4d7b-8da4-6c7992882c94',
-      snapshotUrls: 'https://i.gkd.li/i/15052025',
-      enable: true,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.mvp.view.main.NewMainActivity',
+          matches: '[vid="iv_recycle_close"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/dc1534ca-9ab1-4d7b-8da4-6c7992882c94',
+          snapshotUrls: 'https://i.gkd.li/i/15052025',
+        },
+      ],
     },
   ],
 });

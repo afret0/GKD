@@ -11,11 +11,12 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules:
-        '@[id="com.daimajia.gold:id/iv_close"] -n LinearLayout [id="com.daimajia.gold:id/tv_title"][text="发现新版本"]',
-      snapshotUrls: 'https://i.gkd.li/i/13498703',
-      enable: true,
-      order: -9,
+      rules: [
+        {
+          matches: ['[text="发现新版本"]', '[vid="iv_close"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13498703',
+        },
+      ],
     },
   ],
 });

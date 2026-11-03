@@ -7,11 +7,17 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      activityIds: ['com.dianxinai.mobile.MainActivity'],
-      rules:
-        '@ViewGroup[clickable = true] > TextView[text $="s" && text.length=2]',
-      snapshotUrls: 'https://i.gkd.li/i/12847518',
-      order: -10,
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          matches: '[text$="s"][text.length=2]',
+          snapshotUrls: 'https://i.gkd.li/i/16115075',
+        },
+      ],
     },
   ],
 });

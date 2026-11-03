@@ -6,21 +6,27 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-购买会员-弹窗广告',
-      fastQuery: true,
-      activityIds: 'com.youloft.icloser.view.dialog.VipRetainPacketDialog',
-      rules: '[id="com.youloft.icloser:id/tv_later_buy"]',
-      snapshotUrls: 'https://i.gkd.li/i/13067183',
-      enable: true,
+      name: '全屏广告-购买会员弹窗广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.view.dialog.VipRetainPacketDialog',
+          matches: '[vid="tv_later_buy"]',
+          snapshotUrls: 'https://i.gkd.li/i/13067183',
+        },
+      ],
     },
     {
       key: 2,
-      name: '未分类-右下角悬浮窗小广告',
-      fastQuery: true,
-      activityIds: 'com.youloft.icloser.activity.MainActivity',
-      rules: '[id="com.youloft.icloser:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13164387',
-      enable: true,
+      name: '局部广告-右下角悬浮窗小广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13164387',
+        },
+      ],
     },
   ],
 });

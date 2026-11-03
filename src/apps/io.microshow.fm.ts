@@ -8,15 +8,18 @@ export default defineGkdApp({
       key: 1,
       name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          activityIds: 'io.microshow.fm.ui.activity.MainActivity',
+          fastQuery: true,
+          activityIds: '.ui.activity.MainActivity',
           matches:
-            '[id="android:id/content"] > RelativeLayout > FrameLayout[childCount=2] > Button[clickable=true][visibleToUser=true]',
+            '@Button[childCount=0][clickable=true][visibleToUser=true] <2 FrameLayout < RelativeLayout < [id="android:id/content"]',
           snapshotUrls: 'https://i.gkd.li/i/14953007',
         },
       ],
-      enable: true,
     },
   ],
 });

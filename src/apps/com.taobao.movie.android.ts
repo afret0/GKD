@@ -6,19 +6,16 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '开屏广告',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          exampleUrls: 'https://e.gkd.li/b0b7bd5e-89fc-4079-b17f-1b1cf4938658',
-          snapshotUrls: 'https://i.gkd.li/i/16498740',
+          fastQuery: true,
+          activityIds: '.common.minuscampaign.MinusDialogActivity',
+          matches: '@[clickable=true][width<151] - [vid="minus_dialog"]',
+          snapshotUrls: 'https://i.gkd.li/i/31164402',
+          exampleUrls: 'https://e.gkd.li/05265ff0-580f-4e4c-8432-9f45626beb5c',
         },
       ],
-      order: -10,
     },
   ],
 });

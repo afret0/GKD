@@ -6,8 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '未分类-关闭[个性推荐开启提示]',
-      activityIds: ['com.android.browser.BrowserActivity'],
+      name: '局部广告-关闭[个性推荐开启提示]',
+      activityIds: ['.BrowserActivity'],
       rules: [
         {
           matches:
@@ -15,16 +15,12 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12829403',
         },
       ],
-      enable: true,
     },
     {
       key: 1,
-      name: '未分类-主页信息流广告',
+      name: '分段广告-主页信息流广告',
       fastQuery: true,
-      activityIds: [
-        'com.android.browser.BrowserActivity',
-        'com.android.browser.flow.view.FeedbackDialog',
-      ],
+      activityIds: ['.BrowserActivity', '.flow.view.FeedbackDialog'],
       rules: [
         {
           key: 0,
@@ -45,7 +41,47 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: true,
+    },
+    {
+      key: 2,
+      name: '局部广告-搜索结果页底部必应推荐卡片',
+      desc: '点击关闭',
+      rules: [
+        {
+          activityIds: '.BrowserActivity',
+          matches: '[id="bnp_close_icon"][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b0d601cf-6cd1-411c-8555-bd4a8ee3335c',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14256707',
+            'https://i.gkd.li/i/14256761', // visibleToUser=true防止误触此界面
+          ],
+        },
+      ],
+    },
+    {
+      key: 3,
+      name: '分段广告-小说阅读页面广告',
+      fastQuery: true,
+      activityIds: 'com.duokan.shop.mibrowser.reading.SdkReaderActivity',
+      rules: [
+        {
+          key: 0,
+          excludeMatches:
+            '[vid="reading__close_ad_view__subtitle_tv"][visibleToUser=true]',
+          matches: '[vid="reading__app_ad_view__close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/5deac756-01a5-4ee0-a26f-9fb659115f78',
+          snapshotUrls: 'https://i.gkd.li/i/19718114',
+          excludeSnapshotUrls: 'https://i.gkd.li/i/19718162',
+        },
+        {
+          preKeys: [0],
+          matches:
+            '[vid="reading__close_ad_view__subtitle_tv"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/6e2c9635-4084-47e1-b255-4bc9728a7528',
+          snapshotUrls: 'https://i.gkd.li/i/19718162',
+        },
+      ],
     },
   ],
 });

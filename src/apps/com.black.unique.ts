@@ -6,16 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
       fastQuery: true,
-      activityIds: 'com.black.unique.feature.home.HomeActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '@ImageView[id="com.black.unique:id/iv_close"]',
+          activityIds: '.feature.home.HomeActivity',
+          matches: '@ImageView[vid="iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13499502',
         },
       ],
-      enable: true,
     },
   ],
 });

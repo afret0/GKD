@@ -9,31 +9,30 @@ export default defineGkdApp({
       name: '权限提示',
       fastQuery: true,
       matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: 'com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT',
           matches: 'Button[text="前往开启"] - Button[text="取消"]',
           snapshotUrls: 'https://i.gkd.li/i/13627649',
         },
       ],
-      enable: true,
     },
     {
       key: 2,
-      name: '通知提示',
+      name: '权限提示-通知权限',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
-      excludeActivityIds:
-        'com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT',
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '@ImageView[clickable=true] +(1,2) TextView[text="开启推送通知"]',
+          activityIds: 'com.zhangyue.iReader.bookshelf.ui.ActivityBookShelf',
+          matches: '@ImageView[clickable=true] + TextView[text="开启推送通知"]',
           snapshotUrls: 'https://i.gkd.li/i/13837961',
         },
       ],
-      enable: true,
     },
   ],
 });

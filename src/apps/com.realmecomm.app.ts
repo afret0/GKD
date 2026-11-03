@@ -6,15 +6,19 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '功能类-自动点击签到',
-      desc: '自动点击签到',
+      name: '功能类-自动签到',
       fastQuery: true,
-      resetMatch: 'app',
       actionMaximum: 1,
-      activityIds: 'com.android.realme2.home.view.MainActivity',
-      rules: '[vid="tv_check_in"][text="签到"]',
-      snapshotUrls: 'https://i.gkd.li/i/14321155',
-      enable: true,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.android.realme2.home.view.MainActivity',
+          matches: '[text="签到"][clickable=true][visibleToUser=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/18a5751c-0bbd-475d-be6a-5803307111cb',
+          snapshotUrls: 'https://i.gkd.li/i/14321155',
+        },
+      ],
     },
   ],
 });

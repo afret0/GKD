@@ -6,18 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-底部卡片广告',
+      name: '局部广告-底部卡片广告',
       rules: [
         {
-          activityIds: 'com.lynx.boot.LynxActivity',
           fastQuery: true,
-          matches: '[id="com.dz.xmbnxj:id/mix_img_close"]',
+          activityIds: 'com.lynx.boot.LynxActivity',
+          matches: '[vid="mix_img_close"]',
           exampleUrls:
             'https://m.gkd.li/99116490/40d3c3c9-9443-4c71-9a98-69efa38f8bfd',
           snapshotUrls: 'https://i.gkd.li/i/13399232',
         },
       ],
-      enable: true,
     },
   ],
 });

@@ -6,15 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-版本更新',
+      name: '更新提示',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.cheersedu.app.main.MainActivity',
-      rules: '[id="com.cheersedu.app:id/iv_version_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13315712',
-      enable: true,
+      rules: [
+        {
+          activityIds: '.main.MainActivity',
+          matches: '[vid="iv_version_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13315712',
+        },
+      ],
     },
   ],
 });

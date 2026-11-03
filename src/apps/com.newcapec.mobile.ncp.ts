@@ -6,21 +6,32 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '未分类-新版本提示',
-      desc: '新版本提示弹窗，点击右上角【X】按钮。（需手动开启）',
-      activityIds: 'com.wanxiao.basebusiness.activity.SplashActivity',
-      rules: '[id="com.newcapec.mobile.ncp:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12843377',
-      enable: true,
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.wanxiao.basebusiness.activity.SplashActivity',
+          matches: '[vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/12843377',
+        },
+      ],
     },
     {
       key: 11,
-      name: '未分类-密码过期提示弹窗',
-      desc: '密码过期提示弹窗，点击【取消】按钮。（需手动开启）',
-      activityIds: 'com.wanxiao.ui.activity.IndexActivity',
-      rules: '[id="com.newcapec.mobile.ncp:id/dialog_oppotion"]',
-      snapshotUrls: 'https://i.gkd.li/i/12843399',
-      enable: true,
+      name: '其他-密码过期提示弹窗',
+      desc: '点击"取消"按钮',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.wanxiao.ui.activity.IndexActivity',
+          matches: '[vid="dialog_oppotion"]',
+          snapshotUrls: 'https://i.gkd.li/i/12843399',
+        },
+      ],
     },
   ],
 });

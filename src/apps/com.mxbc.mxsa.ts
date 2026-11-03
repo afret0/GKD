@@ -6,16 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-主界面弹窗广告',
-      activityIds: ['com.mxbc.mxsa.modules.main.MainActivity'],
+      name: '全屏广告-主界面弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 1,
-          matches: '[id="com.mxbc.mxsa:id/close"]',
+          activityIds: '.modules.main.MainActivity',
+          matches: '[vid="close"]',
           snapshotUrls: 'https://i.gkd.li/i/12929345',
         },
       ],
-      enable: true,
     },
   ],
 });

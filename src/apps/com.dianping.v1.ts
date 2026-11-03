@@ -7,36 +7,40 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-主页推荐关注弹窗',
-      activityIds: ['com.dianping.main.guide.SplashActivity'],
-      rules:
-        'FrameLayout[id="android:id/content"] >2 FrameLayout > ImageView + FrameLayout[id=null][desc="关闭"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12727011',
-      enable: true,
-    },
-    {
-      key: 2,
-      name: '通知提示-消息页上方开启系统通知提醒',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: ['com.dianping.main.guide.SplashActivity'],
-      rules: {
-        matches:
-          '[text="去开启"][clickable=true] +2 @FrameLayout[clickable=true] > ImageView',
-        action: 'clickCenter',
-      },
-      snapshotUrls: 'https://i.gkd.li/i/12727070',
-      enable: true,
+      rules: [
+        {
+          activityIds: 'com.dianping.main.guide.SplashActivity',
+          matches:
+            'FrameLayout[id="android:id/content"] >2 FrameLayout > ImageView + FrameLayout[id=null][desc="关闭"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12727011',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '权限提示-通知权限',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches:
+            '[text="去开启"][clickable=true] +2 @FrameLayout[clickable=true] > ImageView',
+          action: 'clickCenter', // clickNode无响应
+          snapshotUrls: 'https://i.gkd.li/i/12727070',
+        },
+      ],
     },
     {
       key: 3,
       name: '局部广告-关闭[签到开红包]',
       desc: '点击右下角悬浮图片右上角的x图标',
-      activityIds: ['com.dianping.v1.NovaMainActivity'],
-      rules:
-        '[id="com.dianping.v1:id/float_image"] + [id="com.dianping.v1:id/close"][clickable=true]',
+      activityIds: ['.NovaMainActivity'],
+      rules: '[vid="float_image"] + [vid="close"][clickable=true]',
       snapshotUrls: 'https://i.gkd.li/i/12727366',
-      enable: true,
     },
     {
       key: 4,
@@ -44,42 +48,65 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          activityIds: 'com.dianping.v1.NovaMainActivity',
+          activityIds: '.NovaMainActivity',
           fastQuery: true,
-          matches: '[id="com.dianping.v1:id/operate_cross_icon"]',
+          matches: '[vid="operate_cross_icon"]',
           snapshotUrls: 'https://i.gkd.li/i/13538340',
         },
       ],
-      enable: true,
     },
     {
       key: 5,
-      name: '分段广告-推荐页卡片式广告',
+      name: '分段广告-推荐页卡片广告',
       rules: [
         {
           key: 0,
-          activityIds: 'com.dianping.v1.NovaMainActivity',
+          activityIds: '.NovaMainActivity',
           matches:
             '@[desc="reculike_delete"][clickable=true][visibleToUser=true] +3 [childCount=2]',
           snapshotUrls: [
             'https://i.gkd.li/i/13759369',
-            'https://i.gkd.li/i/14332054',
+            'https://i.gkd.li/i/14332054', // 限定 +3 [childCount=2] 防止误触
           ],
         },
         {
+          preKeys: [0],
           key: 1,
-          fastQuery: true,
           action: 'clickCenter',
-          activityIds: 'com.dianping.v1.NovaMainActivity',
-          matches: '[text*="重复出现"]',
+          activityIds: '.NovaMainActivity',
+          matches: '@[clickable=true] > [text="重复出现"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14238381',
             'https://i.gkd.li/i/14269115',
-            'https://i.gkd.li/i/14393253',
           ],
         },
+        {
+          preKeys: [0],
+          key: 2,
+          fastQuery: true,
+          activityIds: '.NovaMainActivity',
+          matches: '[text$="重复出现"][clickable=true]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/010c0314-e89b-468f-8143-691925a308a6',
+          snapshotUrls: 'https://i.gkd.li/i/14393256',
+        },
       ],
-      enable: true,
+    },
+    {
+      key: 6,
+      name: '功能类-选择地图时自动点击[更多]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.dianping.nova.picasso.DPPicassoBoxActivity',
+          matches: [
+            '[text="请选择地图"][visibleToUser=true]',
+            '@[clickable=true] > [text^="更多"][visibleToUser=true]',
+          ],
+          exampleUrls: 'https://e.gkd.li/ce751918-dab2-4670-a608-9edbcb3bdc0e',
+          snapshotUrls: 'https://i.gkd.li/i/23289239',
+        },
+      ],
     },
   ],
 });

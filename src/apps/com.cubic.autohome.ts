@@ -6,26 +6,40 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
-      activityIds: 'com.cubic.autohome.MainActivity',
-      rules: '[id="com.cubic.autohome:id/operate_show_exit_layout"]',
-      snapshotUrls: 'https://i.gkd.li/i/12836324',
-      enable: true,
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[vid="operate_show_exit_layout"]',
+          snapshotUrls: 'https://i.gkd.li/i/12836324',
+        },
+      ],
     },
     {
       key: 2,
-      fastQuery: true,
-      name: '局部广告-右下角领福利悬浮窗',
-      desc: '点击X',
+      name: '局部广告',
       rules: [
         {
-          activityIds: 'com.cubic.autohome.MainActivity',
+          key: 0,
+          name: '领福利悬浮窗',
+          fastQuery: true,
+          activityIds: '.MainActivity',
           matches:
             '@ImageView[visibleToUser=true] < * <2 * - [id="android:id/tabhost"]',
           snapshotUrls: 'https://i.gkd.li/i/13885414',
         },
+        {
+          key: 1,
+          name: '直播悬浮窗',
+          activityIds: '.MainActivity',
+          matches:
+            '[id="com.autohome.main.car:id/image_live_close" || id="com.autohome.main.car:id/view_ad_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/24221462',
+        },
       ],
-      enable: true,
     },
   ],
 });

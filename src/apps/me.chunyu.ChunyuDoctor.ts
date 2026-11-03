@@ -6,13 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '未分类-应用评分弹窗',
-      activityIds: [
-        'me.chunyu.ChunyuDoctor.Activities.WelcomeActivity',
-        'me.chunyu.ChunyuDoctor.Activities.MainActivity',
-      ],
+      name: '评价提示-应用评分弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            '.Activities.MainActivity',
+            '.Activities.WelcomeActivity',
+          ],
           matches:
             '[text="给应用评分"] +(2) RelativeLayout > [text="下次再说"]',
           snapshotUrls: [
@@ -21,7 +25,6 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: true,
     },
   ],
 });

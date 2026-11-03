@@ -6,25 +6,24 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '未分类-通知权限授权弹窗',
-      activityIds: [
-        'com.hpbr.bosszhipin.module.main.activity.MainActivity',
-        'com.hpbr.bosszhipin.module.launcher.WelcomeActivity',
-      ],
+      name: '权限提示-通知权限',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
-      resetMatch: 'activity',
+      resetMatch: 'app',
       rules: [
         {
-          matches: '@ImageView[id="com.hpbr.bosszhipin:id/iv_cancle"]',
+          activityIds: [
+            '.module.main.activity.MainActivity',
+            '.module.launcher.WelcomeActivity',
+          ],
+          matches: '@ImageView[vid="iv_cancle"]',
           snapshotUrls: [
             'https://i.gkd.li/i/13440781',
             'https://i.gkd.li/i/13623476',
           ],
         },
       ],
-      enable: true,
     },
   ],
 });

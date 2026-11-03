@@ -6,20 +6,32 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-首页广告弹窗',
-      activityIds: 'com.jd.jdlite.MainFrameActivity',
-      rules: '@[desc="关闭页面"] - FrameLayout >n [text="极速版弹窗"]',
-      snapshotUrls: 'https://i.gkd.li/i/12727396',
-      enable: true,
+      name: '全屏广告-首页弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainFrameActivity',
+          matches: '@[desc="关闭页面"] - FrameLayout >n [text="极速版弹窗"]',
+          snapshotUrls: 'https://i.gkd.li/i/12727396',
+        },
+      ],
     },
     {
       key: 10,
-      name: '未分类-请求通知权限弹窗',
-      activityIds: 'com.jd.jdlite.MainFrameActivity',
-      rules:
-        '@ImageView[clickable=true] - LinearLayout > [text="开启消息通知"]',
-      snapshotUrls: 'https://i.gkd.li/i/13062969',
-      enable: true,
+      name: '权限提示-通知权限',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainFrameActivity',
+          matches:
+            '@ImageView[clickable=true] - LinearLayout > [text="开启消息通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/13062969',
+        },
+      ],
     },
   ],
 });

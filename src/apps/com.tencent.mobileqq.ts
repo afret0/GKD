@@ -10,391 +10,289 @@ export default defineGkdApp({
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
+      scopeKeys: [13], // 规则组key13也是开屏广告
+      actionMaximumKey: 0, // key13-0
       resetMatch: 'app',
-      excludeActivityIds: [
-        'com.tencent.mobileqq.activity.ChatActivity',
-        'com.tencent.mobileqq.search.activity.UniteSearchActivity',
+      priorityTime: 10000,
+      rules: [
+        {
+          excludeActivityIds: [
+            '.activity.ChatActivity', // 在聊天界面禁用
+            '.search.activity.UniteSearchActivity', // 在搜索页面禁用
+          ],
+          excludeMatches: '[vid="root"]', // 在聊天界面禁用，若排除EditText[vid="input"]则滑动消息时会造成误触
+          matches: 'TextView[text^="跳过"][text.length<=10][!(vid="title")]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13093155',
+            'https://i.gkd.li/i/13207731',
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/13217807',
+            'https://i.gkd.li/i/13856647',
+            'https://i.gkd.li/i/13868177',
+            'https://i.gkd.li/i/14341023',
+            'https://i.gkd.li/i/15334565',
+          ],
+        },
       ],
-      rules: {
-        excludeMatches: '[vid="chat_item_content_layout"]',
-        matches: 'TextView[text^="跳过"][text.length<=10][vid!="title"]',
-      },
-      snapshotUrls: [
-        'https://i.gkd.li/i/13062244',
-        'https://i.gkd.li/i/13093155',
-        'https://i.gkd.li/i/13207731',
-        'https://i.gkd.li/i/13217807',
-        'https://i.gkd.li/i/13856647',
-        'https://i.gkd.li/i/13868177',
-      ],
-      order: -10,
     },
     {
       key: 1,
-      name: '局部广告-消息页面顶部横幅广告',
+      name: '局部广告',
       desc: '点击关闭',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
       rules: [
         {
           key: 0,
+          name: '好友动态详情页广告',
+          fastQuery: true,
+          activityIds: [
+            'com.qzone.reborn.base.QZoneTransparentShellActivity',
+            'com.qzone.reborn.base.QZoneShellActivity',
+          ],
           matches:
-            'TextView[text!=null] < LinearLayout + ImageView[desc="关闭"]',
+            '@[desc="关闭广告"][visibleToUser=true] <4 RelativeLayout <2 LinearLayout <2 LinearLayout < FrameLayout <n RecyclerView < FrameLayout - FrameLayout >2 [text="详情"]',
+          exampleUrls: 'https://e.gkd.li/b78a3e44-3bd9-445d-9199-e989269c2be3',
           snapshotUrls: [
-            'https://i.gkd.li/i/12892726',
-            'https://i.gkd.li/i/12774870',
-            'https://i.gkd.li/i/13207766',
-            'https://i.gkd.li/i/13386518',
+            'https://i.gkd.li/i/17009847',
+            'https://i.gkd.li/i/17815694',
+            'https://i.gkd.li/i/17827969',
           ],
         },
         {
           key: 1,
-          name: '消息页面-顶部惊喜礼包',
+          name: '推荐你试试这些玩法',
+          activityIds:
+            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
           fastQuery: true,
-          matches:
-            '@ImageView[childCount=0][visibleToUser=true] - FrameLayout - [text*="惊喜礼包"]',
-          snapshotUrls: 'https://i.gkd.li/i/13426912',
+          matches: '@[desc="关闭"] - [text="推荐你试试这些玩法"]',
+          exampleUrls: 'https://e.gkd.li/6cf71a22-0e21-4877-86a7-69d84353ad5a',
+          snapshotUrls: 'https://i.gkd.li/i/18236745',
         },
+        // 消息列表页面顶部广告
         {
           key: 2,
+          fastQuery: true,
+          activityIds: '.activity.SplashActivity',
           matches:
-            'ImageView + RelativeLayout[childCount=2] > TextView[text!=null] + ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/13476400',
+            '@ImageView[desc="关闭"][clickable=true][childCount=0] -2 [text$="试用超级会员"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/23837678',
         },
         {
           key: 3,
-          name: '稀有龙鹅卡掉落/瓜分现金',
+          fastQuery: true,
+          activityIds: '.activity.SplashActivity',
           matches:
-            'RelativeLayout[childCount=2] > ImageView + RelativeLayout[childCount=2] > ImageView',
+            '@ImageView[clickable=true][width<100 && height<100][desc="关闭" || desc=null][index!=0] <<n FrameLayout <(2,3) * <2 [childCount=4] <2 [vid="root"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/14155603',
-            'https://i.gkd.li/i/14217033',
+            'https://i.gkd.li/i/24230528',
+            'https://i.gkd.li/i/28426083',
+            'https://i.gkd.li/i/28425887',
+            'https://i.gkd.li/i/28425944',
+            'https://i.gkd.li/i/29140037',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/29032927', // [index!=0]
+        },
+        {
+          key: 4,
+          activityIds: '.activity.QPublicFragmentActivity',
+          matches:
+            'ImageView[width<62] < [visibleToUser=true][desc="关闭广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/33948809',
         },
       ],
-      enable: true,
     },
     {
       key: 2,
-      name: '综合广告-好友动态-广告卡片',
-      rules: [
-        {
-          key: 0,
-          activityIds: [
-            'com.tencent.mobileqq.activity.SplashActivity',
-            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-          ],
-          matches: 'View[desc="广告"] + ImageView[clickable=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12847842',
-            'https://i.gkd.li/i/13787345',
-          ],
-        },
-        {
-          key: 4,
-          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-          fastQuery: true,
-          matches: 'ImageView[clickable=true] < * -2 * >2 [text="广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/14138557',
-        },
-        {
-          preKeys: [0, 4],
-          key: 1,
-          activityIds: [
-            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-            'com.tencent.mobileqq.activity.SplashActivity',
-          ],
-          fastQuery: true,
-          matches: '@* > ImageView + [text="关闭此条广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12840889',
-            'https://i.gkd.li/i/13831867',
-            'https://i.gkd.li/i/14138556',
-          ],
-        },
-        {
-          preKeys: 0,
-          key: 2,
-          activityIds: [
-            'com.tencent.mobileqq.activity.SplashActivity',
-            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-          ],
-          fastQuery: true,
-          matches: '@[clickable=true] > * > ImageView + [text="隐藏此条动态"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13761147',
-            'https://i.gkd.li/i/13849730',
-          ],
-        },
-        {
-          key: 3,
-          fastQuery: true,
-          activityIds: [
-            'com.tencent.mobileqq.activity.SplashActivity',
-            'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-          ],
-          matches: '@ImageView[clickable=true] - [text="广告"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12749584',
-            'https://i.gkd.li/i/13627967',
-          ],
-        },
-        {
-          key: 5,
-          fastQuery: true,
-          position: {
-            left: 'width * 0.9534',
-            top: 'width * 0.0805',
-          },
-          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-          matches:
-            'LinearLayout[childCount=4] > LinearLayout > FrameLayout > FrameLayout > @View[visibleToUser=true] <<n [vid="root"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/940f4965-0058-4101-ab62-20d131e9c1d1',
-          snapshotUrls: 'https://i.gkd.li/i/14732983',
-        },
-      ],
-      enable: true,
-    },
-    {
-      key: 3,
-      name: '全屏广告-弹窗广告',
-      rules: [
-        {
-          key: 0,
-          fastQuery: true,
-          activityIds: [
-            'com.tencent.mobileqq.activity.SplashActivity',
-            'com.tencent.qqlive.module.videoreport.inject.dialog.ReportDialog',
-          ],
-          matches:
-            'ImageView[id="com.tencent.mobileqq:id/close"][clickable=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/13206663',
-            'https://i.gkd.li/i/12642081',
-          ],
-        },
-        {
-          key: 2,
-          name: '钱包页面弹窗广告',
-          activityIds: 'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
-          matches: '[desc="弹窗推荐活动"] + [desc="关闭"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/11e8f456-4c88-431a-ad58-f626bee61df9',
-          snapshotUrls: 'https://i.gkd.li/i/14822290',
-        },
-        {
-          key: 3,
-          name: '黄钻页面弹窗广告',
-          activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
-          matches:
-            'TextView[text.length=0&&clickable=true&&visibleToUser=true] + View > Button[text.length=0&&focusable=true]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12914978',
-            'https://i.gkd.li/i/12914886',
-          ],
-        },
-        {
-          key: 4,
-          fastQuery: true,
-          activityIds:
-            'com.tencent.mobileqq.activity.QPublicTransFragmentActivity',
-          matches:
-            'ViewGroup[childCount=6] > @ViewGroup[index=2][clickable=true][visibleToUser=true] <<n [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/i/15136939',
-        },
-      ],
-      enable: true,
-    },
-    {
-      key: 4,
-      name: '局部广告-顶部SVIP广告',
-      desc: '消息界面-搜索框和消息记录之间的广告卡片,点击关闭右侧x',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules:
-        'LinearLayout > TextView[text*="SVIP"||text*="超级会员"] + FrameLayout[childCount<=2] + [name$="ImageView"||name$="Button"][id!=null][clickable=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12706907',
-        'https://i.gkd.li/i/13107298',
-        'https://i.gkd.li/i/12793359',
-        'https://i.gkd.li/i/12855048',
-        'https://i.gkd.li/i/13228108',
-      ],
-      enable: true,
-    },
-    {
-      key: 5,
-      name: '分段广告-动态页-好友热播',
-      desc: '好友动态中的好友热播，自动选择“减少好友热播” - 默认关闭',
+      name: '分段广告',
+      desc: '①点击[广告/更多] ②点击[关闭这条] ③点击[直接关闭]',
       fastQuery: true,
       activityIds: [
-        'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-        'com.tencent.mobileqq.activity.SplashActivity',
+        'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity', //空间动态页
+        'com.qzone.reborn.layer.part.QzoneFeedProGalleryActivity', //好友空间相册页
+        'com.qzone.reborn.layer.part.QZoneFeedXGalleryActivity', //空间相册页2
+        '.guild.base.QPublicFragmentActivityForMainWebActivity', //频道页
+        'com.qzone.reborn.base.QZoneShellActivity', //空友爱看页
+        '.activity.SplashActivity', //空间动态页
       ],
       rules: [
         {
           key: 0,
-          name: '点击 [好友热播] 卡片右上角菜单按钮',
-          matches: '@Button[clickable=true] - [text="好友热播"]',
+          name: '①点击[广告]',
+          anyMatches: [
+            '[text="广告"][clickable=true]', //1️⃣
+            '@[clickable=true] > [text="广告"][visibleToUser=true]', //2️⃣
+          ],
           snapshotUrls: [
-            'https://i.gkd.li/i/12721427',
-            'https://i.gkd.li/i/14822579',
+            //选择器1️⃣
+            'https://i.gkd.li/i/30876372',
+            'https://i.gkd.li/i/33749525',
+
+            //选择器2️⃣
+            'https://i.gkd.li/i/21947672',
+            'https://i.gkd.li/i/24404962',
+            'https://i.gkd.li/i/28888622',
+          ],
+          exampleUrls: [
+            'https://e.gkd.li/ab1f2c2a-a565-42d4-ab24-49747ad558ec',
+            'https://e.gkd.li/b272a9a4-ba11-4bee-9608-123683475c68',
+            'https://e.gkd.li/76ce897a-7ff5-4edb-b3de-381187bcea1a',
           ],
         },
         {
-          preKeys: [0],
           key: 1,
-          name: '点击[减少好友热播]',
-          matches: '@[clickable=true] >2 [text="减少好友热播"]',
+          name: '①点击[更多]',
+          activityIds: '.activity.SplashActivity',
+          matches:
+            '@[desc="更多"][clickable=true] - [desc="广告"][visibleToUser=true] - LinearLayout > [text="今天"]',
+          snapshotUrls: 'https://i.gkd.li/i/33749900',
+          exampleUrls: 'https://e.gkd.li/4c4b12cf-777b-4e27-92ea-f764055025a2',
+        },
+
+        // 第二段
+        {
+          key: 50,
+          preKeys: [0, 1],
+          name: '②点击[关闭]此条广告',
+          matches:
+            '@[clickable=true] >(1,2) [text^="关闭"][text*="条"][text.length<10]',
           snapshotUrls: [
-            'https://i.gkd.li/i/12721433',
-            'https://i.gkd.li/i/14822576',
+            'https://i.gkd.li/i/21947698',
+            'https://i.gkd.li/i/24381598',
+            'https://i.gkd.li/i/24406932',
+            'https://i.gkd.li/i/26997293', // 关闭这条
+            'https://i.gkd.li/i/28888643',
+            'https://i.gkd.li/i/28942736',
+            'https://i.gkd.li/i/30876374',
+            'https://i.gkd.li/i/33749584',
+          ],
+          exampleUrls: [
+            'https://e.gkd.li/62772b6a-f349-4701-8c1d-5bfa08a4f6c9',
+            'https://e.gkd.li/4ff2b91f-7a3a-4514-9c23-0310c499ff9e',
+            'https://e.gkd.li/c26339b2-8df9-4aed-a3ba-4ec77e519574',
+          ],
+        },
+
+        // 第三段
+        {
+          key: 100,
+          preKeys: [50],
+          name: '③点击[直接关闭]',
+          matches: '[text="直接关闭"][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/26997174',
+            'https://i.gkd.li/i/28942737',
+            'https://i.gkd.li/i/30876376',
+            'https://i.gkd.li/i/33749791',
+          ],
+          exampleUrls: [
+            'https://e.gkd.li/a5da537d-d1cc-4420-a9a4-3329cf4a8fad',
+            'https://e.gkd.li/1fc58680-ecb3-4f8b-b204-b2d55fe20964',
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 7,
-      name: '功能类-扫一扫登录确认',
-      desc: '自动点击登录。包括 PC 登录确认、QQ 互联登录确认。',
-      fastQuery: true,
+      name: '功能类-登录授权',
+      desc: '自动点击登录',
       rules: [
         {
           key: 1,
-          name: '点击登录',
+          fastQuery: true,
+          matchRoot: true,
+          actionMaximum: 3,
+          actionCd: 500,
           activityIds: [
             'com.tencent.biz.qrcode.activity.QRLoginAuthActivity',
-            'com.tencent.mobileqq.activity.DevlockQuickLoginActivity',
-            'com.tencent.mobileqq.activity.DevLockQuickVerifyActivity',
+            'com.tencent.open.agent.PublicFragmentActivityForOpenSDK',
+            'com.tencent.open.agent.QuickLoginAuthorityActivity',
           ],
-          matches:
-            'Button[text*="登录"][clickable=true][visibleToUser=true][text.length<10]',
+          matches: [
+            '[text="登录确认" || text$="申请使用"][visibleToUser=true]',
+            'Button[text="登录" || text="同意" || text="确认"][clickable=true][visibleToUser=true]',
+          ],
           snapshotUrls: [
-            'https://i.gkd.li/i/13623520',
-            'https://i.gkd.li/i/12789287',
-            'https://i.gkd.li/i/13063027',
-            'https://i.gkd.li/i/13166314',
+            'https://i.gkd.li/i/20737721',
+            'https://i.gkd.li/i/20737651',
+            'https://i.gkd.li/i/20737675',
+            'https://i.gkd.li/i/20737673',
+            'https://i.gkd.li/i/22631619',
           ],
-        },
-        {
-          key: 2,
-          name: '点击同意',
-          activityIds:
-            'com.tencent.open.agent.PublicFragmentActivityForOpenSDK',
-          matches: 'Button[text="同意"][clickable=true][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14752498',
-        },
-        {
-          preKeys: [2],
-          key: 3,
-          name: '点击确认',
-          activityIds:
-            'com.tencent.open.agent.PublicFragmentActivityForOpenSDK',
-          matches: 'Button[text="确认"]',
-          snapshotUrls: 'https://i.gkd.li/i/14752519',
         },
       ],
-      enable: true,
     },
     {
       key: 8,
-      name: '功能类-消息页面顶部-无法接收新消息通知',
-      desc: '消息界面-搜索框和消息记录之间的通知卡片,点击关闭右侧x',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-      rules: 'RelativeLayout > [text^="当前无法接收"] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/12855441',
-      enable: true,
-    },
-    {
-      key: 9,
-      name: '局部广告-浮窗广告',
-      activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
+      name: '功能类-自动[勾选]同意协议',
+      desc: '✅已阅读并同意服务协议和隐私政策',
       rules: [
         {
-          key: 0,
+          fastQuery: true,
+          actionMaximum: 1,
+          activityIds: '.activity.LoginPublicFragmentActivity',
           matches:
-            'TextView[text="QQ等级规则"] + View > TextView[id=null&&text.length=0]',
-          snapshotUrls: 'https://i.gkd.li/i/12914734',
-        },
-        {
-          key: 1,
-          name: '右侧悬浮广告',
-          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-          matches:
-            'FrameLayout[desc="发表帖子"] - LinearLayout[id!=null] >3 ImageView[id!=null][clickable=false] - View[id!=null][clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12708844',
+            '@CheckBox[checked=false] + [text="已阅读并同意服务协议和隐私政策"]',
+          snapshotUrls: 'https://i.gkd.li/i/33854572',
+          exampleUrls: 'https://e.gkd.li/e38854d8-4cd5-41c0-9396-b2c95ef9a788',
         },
       ],
-      enable: true,
     },
     {
       key: 10,
-      name: '功能类-自动勾选原图',
-      desc: '发送图片时自动勾选原图',
-      fastQuery: true,
-      activityIds: [
-        'com.tencent.mobileqq.activity.SplashActivity',
-        'com.tencent.qqnt.qbasealbum.WinkHomeActivity',
-        'com.tencent.mobileqq.activity.photo.album.NewPhotoListActivity',
+      name: '功能类-自动[勾选]原图',
+      desc: '发送图片时自动勾选原图，可手动取消勾选',
+      actionMaximum: 1,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            '.activity.SplashActivity',
+            'com.tencent.qqnt.qbasealbum.WinkHomeActivity',
+            '.activity.photo.album.NewPhotoListActivity',
+          ],
+          matches: '@CheckBox[checked=false] + [text="原图"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12705556', // 未勾选原图
+            'https://i.gkd.li/i/12705559', // 已勾选原图
+            'https://i.gkd.li/i/13295142',
+            'https://i.gkd.li/i/13476247',
+          ],
+        },
       ],
-      rules: '@CheckBox[checked=false] + [text="原图"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/12705556',
-        'https://i.gkd.li/i/12705559',
-        'https://i.gkd.li/i/13295142',
-        'https://i.gkd.li/i/13476247',
-      ],
-      enable: true,
     },
     {
       key: 11,
-      name: '功能类-自动查看原图',
+      name: '功能类-自动点击查看原图',
       desc: '查看图片时自动点击原图',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.tencent.richframework.gallery.QQGalleryActivity',
-          matches: '[text^="查看原图"]',
-          snapshotUrls: 'https://i.gkd.li/i/14757735',
+          anyMatches: [
+            '[text^="查看原图"][clickable=true][visibleToUser=true]',
+            '@[clickable=true] > [text^="查看原图"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/14757735',
+            'https://i.gkd.li/i/24489364',
+          ],
         },
       ],
-      enable: true,
-    },
-    {
-      key: 12,
-      name: '分段广告-小世界评论区广告',
-      desc: '点击广告-弹出原因框-关闭此条广告',
-      activityIds: [
-        'com.tencent.mobileqq.activity.SplashActivity',
-        'com.tencent.biz.qqcircle.activity.QCircleFolderActivity',
-      ],
-      rules: [
-        {
-          key: 0,
-          matches:
-            'RelativeLayout[childCount=5] > @LinearLayout[clickable=true][childCount=2][id!=null] > TextView[text="广告"][id!=null]',
-          snapshotUrls: 'https://i.gkd.li/i/12847819',
-        },
-        {
-          preKeys: 0,
-          matches:
-            '@LinearLayout[clickable=true] > TextView[text="关闭此条广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/12847821',
-        },
-      ],
-      enable: true,
     },
     {
       key: 13,
       name: '开屏广告-QQ小程序开屏广告',
       desc: '点击右下角跳过',
+      fastQuery: true,
       actionMaximum: 1,
-      activityIds: [
-        'com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI',
-        'com.tencent.mobileqq.activity.miniaio.MiniChatActivity',
-      ],
+      priorityTime: 10000,
       rules: [
         {
+          key: 0,
+          activityIds: [
+            '.mini.appbrand.ui.AppBrandUI',
+            '.activity.miniaio.MiniChatActivity',
+          ],
           matches: [
             '[text="广告"][visibleToUser=true]',
             '[text="跳过"][visibleToUser=true]',
@@ -406,37 +304,6 @@ export default defineGkdApp({
           ],
         },
       ],
-      order: -10,
-    },
-    {
-      key: 15,
-      name: '分段广告-好友动态-为你推荐',
-      fastQuery: true,
-      activityIds: [
-        'com.tencent.mobileqq.activity.SplashActivity',
-        'com.qzone.reborn.feedx.activity.QZoneFriendFeedXActivity',
-      ],
-      rules: [
-        {
-          key: 0,
-          matches: '@ImageView[clickable=true] - [text="为你推荐"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12929620',
-            'https://i.gkd.li/i/13387606',
-          ],
-        },
-        {
-          preKeys: 0,
-          key: 1,
-          matches:
-            '@LinearLayout[id!=null][clickable=true] > LinearLayout > [text="减少此类推荐"]',
-          snapshotUrls: [
-            'https://i.gkd.li/i/12929619',
-            'https://i.gkd.li/i/13387605',
-          ],
-        },
-      ],
-      enable: true,
     },
     {
       key: 17,
@@ -449,231 +316,350 @@ export default defineGkdApp({
       rules: [
         {
           key: 0,
-          matches: '@[desc="关闭"] - * > [text="发现新版本"]',
-          snapshotUrls: 'https://i.gkd.li/i/13386719',
+          activityIds: [
+            '.activity.SplashActivity',
+            '.upgrade.ui.dialog.UpgradeActivity',
+            '.upgrade.activity.UpgradeActivity',
+          ],
+          matches:
+            '@[desc="关闭"] <2 * >2 Button[text^="立即" || text="马上升级"][text.length=4]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13386719',
+            'https://i.gkd.li/i/13526551',
+            'https://i.gkd.li/i/22455760',
+            'https://i.gkd.li/i/23393647',
+          ],
         },
         {
           key: 1,
-          matches: '@[text="稍后处理"] +2 [text="立即升级"]',
+          activityIds: '.upgrade.activity.UpgradeActivity',
+          matches: ['[text="立即升级"]', '[text="稍后处理"]'],
           snapshotUrls: 'https://i.gkd.li/i/14724108',
         },
       ],
-      enable: true,
-      order: -9,
     },
     {
       key: 18,
       name: '更新提示-消息页面-顶部',
       fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
+      // matchTime: 10000, // 不止刚进QQ的时候出现
+      // actionMaximum: 1,
+      // resetMatch: 'app',
       rules: [
         {
           key: 0,
-          activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
-          matches: '@ImageView[clickable=true] <n * > [text*="版本更新"]',
+          activityIds: '.activity.SplashActivity',
+          matches:
+            '@[clickable=true][text=null][visibleToUser=true] - [text*="版本更新" || text="点击下载" || text="立即安装" || text="点击更新"][text.length<15]',
           snapshotUrls: [
             'https://i.gkd.li/i/13255493',
             'https://i.gkd.li/i/13843140',
             'https://i.gkd.li/i/14138340',
             'https://i.gkd.li/i/13931212',
+            'https://i.gkd.li/i/16323755',
+            'https://i.gkd.li/i/17529150',
+            'https://i.gkd.li/i/26159150',
           ],
+          excludeSnapshotUrls: 'https://i.gkd.li/i/17920550',
         },
       ],
-      enable: true,
-      order: -9,
-    },
-    {
-      key: 19,
-      name: '更新提示-内测邀请弹窗',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules: [
-        {
-          key: 0,
-          matches: '@[desc="关闭"] - * > [text="QQ测试版"]',
-          snapshotUrls: 'https://i.gkd.li/i/13526551',
-        },
-      ],
-      enable: true,
-      order: -9,
-    },
-    {
-      key: 20,
-      name: '分段广告-钱包页卡片广告',
-      fastQuery: true,
-      activityIds: [
-        'com.tencent.mobileqq.activity.SplashActivity',
-        'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
-      ],
-      rules: [
-        {
-          key: 0,
-          matches: 'ViewGroup[childCount=6] > [text="广告"]',
-          snapshotUrls: ['https://i.gkd.li/i/13695087'],
-        },
-        {
-          preKeys: 0,
-          key: 1,
-          matches: '@LinearLayout > [text="关闭此条广告"]',
-          snapshotUrls: ['https://i.gkd.li/i/13699701'],
-        },
-      ],
-      enable: true,
-    },
-    {
-      key: 21,
-      name: '全屏广告-广告弹窗',
-      activityIds: 'com.tencent.mobileqq.activity.QPublicTransFragmentActivity',
-      rules: [
-        {
-          key: 0,
-          name: '元梦之星广告弹窗',
-          matches:
-            'ViewGroup[childCount=2] > ViewGroup[childCount=3][index=1] > ViewGroup[clickable=true][visibleToUser=true][index=1][childCount=0]',
-          snapshotUrls: 'https://i.gkd.li/i/13797876',
-        },
-        {
-          key: 1,
-          name: '现金瓜分弹窗',
-          matches:
-            'RelativeLayout >5 ViewGroup[childCount=6] > ViewGroup[index=2][clickable=true]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/a9fe74db-07b4-47e6-beed-80983f61d2e3',
-          snapshotUrls: 'https://i.gkd.li/i/14207286',
-        },
-      ],
-      enable: true,
-    },
-    {
-      key: 22,
-      name: '分段广告-天气页卡片广告',
-      desc: '点击关闭-点击关闭此条广告',
-      rules: [
-        {
-          key: 0,
-          fastQuery: true,
-          activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
-          matches: '[id="com.tencent.mobileqq:id/nca"]',
-          snapshotUrls: 'https://i.gkd.li/i/14019384',
-        },
-        {
-          preKeys: 0,
-          key: 1,
-          fastQuery: true,
-          activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
-          matches: '@LinearLayout[childCount=3] > [text="关闭此条广告"]',
-          snapshotUrls: 'https://i.gkd.li/i/14019401',
-        },
-        {
-          key: 2,
-          activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
-          matches: [
-            'ViewGroup[desc="返回"]',
-            'ViewGroup[desc="首页"]',
-            'ViewGroup[desc="分享"]',
-            'ViewGroup[childCount=6] > ViewGroup[childCount=2][clickable=true][visibleToUser=true]',
-          ],
-          snapshotUrls: 'https://i.gkd.li/i/14549503',
-        },
-        {
-          key: 3,
-          preKeys: 2,
-          activityIds: 'com.tencent.mobileqq.activity.QPublicFragmentActivity',
-          matches:
-            'View < @ViewGroup[clickable=true][visibleToUser=true] - ViewGroup > ViewGroup[childCount=6] > ViewGroup[childCount=2]',
-          snapshotUrls: 'https://i.gkd.li/i/14549504',
-        },
-      ],
-      enable: true,
-    },
-    {
-      key: 23,
-      name: '全屏广告-个人主页广告',
-      desc: '点击关闭',
-      rules: [
-        {
-          key: 0,
-          name: '迷你窝弹窗',
-          fastQuery: true,
-          action: 'back',
-          activityIds:
-            'com.tencent.mobileqq.profilecard.activity.FriendProfileCardActivity',
-          matches: '[text="开启迷你窝"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/882ab889-a145-4951-9a44-1dc192490c79',
-          snapshotUrls: 'https://i.gkd.li/i/14188980',
-        },
-        {
-          key: 1,
-          name: '个性装扮弹窗',
-          activityIds: 'cooperation.vip.ad.UserLeadingActivity',
-          matches: '[desc="关闭"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/15137056',
-        },
-      ],
-      enable: true,
     },
     {
       key: 24,
-      name: '局部广告-聊天页-顶部活动浮窗',
-      activityIds: 'com.tencent.mobileqq.activity.SplashActivity',
+      name: '局部广告-聊天页面广告',
       rules: [
         {
-          key: 0,
-          excludeMatches: ['[text*="正在语音通话"]', '[text*="正在一起听歌"]'],
+          key: 1,
+          name: '关键词广告',
+          fastQuery: true,
+          activityIds: [
+            '.profilecard.activity.FriendProfileCardActivity',
+            '.activity.ChatActivity',
+            '.activity.SplashActivity',
+          ],
           matches:
-            'FrameLayout[childCount=2] >4 FrameLayout[childCount=2] > FrameLayout[index=1] > RelativeLayout[childCount=4] > TextView[index=1] +2 ImageView',
+            'FrameLayout[childCount=2] >2 FrameLayout[childCount=2] >3 FrameLayout[childCount=2] > [text="跳过" || text="关闭"][clickable=true]',
           exampleUrls:
-            'https://m.gkd.li/57941037/3bf709fc-eefc-4d66-9a00-475738934cd7',
+            'https://m.gkd.li/57941037/4cf5bc02-d2c3-4ca4-833e-522a194e3131',
           snapshotUrls: [
-            'https://i.gkd.li/i/14178667',
-            'https://i.gkd.li/i/14193973',
-            'https://i.gkd.li/i/14734790',
+            'https://i.gkd.li/i/14183188',
+            'https://i.gkd.li/i/16549500',
+            'https://i.gkd.li/i/16555184',
           ],
         },
       ],
-      enable: true,
     },
     {
-      key: 25,
-      name: '全屏广告-腾讯文档页面-"使用App"弹窗',
-      desc: '点击关闭',
+      key: 27,
+      name: '功能类-自动领取群聊红包',
+      desc: '自己发的红包、专属红包、口令红包、私聊红包不领',
       rules: [
         {
+          key: 0,
           fastQuery: true,
-          activityIds:
-            'com.tencent.mobileqq.activity.TeamWorkDocEditBrowserActivity',
+          activityIds: '.activity.SplashActivity',
           matches:
-            '@TextView[clickable=true] + * > [text^="使用 APP"] <<n [vid="webview"]',
+            'ImageView[childCount=0] <<(1,2) RelativeLayout < FrameLayout +2 LinearLayout >3 @ViewGroup[clickable=true][!(getChild(childCount.minus(1)).text^="已")] + TextView[text="拼手气红包"]',
           exampleUrls:
-            'https://m.gkd.li/57941037/6efc2dfd-79f3-43b5-bf20-f59a88295ddb',
-          snapshotUrls: 'https://i.gkd.li/i/14188983',
+            'https://m.gkd.li/57941037/7a933a7f-dc5a-4eb7-8a6f-fe3cc4e8fb5e',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14221309',
+            'https://i.gkd.li/i/18574530',
+            'https://i.gkd.li/i/18725007',
+            'https://i.gkd.li/i/24551887',
+          ],
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          fastQuery: true,
+          activityIds: [
+            'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
+            'com.tencent.biz.TenpayActivity',
+          ],
+          anyMatches: [
+            '@[desc="关闭"][clickable=true] < RelativeLayout -2 ViewGroup >4 [text^="来晚一步"][visibleToUser=true]',
+            '[desc="拆红包"][visibleToUser=true]',
+          ],
+          exampleUrls:
+            'https://m.gkd.li/57941037/61006833-9806-45b2-b3a1-55b9b248958f',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14221242',
+            'https://i.gkd.li/i/18724880',
+            'https://i.gkd.li/i/24551748',
+          ],
+        },
+        {
+          preKeys: [1],
+          key: 2,
+          fastQuery: true,
+          activityIds: [
+            'cooperation.qwallet.plugin.QWalletToolFragmentActivity',
+            'com.tencent.biz.TenpayActivity',
+          ],
+          matches: '@[desc="返回"] +n [text="红包记录"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/b90e6a69-ac57-41a5-bd2c-c500b92a58ba',
+          snapshotUrls: [
+            'https://i.gkd.li/i/14221279',
+            'https://i.gkd.li/i/24551886',
+          ],
         },
       ],
-      enable: true,
     },
     {
-      key: 26,
+      key: 29,
       name: '功能类-申请入群后自动点击右上角关闭',
       actionMaximum: 1,
       rules: [
         {
           fastQuery: true,
-          activityIds: 'com.tencent.mobileqq.activity.QQBrowserActivity',
+          activityIds: '.activity.QQBrowserActivity',
           matches: [
             'TextView[text="入群申请中"][visibleToUser=true]',
             'TextView[text="关闭"][visibleToUser=true]',
           ],
-          exampleUrls:
-            'https://m.gkd.li/57941037/df526685-8a68-48cd-8328-0292079ff030',
           snapshotUrls: 'https://i.gkd.li/i/14235163',
         },
       ],
-      enable: true,
+    },
+    {
+      key: 31,
+      name: '功能类-授权登录时关闭获取QQ好友关系',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds:
+            'com.tencent.open.agent.PublicFragmentActivityForOpenSDK',
+          matches:
+            '@CompoundButton[checked=true] - RelativeLayout > [text="你的QQ好友关系"]',
+          exampleUrls: 'https://e.gkd.li/4d69a243-6a57-47ca-bc25-0a5353d80179',
+          snapshotUrls: 'https://i.gkd.li/i/16929347',
+        },
+      ],
+    },
+    {
+      key: 32,
+      name: '其他-联系人页面-顶部可能认识的人推荐',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.SplashActivity',
+          matches:
+            '@ImageView[childCount=0][clickable=true][visibleToUser=true] -2 [text="开启推荐，发现可能认识的人。"]',
+          exampleUrls: 'https://e.gkd.li/7922ab73-cc99-4559-b18c-5ab54dd9633a',
+          snapshotUrls: 'https://i.gkd.li/i/18237415',
+        },
+      ],
+    },
+    {
+      key: 33,
+      name: '功能类-自动解锁 Windows QQ',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      rules: [
+        {
+          activityIds:
+            'com.tencent.biz.qrcode.activity.UnlockPCQuickVerifyActivity',
+          matches: '[text="解锁"]',
+          snapshotUrls: 'https://i.gkd.li/i/15360265',
+        },
+      ],
+    },
+    {
+      key: 34,
+      name: '功能类-关闭体验模式提醒',
+      desc: '点击[我知道了]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.activity.QPublicFragmentActivity',
+          matches: [
+            '[text^="当前处于"][text*="体验模式"][visibleToUser=true]',
+            '[text="我知道了"][clickable=true]',
+          ],
+          snapshotUrls: 'https://i.gkd.li/i/24561058',
+        },
+      ],
+    },
+    {
+      key: 35,
+      name: '功能类-自动跳转第三方应用',
+      desc: '点击[允许]',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            '.activity.QQBrowserActivity',
+            '.filebrowser.FileBrowserActivityV2',
+          ],
+          matches: [
+            '[text$="打开其他应用"]',
+            '[text="允许"][clickable=true][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/25142977',
+            'https://i.gkd.li/i/30150628',
+          ],
+        },
+      ],
+    },
+    {
+      key: 36,
+      name: '功能类-不看或隐藏[官方Qzone]的动态',
+      desc: '点击动态右上角三个点-不看此条动态-确定',
+      rules: [
+        {
+          key: 0,
+          name: '①点击右边三个点',
+          fastQuery: true,
+          activityIds: [
+            '.activity.SplashActivity',
+            'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
+          ],
+          matches:
+            '@ImageView[clickable=true][width<160 && height<160] - * >2 [desc="官方Qzone"] <<(-n+8) ViewGroup +n * >(2,3) [text^="说点什么吧"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/26308400',
+            'https://i.gkd.li/i/26489612',
+          ],
+        },
+        {
+          key: 1,
+          preKeys: 0,
+          name: '②不看or隐藏此条动态',
+          fastQuery: true,
+          activityIds: [
+            '.activity.SplashActivity',
+            'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
+          ],
+          matches:
+            '@[clickable=true] >(1,2) [text^="不看" || text^="隐藏"][text$="动态"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/26308405', // 不看此条\n动态
+            'https://i.gkd.li/i/26489660', // 隐藏此条动态
+          ],
+        },
+        {
+          key: 2,
+          name: '③确定',
+          activityIds: '.activity.QPublicTransFragmentActivity',
+          matches: '[desc="确认不看此条动态吗？"] +n [desc="确定"]',
+          snapshotUrls: 'https://i.gkd.li/i/26308417',
+        },
+        {
+          key: 3,
+          preKeys: [1],
+          name: '④确定',
+          fastQuery: true,
+          activityIds: '.activity.SplashActivity',
+          matches: '[childCount=2] > [text="确定"]',
+          snapshotUrls: 'https://i.gkd.li/i/26489750', // 确认隐藏...吗
+        },
+      ],
+    },
+    {
+      key: 37,
+      name: '分段广告-QQ空间空友爱看',
+      desc: '①点击右侧折叠 ②[不感兴趣/关闭推荐] ③选择原因 ④点击[提交]',
+      fastQuery: true,
+      activityIds:
+        'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity',
+      rules: [
+        {
+          key: 0,
+          name: '①点击右侧折叠',
+          matches:
+            '@[clickable=true][index=parent.childCount.minus(1)] -2 [text="空友爱看"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/32656065',
+            'https://i.gkd.li/i/33508601', //推荐
+            'https://i.gkd.li/i/33665642',
+          ],
+        },
+        {
+          key: 1,
+          preKeys: [0],
+          name: '②不感兴趣/关闭推荐',
+          matches: '@[clickable=true] >2 [text="不感兴趣" || text="关闭推荐"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/32656067', //不感兴趣 (v9.3.60)
+            'https://i.gkd.li/i/33508604', //关闭推荐 (v9.2.90 旧版)
+            'https://i.gkd.li/i/33665763', //不感兴趣 (v9.3.75)
+          ],
+        },
+        {
+          key: 2,
+          preKeys: [1],
+          name: '③选择原因',
+          activityIds: '.activity.QPublicTransFragmentActivity',
+          matches: '[desc="没有我想看的类型 未选中"]',
+          snapshotUrls: 'https://i.gkd.li/i/32656073',
+        },
+        {
+          key: 3,
+          preKeys: [2],
+          name: '④提交',
+          activityIds: '.activity.QPublicTransFragmentActivity',
+          matches: '[desc$="已选中"] +n * > [desc="提交"]',
+          snapshotUrls: 'https://i.gkd.li/i/32656070',
+        },
+      ],
+    },
+    {
+      key: 39,
+      name: '局部广告-空间相册内广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.qzone.reborn.base.QZoneShellActivity',
+          matches:
+            '@ImageView[clickable=true][width<87] <2 [visibleToUser=true] - [childCount=3] >2 [text="广告"]',
+          snapshotUrls: 'https://i.gkd.li/i/30869035',
+        },
+      ],
     },
   ],
 });

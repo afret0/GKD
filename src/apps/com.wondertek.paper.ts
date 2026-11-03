@@ -6,16 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-应用内弹窗',
-      activityIds: ['cn.thepaper.paper.ui.main.MainActivity'],
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[id="com.wondertek.paper:id/second_num"] <2 [id="com.wondertek.paper:id/relative_layout"] + [id="com.wondertek.paper:id/close_photo"]',
-          snapshotUrls: ['https://i.gkd.li/i/12899226'],
+          activityIds: 'cn.thepaper.paper.ui.main.MainActivity',
+          matches: '[vid="relative_layout"] + [vid="close_photo"]',
+          snapshotUrls: 'https://i.gkd.li/i/12899226',
         },
       ],
-      enable: true,
     },
   ],
 });

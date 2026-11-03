@@ -6,8 +6,11 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
@@ -19,7 +22,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14680681',
         },
       ],
-      enable: true,
     },
   ],
 });

@@ -7,56 +7,39 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      actionMaximumKey: 0,
-      rules: [
-        {
-          key: 0,
-          matches: '[text*="跳过"][text.length<10][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/12867875',
-        },
-        {
-          key: 1,
-          position: {
-            left: 'width * 0.8981',
-            top: 'width * 0.1574',
-          },
-          matches: '[id="android:id/content"]',
-          exampleUrls:
-            'https://m.gkd.li/57941037/45daad88-68a3-41b9-933a-943eeae0e4ff',
-          snapshotUrls: 'https://i.gkd.li/i/14434685',
-        },
-      ],
-      order: -10,
-    },
-    {
-      key: 1,
-      name: '通知提示-请求推送通知弹窗',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: 'ImageView[id="com.zmzx.college.search:id/siv_dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12867853',
-      enable: true,
+      priorityTime: 10000,
+      rules: [
+        {
+          key: 0,
+          action: 'clickCenter',
+          matches:
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12867875',
+            'https://i.gkd.li/i/16812698',
+          ],
+        },
+      ],
     },
     {
       key: 2,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
           name: '腾讯广告',
           fastQuery: true,
           activityIds: [
-            'com.zmzx.college.search.activity.main.activity.MainActivity',
-            'com.zmzx.college.search.activity.questionsearch.camera.activity.PicSearchResultActivity',
-            'com.zmzx.college.search.activity.camerasdk.ZybCameraSDKActivity',
-            'com.zmzx.college.search.activity.common.CommonCacheHybridActivity',
+            '.activity.main.activity.MainActivity',
+            '.activity.questionsearch.camera.activity.PicSearchResultActivity',
+            '.activity.camerasdk.ZybCameraSDKActivity',
+            '.activity.common.CommonCacheHybridActivity',
           ],
-          matches: '[id="com.zmzx.college.search:id/iv_close"]',
+          matches: '[vid="iv_close"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12867751',
             'https://i.gkd.li/i/12894813',
@@ -67,18 +50,17 @@ export default defineGkdApp({
         {
           key: 1,
           name: '快手广告-1',
+          fastQuery: true,
           activityIds: [
-            'com.zmzx.college.search.activity.main.activity.MainActivity',
-            'com.zmzx.college.search.activity.questionsearch.camera.activity.PicSearchResultActivity',
+            '.activity.main.activity.MainActivity',
+            '.activity.questionsearch.camera.activity.PicSearchResultActivity',
           ],
-          matches: [
-            'ViewGroup[childCount=2] [text="广告"]',
-            'ViewGroup @ViewGroup[clickable=true][childCount=1] > ImageView',
-          ],
+          matches:
+            'ImageView < @ViewGroup[clickable=true] < ViewGroup <n * + ViewGroup >3 [text="广告"]',
           snapshotUrls: [
-            'https://i.gkd.li/i/13346628',
             'https://i.gkd.li/i/13451304',
             'https://i.gkd.li/i/14519779',
+            'https://i.gkd.li/i/14731371',
           ],
         },
         {
@@ -97,11 +79,21 @@ export default defineGkdApp({
             'com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity',
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           ],
-          matches: '[id$="tt_reward_full_count_down"]',
-          snapshotUrls: 'https://i.gkd.li/i/13929945',
+          matches:
+            '[id="com.byted.pangle.m:id/tt_reward_full_count_down_after_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/12893408',
+            'https://i.gkd.li/i/13929945',
+          ],
+        },
+        {
+          key: 5,
+          fastQuery: true,
+          activityIds: 'com.mercury.sdk.activity.InterstitialPortraitActivity',
+          matches: '[vid="iv_itr_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/15360368',
         },
       ],
-      enable: true,
     },
     {
       key: 3,
@@ -111,8 +103,8 @@ export default defineGkdApp({
           key: 0,
           fastQuery: true,
           activityIds: [
-            'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
-            'com.zmzx.college.search.activity.booksearch.result.activity.AnswerBrowseActivity',
+            '.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
+            '.activity.booksearch.result.activity.AnswerBrowseActivity',
           ],
           matches: '[vid="close_m_image_left_text_right_app_compliance"]',
           snapshotUrls: [
@@ -124,13 +116,12 @@ export default defineGkdApp({
           key: 1,
           fastQuery: true,
           activityIds:
-            'com.zmzx.college.search.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
+            '.activity.booksearch.result.activity.SearchScanCodeResultDxActivity',
           matches:
-            '[id^="com.zmzx.college.search:id/ad_flag_source"] - * > [id="com.zmzx.college.search:id/close"]',
+            '[id^="com.zmzx.college.search:id/ad_flag_source"] - * > [vid="close"]',
           snapshotUrls: 'https://i.gkd.li/i/13063381',
         },
       ],
-      enable: true,
     },
     {
       key: 5,
@@ -139,41 +130,49 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.zmzx.college.search:id/update_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13063373',
-        'https://i.gkd.li/i/13623469',
+      rules: [
+        {
+          activityIds: [
+            '.activity.main.activity.MainActivity',
+            '.activity.init.InitActivity',
+          ],
+          matches: '[vid="update_close"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13063373',
+            'https://i.gkd.li/i/13623469',
+          ],
+        },
       ],
-      enable: true,
-      order: -9,
     },
     {
       key: 6,
-      name: '通知提示-申请开启推送通知弹窗',
+      name: '权限提示-通知权限',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          matches:
-            '[text="开启推送通知"] - [id="com.zmzx.college.search:id/siv_dialog_close"]',
+          activityIds: '.activity.main.activity.MainActivity',
+          matches: '[text="开启推送通知"] - [vid="siv_dialog_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13440939',
         },
       ],
-      enable: true,
     },
     {
       key: 7,
       name: '评价提示-请求好评弹窗',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules:
-        '[id="com.zmzx.college.search:id/iv_logo"] + [id="com.zmzx.college.search:id/siv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13476308',
-      enable: true,
+      rules: [
+        {
+          activityIds: '.activity.camerasdk.ZybCameraSDKActivity',
+          matches: '[vid="iv_logo"] + [vid="siv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13476308',
+        },
+      ],
     },
     {
       key: 11,
@@ -185,15 +184,34 @@ export default defineGkdApp({
         {
           fastQuery: true,
           action: 'back',
-          activityIds:
-            'com.zmzx.college.search.activity.common.CommonCacheHybridActivity',
-          matches: '[text="邀好友得开学好礼"] <<n [vid="webview_root_layout"]',
+          activityIds: '.activity.common.CommonCacheHybridActivity',
+          matches:
+            '[visibleToUser=true][text="邀好友得开学好礼"] <<n [vid="webview_root_layout"]',
           exampleUrls:
             'https://m.gkd.li/57941037/d625fcaa-4cf3-4c92-9b27-10542b0262bb',
           snapshotUrls: 'https://i.gkd.li/i/14555042',
         },
       ],
-      enable: true,
+    },
+    {
+      key: 12,
+      name: '分段广告-底部卡片广告',
+      desc: '点击关闭-点击不感兴趣',
+      fastQuery: true,
+      activityIds: '.activity.booksearch.result.activity.AnswerBrowseActivity',
+      rules: [
+        {
+          key: 0,
+          matches: '@[desc$="dislike"] <<n [vid="rlBottomADContainer"]',
+          snapshotUrls: 'https://i.gkd.li/i/15902162',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/15902298',
+        },
+      ],
     },
   ],
 });

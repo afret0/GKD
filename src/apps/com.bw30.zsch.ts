@@ -6,12 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-升级弹窗',
+      name: '更新提示',
       fastQuery: true,
-      activityIds: ['com.bw.zsch.MainActivityTab'],
-      rules: '[id="com.bw30.zsch:id/tv_cancel"]',
-      snapshotUrls: ['https://i.gkd.li/i/13068699'],
-      enable: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.bw.zsch.MainActivityTab',
+          matches: '[vid="tv_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/13068699',
+        },
+      ],
     },
   ],
 });

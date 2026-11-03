@@ -6,19 +6,20 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 0,
           name: '字节广告',
-          activityIds: 'com.zmapp.fwatch.activity.NativeAdActivity',
           fastQuery: true,
-          matches:
-            '@[id="com.zmsoft.forwatch:id/ad_close"] - * >n [text="广告"]',
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: 'com.zmapp.fwatch.activity.NativeAdActivity',
+          matches: '[vid="ad_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13545995',
         },
       ],
-      enable: true,
     },
   ],
 });

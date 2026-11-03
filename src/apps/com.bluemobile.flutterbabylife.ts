@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-应用内广告弹窗',
+      name: '全屏广告-弹窗广告',
       matchTime: 10000,
       actionMaximum: 1,
       rules: [
@@ -15,11 +15,11 @@ export default defineGkdApp({
           name: '字节SDK',
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
-          matches: 'View[childCount=7] > View[index=1]',
+          matches:
+            '@Image[childCount=0][text=""][width<60 && height<60] < View[childCount=1] + View +n View > View[childCount=1] > TextView[text$="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13632639',
         },
       ],
-      enable: true,
     },
   ],
 });

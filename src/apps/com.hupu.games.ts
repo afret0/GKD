@@ -6,38 +6,52 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
+      name: '分段广告-信息流广告',
+      desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
+      fastQuery: true,
       activityIds: [
-        'com.hupu.games.main.MainActivity',
+        '.main.MainActivity',
         'com.hupu.android.bbs.detail.PostDetailActivity',
         'com.hupu.topic.TopicActivity',
+        'com.hupu.android.bbs.page.rating.ratingDetail.RatingDetailActivity',
       ],
-      fastQuery: true,
-      name: '未分类-推荐流广告',
-      desc: '点击卡片右上角广告文字,出现广告反馈,点击屏蔽该广告',
       rules: [
         {
           key: 0,
-          matches:
-            '@[id="com.hupu.games:id/shield_view"] >2 [id="com.hupu.games:id/tv_tag"][text="广告"]',
+          matches: '[vid="shield_view"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12511005',
             'https://i.gkd.li/i/13258026',
             'https://i.gkd.li/i/13259692',
+            'https://i.gkd.li/i/15360331',
           ],
         },
         {
-          preKeys: 0,
+          preKeys: [0],
           key: 1,
-          matches:
-            '@[clickable=true] > [id="com.hupu.games:id/tv_title"][text="屏蔽该广告"]',
+          matches: '@[clickable=true] > [text="屏蔽该广告" || text="不感兴趣"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12511010',
             'https://i.gkd.li/i/12534848',
             'https://i.gkd.li/i/13259699',
+            'https://i.gkd.li/i/15360360',
+            'https://i.gkd.li/i/17869227',
           ],
         },
       ],
-      enable: true,
+    },
+    {
+      key: 2,
+      name: '全屏广告',
+      desc: '点击x掉',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches: '[vid="iv_close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/27383159',
+        },
+      ],
     },
   ],
 });

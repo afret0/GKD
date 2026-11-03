@@ -6,8 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '未分类-授权第三方应用访问文件夹',
-      desc: '自动点击【使用此文件夹】->【允许】',
+      name: '功能类-授权第三方应用访问文件夹',
+      desc: '自动点击"使用此文件夹"->"允许"',
       activityIds: 'com.android.documentsui.picker.PickActivity',
       rules: [
         {
@@ -22,7 +22,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12799603',
         },
       ],
-      enable: true,
     },
   ],
 });

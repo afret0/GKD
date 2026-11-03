@@ -6,29 +6,34 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '局部广告-卡片式广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 0,
           name: '软件详情页',
           fastQuery: true,
-          actionDelay: 300,
+          actionDelay: 300, // 没有此字段会导致误触
           activityIds: [
-            'com.magicalstory.AppStore.appDetails.AppDetailsActivity',
-            'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
+            '.appDetails.AppDetailsActivity',
+            '.main.fragments.square.section.forumDetailsActivity',
           ],
-          matches:
-            '@ImageView < FrameLayout[childCount=1] <3 [childCount=5] <<n [vid="bannerLayout"] + [vid="itemUser"][visibleToUser=true]',
+          matches: [
+            '[vid="itemUser"][visibleToUser=true]',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView[childCount=0][visibleToUser=true] <<n [vid="bannerLayout"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14771070',
             'https://i.gkd.li/i/14771175',
-            'https://i.gkd.li/i/14771110',
+          ],
+          excludeSnapshotUrls: [
+            'https://i.gkd.li/i/14771110', // 限定 visibleToUser, 防止误触
+            'https://i.gkd.li/i/17879219', // 限定 visibleToUser, 防止误触
           ],
         },
         {
           key: 1,
           name: '搜索页面',
-          activityIds: 'com.magicalstory.AppStore.search.searchActivity',
+          activityIds: '.search.searchActivity',
           matches:
             'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView < FrameLayout +2 *[visibleToUser=true]',
           snapshotUrls: 'https://i.gkd.li/i/14771429',
@@ -37,7 +42,7 @@ export default defineGkdApp({
           key: 2,
           name: '首页',
           fastQuery: true,
-          activityIds: 'com.magicalstory.AppStore.main.MainActivity',
+          activityIds: '.main.MainActivity',
           matches: '[vid="button_close_ad"]',
           snapshotUrls: 'https://i.gkd.li/i/14668408',
         },
@@ -45,46 +50,67 @@ export default defineGkdApp({
           key: 3,
           name: '评论区顶部',
           fastQuery: true,
-          actionDelay: 300,
-          activityIds:
-            'com.magicalstory.AppStore.main.fragments.square.section.forumDetailsActivity',
-          matches:
-            '@ImageView < FrameLayout[childCount=1] <<n [vid="banner"] +2 [vid="title_browse"][visibleToUser=true]',
+          actionDelay: 300, // 没有此字段会导致误触
+          activityIds: '.main.fragments.square.section.forumDetailsActivity',
+          matches: [
+            '[vid="title_browse"][visibleToUser=true]',
+            'FrameLayout[childCount=5] > FrameLayout[childCount=1] > @ImageView <<n [vid="banner"]',
+          ],
           snapshotUrls: [
             'https://i.gkd.li/i/14758809',
             'https://i.gkd.li/i/14783076',
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 2,
-      name: '通知提示-公告',
+      name: '通知提示-公告弹窗',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.magicalstory.AppStore.main.MainActivity',
       rules: [
         {
-          matches:
-            '[text*="隐藏"][id="com.magicalstory.AppStore:id/btn_selectNegative"]',
-          snapshotUrls: 'https://i.gkd.li/i/13437553',
+          activityIds: '.main.MainActivity',
+          matches: '[text="隐藏"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/17892865',
         },
       ],
-      enable: true,
     },
     {
-      key: 5,
-      name: '功能类-签到页-自动签到',
-      desc: '签到页自动点击【签到】按钮',
+      key: 3,
+      name: '更新提示',
       fastQuery: true,
+      matchTime: 10000,
       actionMaximum: 1,
-      activityIds: 'com.magicalstory.AppStore.user.sign.signActivity',
-      rules: '[text="签到"][vid="button"]',
-      snapshotUrls: 'https://i.gkd.li/i/14168441',
-      enable: true,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds:
+            'com.cretin.www.cretinautoupdatelibrary.activity.UpdateType10Activity',
+          matches: '[vid="tv_update"] <2 * + * > [vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13459373',
+        },
+      ],
+    },
+    {
+      key: 4,
+      name: '局部广告-首页横幅广告',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.main.MainActivity',
+          matches:
+            '[vid="item_broadcast"] >2 [vid="button_close"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/c885f80c-9fd5-4fcc-9117-e8fed04ee300',
+          snapshotUrls: 'https://i.gkd.li/i/20259691',
+        },
+      ],
     },
   ],
 });

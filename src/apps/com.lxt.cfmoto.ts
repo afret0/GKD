@@ -6,18 +6,20 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 1,
           name: '首页弹窗广告',
+          fastQuery: true,
           activityIds: 'com.cfmoto.oilmoto.ui.MainCfActivity',
-          matches:
-            'RelativeLayout[childCount=2] > [id="com.lxt.cfmoto:id/image"] + [id="com.lxt.cfmoto:id/closeClick"]',
+          matches: '[vid="closeClick"]',
           snapshotUrls: 'https://i.gkd.li/i/13401967',
         },
       ],
-      enable: true,
     },
   ],
 });

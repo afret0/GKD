@@ -6,20 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-加速页-分享抽奖浮窗',
-      activityIds: 'cn.ccspeed.app.MainActivity',
+      name: '局部广告-加速页分享抽奖浮窗',
       fastQuery: true,
       matchTime: 10000,
-      resetMatch: 'activity',
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches:
-            'FrameLayout[id="cn.ccspeed:id/float_layout"] > ImageView - ImageView',
+          activityIds: '.app.MainActivity',
+          matches: '@ImageView[visibleToUser=true] + [vid="iv_float"]',
           snapshotUrls: 'https://i.gkd.li/i/13539299',
         },
       ],
-      enable: true,
     },
   ],
 });

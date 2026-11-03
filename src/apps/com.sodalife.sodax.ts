@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
       rules: [
         {
           key: 1,
@@ -19,14 +19,15 @@ export default defineGkdApp({
         {
           key: 10,
           name: '双十一广告',
-          activityIds:
-            'com.sodalife.sodax.libraries.ads.gromore.GroMoreSplashActivity',
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          activityIds: '.libraries.ads.gromore.GroMoreSplashActivity',
           matches:
             'ViewGroup[childCount=2] > ViewGroup + ViewGroup[clickable=true][childCount=1]',
           snapshotUrls: 'https://i.gkd.li/i/13400653',
         },
       ],
-      enable: true,
     },
   ],
 });

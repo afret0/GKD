@@ -7,13 +7,17 @@ export default defineGkdApp({
     {
       key: 0,
       name: '开屏广告',
-      fastQuery: true,
       matchTime: 10000,
-      resetMatch: 'app',
       actionMaximum: 1,
-      rules: '[vid="tv_welcome_guide"]',
-      snapshotUrls: 'https://i.gkd.li/i/14809185',
-      order: -10,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          fastQuery: true,
+          matches: '[vid="tv_welcome_guide"]',
+          snapshotUrls: 'https://i.gkd.li/i/14809185',
+        },
+      ],
     },
   ],
 });

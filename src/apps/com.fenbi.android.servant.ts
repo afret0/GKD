@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-升级弹窗',
+      name: '其他-升级弹窗',
       activityIds: 'com.fenbi.android.module.home.HomeActivity',
       rules: [
         {

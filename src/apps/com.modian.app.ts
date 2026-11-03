@@ -6,16 +6,15 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-「我的」界面广告条',
-      activityIds: 'com.modian.app.ui.activity.MainActivity',
+      name: '局部广告-[我的]界面广告条',
       rules: [
         {
-          matches:
-            '[id="com.modian.app:id/banner_view"] + [id="com.modian.app:id/iv_close"]',
+          fastQuery: true,
+          activityIds: '.ui.activity.MainActivity',
+          matches: '[vid="fl_banner_layout"] > [vid="iv_close"]',
           snapshotUrls: 'https://i.gkd.li/i/13610188',
         },
       ],
-      enable: true,
     },
   ],
 });

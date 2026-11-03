@@ -11,10 +11,35 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '@ImageView[clickable=true] + [text="检测到新版本"]',
-      snapshotUrls: 'https://i.gkd.li/i/14987173',
-      enable: true,
-      order: -9,
+      rules: [
+        {
+          activityIds: 'com.allsaints.music.MainActivity',
+          matches: '@ImageView[clickable=true] + [text="检测到新版本"]',
+          snapshotUrls: 'https://i.gkd.li/i/14987173',
+        },
+      ],
+    },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'com.allsaints.ad.sjy.reward.SRewardLoadingActivity',
+            'com.allsaints.music.MainActivity',
+          ],
+          matches: [
+            '[vid="btnFreeListening"][visibleToUser=true]',
+            '[vid="close"][visibleToUser=true]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/16200623',
+            'https://i.gkd.li/i/21175600',
+          ],
+        },
+      ],
     },
   ],
 });

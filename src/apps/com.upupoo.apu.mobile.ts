@@ -5,18 +5,19 @@ export default defineGkdApp({
   name: 'UPUPOO动态壁纸',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
+      key: 1,
+      name: '青少年模式',
+      desc: '点击"我知道了"',
       matchTime: 10000,
       resetMatch: 'app',
       actionMaximum: 1,
-      rules:
-        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13830230',
-        'https://i.gkd.li/i/14052232',
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[desc="青少年模式"] +3 [desc="我知道了"]',
+          snapshotUrls: 'https://i.gkd.li/i/14052188',
+        },
       ],
-      order: -10,
     },
   ],
 });

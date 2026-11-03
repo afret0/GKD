@@ -6,18 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-卡片式广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 0,
+          fastQuery: true,
           activityIds:
             'com.elinkway.infinitemovies.ui.activity.NewMainActivity',
-          fastQuery: true,
-          matches: '[id="com.le123.ysdq:id/ad_close_iv"]',
+          matches: '[vid="ad_close_iv"]',
           snapshotUrls: 'https://i.gkd.li/i/13635244',
         },
       ],
-      enable: true,
     },
   ],
 });

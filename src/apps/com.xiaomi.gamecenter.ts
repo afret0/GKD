@@ -6,12 +6,14 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-首页右侧悬浮广告',
-      activityIds: 'com.xiaomi.gamecenter.ui.MainTabActivity',
-      rules:
-        '[id="com.xiaomi.gamecenter:id/ad_view"] + [id="com.xiaomi.gamecenter:id/close_btn"]',
-      snapshotUrls: 'https://i.gkd.li/i/12715800',
-      enable: true,
+      name: '局部广告-首页右侧悬浮广告',
+      rules: [
+        {
+          activityIds: '.ui.MainTabActivity',
+          matches: '[vid="ad_view"] + [vid="close_btn"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715800',
+        },
+      ],
     },
   ],
 });

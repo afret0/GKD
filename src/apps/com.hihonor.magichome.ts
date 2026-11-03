@@ -6,32 +6,36 @@ export default defineGkdApp({
   groups: [
     {
       key: 10,
-      name: '未分类-首页顶部广告',
-      activityIds: 'com.hihonor.magichome.business.MainActivity',
-      rules: '[id="com.hihonor.magichome:id/item_close_image"]',
+      name: '局部广告-首页顶部广告',
+      activityIds: '.business.MainActivity',
+      rules: '[vid="item_close_image"]',
       snapshotUrls: 'https://i.gkd.li/i/12843930',
-      enable: true,
     },
     {
       key: 11,
-      name: '未分类-推荐服务声明',
-      desc: '推荐服务声明弹窗。默认点击【取消】按钮',
-      activityIds: 'com.hihonor.magichome.business.MainActivity',
+      name: '其他-推荐服务声明',
+      desc: '推荐服务声明弹窗。默认点击"取消"按钮',
+      activityIds: '.business.MainActivity',
       rules:
-        '[text$="推荐服务声明"] < LinearLayout < LinearLayout + LinearLayout > [id="com.hihonor.magichome:id/negative_btn"]',
+        '[text$="推荐服务声明"] < LinearLayout < LinearLayout + LinearLayout > [vid="negative_btn"]',
       snapshotUrls: 'https://i.gkd.li/i/12843976',
-      enable: true,
     },
     {
       key: 12,
-      name: '未分类-升级提示',
+      name: '更新提示',
       desc: '点击以后再说',
-      activityIds: 'com.hihonor.magichome.business.MainActivity',
       fastQuery: true,
-      rules:
-        'TextView[text="立即更新"] -2 [id="com.hihonor.magichome:id/negative_btn"][text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/12916700',
-      enable: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.business.MainActivity',
+          matches:
+            'TextView[text="立即更新"] -2 [vid="negative_btn"][text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/12916700',
+        },
+      ],
     },
   ],
 });

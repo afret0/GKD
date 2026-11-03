@@ -6,32 +6,37 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-公告弹窗',
+      name: '通知提示-公告弹窗',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.yunxiang.wuyu.MainActivity',
-      rules: '[desc^="人生嘛"] +4 ImageView[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13455634',
-      enable: true,
+      rules: [
+        {
+          activityIds: '.MainActivity',
+          matches: '[desc="我知道了"]',
+          snapshotUrls: 'https://i.gkd.li/i/13455634',
+        },
+      ],
     },
     {
       key: 3,
-      name: '未分类-广告弹窗',
+      name: '全屏广告-弹窗广告',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.yunxiang.wuyu.MainActivity',
+      activityIds: '.MainActivity',
       rules: [
         {
-          name: '【x】型',
+          key: 1,
+          name: '"x"型',
           matches:
             'ImageView < @ViewGroup[clickable=true] < ViewGroup +n ViewGroup [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13455628',
         },
         {
-          name: '【跳过】型',
+          key: 2,
+          name: '"跳过"型',
           matches: [
             'TextView[text="广告"]',
             '@ViewGroup > TextView[text="跳过"]',
@@ -39,7 +44,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13455629',
         },
       ],
-      enable: true,
     },
   ],
 });

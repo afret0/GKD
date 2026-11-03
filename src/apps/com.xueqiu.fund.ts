@@ -6,15 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-春节闲钱放哪里弹窗',
-      desc: '有误触风险',
-      fastQuery: true,
-      resetMatch: 'app',
-      actionMaximum: 1,
-      activityIds: 'com.xueqiu.fund.commonlib.FundHomeActivityV2',
-      rules: '[vid="image_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/14163901',
-      enable: true,
+      name: '全屏广告-基金页面弹窗广告',
+      desc: '点击关闭',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.commonlib.FundHomeActivityV2',
+          matches: '[vid="image_cancel"]',
+          exampleUrls:
+            'https://m.gkd.li/57941037/c43d58ab-a18c-4249-bc35-1c7aeab4c3ff',
+          snapshotUrls: 'https://i.gkd.li/i/14163901',
+        },
+      ],
     },
   ],
 });

@@ -6,14 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-版本更新',
+      name: '更新提示',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
-      rules: '[id="com.shangfang.gylm:id/iv_upgrade_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13643599',
-      enable: true,
+      rules: [
+        {
+          activityIds: '.mvp.ui.home.activity.UpdateActivityV2',
+          matches: '[vid="iv_upgrade_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13643599',
+        },
+      ],
     },
   ],
 });

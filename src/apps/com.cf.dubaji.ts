@@ -7,19 +7,19 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      activityIds: 'com.cf.dubaji.module.main.MainActivity',
       fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 0,
-          matches:
-            '[id="com.cf.dubaji:id/dlg_action_positive"][text="立即更新"]',
+          activityIds: '.module.main.MainActivity',
+          matches: '[vid="dlg_action_positive"][text="立即更新"]',
           action: 'back',
           snapshotUrls: 'https://i.gkd.li/i/13198107',
         },
       ],
-      enable: true,
-      order: -9,
     },
   ],
 });

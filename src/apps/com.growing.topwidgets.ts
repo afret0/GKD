@@ -9,7 +9,7 @@ export default defineGkdApp({
       name: '局部广告-卡片广告',
       desc: '点击关闭',
       fastQuery: true,
-      activityIds: 'com.growing.topwidgets.home.MainActivity',
+      activityIds: '.home.MainActivity',
       rules: [
         {
           key: 0,
@@ -27,7 +27,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/15137361',
         },
       ],
-      enable: true,
     },
     {
       key: 2,
@@ -39,23 +38,24 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
-            '@ImageView[clickable=true][visibleToUser=true] <(2,3) * >(2,3) [text="反馈"]',
+            '@ImageView[clickable=true][visibleToUser=true] <(2,3,4) * >(2,3,4) [text="反馈"]',
           snapshotUrls: [
             'https://i.gkd.li/i/14945552',
             'https://i.gkd.li/i/15286451',
+            'https://i.gkd.li/i/16703279',
           ],
         },
         {
           key: 1,
+          fastQuery: true,
+          matchTime: 10000,
+          actionMaximum: 1,
+          resetMatch: 'app',
           matches:
-            '[id="android:id/content"] >3 FrameLayout[childCount=2] > FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: [
-            'https://i.gkd.li/i/14964868',
-            'https://i.gkd.li/i/14969910',
-          ],
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null] - FrameLayout[childCount>2] >3 [text^="立即" || text$="应用" || text="了解更多" || text="查看详情"]',
+          snapshotUrls: 'https://i.gkd.li/i/14964868',
         },
       ],
-      enable: true,
     },
   ],
 });

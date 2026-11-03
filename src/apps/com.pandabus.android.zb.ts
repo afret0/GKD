@@ -6,14 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '未分类-广告弹窗',
+      name: '全屏广告-弹窗广告',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[id="com.pandabus.android.zb:id/iv_native_dislike"]',
-      snapshotUrls: 'https://i.gkd.li/i/13400177',
-      enable: true,
+      rules: [
+        {
+          matches: '[vid="iv_native_dislike"]',
+          snapshotUrls: 'https://i.gkd.li/i/13400177',
+        },
+      ],
     },
   ],
 });

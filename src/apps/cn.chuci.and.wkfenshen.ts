@@ -6,19 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-购买会员弹窗',
-      activityIds: 'cn.chuci.and.wkfenshen.ActMain',
+      name: '全屏广告-购买会员弹窗',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          fastQuery: true,
-          matches: [
-            '[id="cn.chuci.and.wkfenshen:id/dialog_local_buy_btn"]',
-            '[id="cn.chuci.and.wkfenshen:id/action_close"]',
-          ],
+          activityIds: '.ActMain',
+          matches: ['[vid="dialog_local_buy_btn"]', '[vid="action_close"]'],
           snapshotUrls: 'https://i.gkd.li/i/13226988',
         },
       ],
-      enable: true,
     },
   ],
 });

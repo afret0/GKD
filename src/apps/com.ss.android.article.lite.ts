@@ -2,81 +2,44 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'com.ss.android.article.lite',
-  name: '头条搜索极速版',
+  name: '今日头条极速版',
   groups: [
     {
-      key: 10,
-      name: '未分类-首页-红包弹窗',
-      activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
-      rules: '@[desc="关闭"] + [text$="现金红包"]',
-      snapshotUrls: 'https://i.gkd.li/i/12705414',
-      enable: true,
-    },
-    {
-      key: 11,
-      name: '未分类-首页-右侧悬浮广告',
-      activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
-      rules:
-        'FrameLayout[id!=null] > @ImageView[id!=null][clickable=true] + ImageView[id!=null]',
-      snapshotUrls: 'https://i.gkd.li/i/12705452',
-      enable: true,
-    },
-    {
-      key: 12,
-      name: '未分类-首页-你可能感兴趣的人',
-      activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
-      rules: '[text="你可能感兴趣的人"] + [desc="关闭"]',
-      snapshotUrls: 'https://i.gkd.li/i/12705427',
-      enable: true,
-    },
-    {
-      key: 20,
-      name: '未分类-任务页面-签到弹窗',
-      activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
+      key: 1,
+      name: '功能类-全自动续听书时长',
+      desc: '<03:45有效,时长不足自动看广告',
+      fastQuery: true,
+      activityIds: [
+        'com.ss.android.list.news.activity.AudioNewsListActivity',
+        'com.ss.android.excitingvideo.ExcitingVideoActivity',
+      ],
       rules: [
         {
+          key: 0, // 放前面优先判断
+          name: '③已完成-关闭', // 剩余时长大于 [text="03:45:00"] 则点击x掉
           matches:
-            'UIView[clickable=false] + LynxFlattenUI[clickable=true][visibleToUser=true]',
-          action: 'clickCenter',
-          snapshotUrls: 'https://i.gkd.li/i/12705439',
+            '[text^="03:" && text.substring(3,5).toInt()>45] - [text="剩余时长"] < * -3 @ImageView[width<102 && height<102] + [text^="领取成功"]',
+          snapshotUrls: 'https://i.gkd.li/i/26456102', //时长已满
         },
-      ],
-      enable: true,
-    },
-    {
-      key: 21,
-      name: '未分类-任务页面-右侧悬浮红包',
-      activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
-      rules: 'UIScrollView + UIView + UISvg',
-      snapshotUrls: 'https://i.gkd.li/i/12705447',
-      enable: true,
-    },
-    {
-      key: 22,
-      name: '未分类-任务页面-答题弹窗',
-      activityIds: 'com.ss.android.article.lite.activity.SplashActivity',
-      rules: [
         {
+          key: 1,
+          name: '①点击看视频', // 剩余时长小于 [text="03:45:00"] 则继续去观看
           matches:
-            '[text^="答对"][text$="金币"] + FlattenUIImage[clickable=true]',
-          action: 'clickCenter',
-          snapshotUrls: 'https://i.gkd.li/i/12705456',
+            '[text.get(1).toInt()<3 || (text^="03:" && text.substring(3,5).toInt()<45)] - [text="剩余时长"] < * + [text^="看视频领取"][clickable=true]',
+          // matches: '[text="剩余时长"] < * + [text^="看视频领取"][clickable=true]', // 前面key0判断过剩余时长了,这里不判断应该也可以
+          snapshotUrls: 'https://i.gkd.li/i/26456075',
+          exampleUrls: 'https://e.gkd.li/dec3910f-ee59-482b-99e0-aba6de33c67c',
         },
-      ],
-      enable: true,
-    },
-    {
-      key: 30,
-      name: '未分类-搜索页面-搜索得金币弹窗',
-      activityIds: 'com.android.bytedance.search.SearchActivity',
-      rules: [
         {
-          matches: '[text^="搜索"][text$="金币"] + LynxFlattenUI + UISvg',
-          action: 'clickCenter',
-          snapshotUrls: 'https://i.gkd.li/i/12705468',
+          preKeys: [1],
+          name: '②领取成功x掉',
+          matches:
+            'ImageView < @ViewGroup[childCount=1][visibleToUser=true] <n ViewGroup[childCount>6] <<6 [id="android:id/content"]',
+          snapshotUrls: 'https://i.gkd.li/i/26456098', // 领取成功
+          excludeSnapshotUrls: 'https://i.gkd.li/i/26456099', // 倒计时未结束
+          exampleUrls: 'https://e.gkd.li/720a223e-70af-455a-965c-dcf1a7228921',
         },
       ],
-      enable: true,
     },
   ],
 });

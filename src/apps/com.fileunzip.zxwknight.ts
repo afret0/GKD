@@ -7,6 +7,9 @@ export default defineGkdApp({
     {
       key: 1,
       name: '全屏广告-弹窗广告',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           key: 1,
@@ -19,43 +22,48 @@ export default defineGkdApp({
         {
           key: 2,
           name: '腾讯广告',
+          fastQuery: true,
           matches:
-            '[id="android:id/content"] >(3,4) FrameLayout[childCount>4] > FrameLayout[childCount=1] > ImageView',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           snapshotUrls: 'https://i.gkd.li/i/13391833',
         },
       ],
-      enable: true,
     },
     {
       key: 2,
       name: '全屏广告-升级专业版弹窗',
-      fastQuery: true,
-      activityIds: [
-        'com.fileunzip.zxwknight.activity.MainActivity',
-        'com.fileunzip.zxwknight.activity.VideoPlayActivity',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            '.activity.MainActivity',
+            '.activity.VideoPlayActivity',
+          ],
+          matches:
+            '@[vid="ziputil_dialog_imageview"] < * > [text="升级到专业版"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13328212',
+            'https://i.gkd.li/i/14885336',
+          ],
+        },
       ],
-      rules: '@[vid="ziputil_dialog_imageview"] < * > [text="升级到专业版"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13328212',
-        'https://i.gkd.li/i/14885336',
-      ],
-      enable: true,
     },
     {
       key: 3,
-      name: '全屏广告-应用推荐广告',
+      name: '全屏广告-软件推广',
+      desc: '全能保险箱',
       fastQuery: true,
       rules: [
         {
           key: 0,
           matches: '[vid="dialog_recommend_back"]',
           exampleUrls:
-            'https://m.gkd.li/101449500/e7cf2c1a-9323-4ef4-8c89-82f63244b24b',
-          snapshotUrls: 'https://i.gkd.li/i/14472982',
+            'https://m.gkd.li/57941037/de127f4b-5de6-41ab-a1ea-5a98f7eeab58',
+          snapshotUrls: 'https://i.gkd.li/i/14472568',
         },
         {
           key: 1,
-          activityIds: 'com.fileunzip.zxwknight.activity.MainActivity',
+          activityIds: '.activity.MainActivity',
           matches: '@[text="本次启动不再提示"][checked=false]',
           exampleUrls:
             'https://m.gkd.li/57941037/57e29faf-2806-4166-a21d-839f1479960d',
@@ -64,14 +72,13 @@ export default defineGkdApp({
         {
           preKeys: [1],
           key: 2,
-          activityIds: 'com.fileunzip.zxwknight.activity.MainActivity',
+          activityIds: '.activity.MainActivity',
           matches: '[vid="promote_vault_full_screen_close"]',
           exampleUrls:
             'https://m.gkd.li/57941037/57e29faf-2806-4166-a21d-839f1479960d',
           snapshotUrls: 'https://i.gkd.li/i/14885425',
         },
       ],
-      enable: true,
     },
     {
       key: 4,
@@ -88,8 +95,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14900121',
         },
       ],
-      enable: true,
-      order: -9,
     },
   ],
 });

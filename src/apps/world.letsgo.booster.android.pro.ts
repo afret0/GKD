@@ -2,28 +2,47 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'world.letsgo.booster.android.pro',
-  name: '快连VPN',
+  name: '快连 VPN',
   groups: [
     {
       key: 1,
-      name: '更新提示',
-      fastQuery: true,
-      resetMatch: 'app',
-      actionMaximum: 1,
-      rules: '[vid="close_update_tip"]',
-      snapshotUrls: 'https://i.gkd.li/i/14066056',
-      enable: true,
-      order: -9,
+      name: '通知提示-各种提示弹窗',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            'world.letsgo.booster.android.pages.home.HomeActivity',
+            'world.letsgo.booster.android.pages.guide.GuideActivity',
+          ],
+          matches:
+            '[text="我会设置" || text="快快收下" || text="知道了"][visibleToUser=true]',
+          exampleUrls: [
+            'https://e.gkd.li/0fe731a4-bf4c-4d35-a157-c1304e8df4ba',
+            'https://e.gkd.li/efeb874b-f3bf-4899-a069-387d020eb1f5',
+            'https://e.gkd.li/5868f38e-b929-4423-adfc-82b05ea1733c',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/23619426',
+            'https://i.gkd.li/i/23619427',
+            'https://i.gkd.li/i/23619428',
+          ],
+        },
+      ],
     },
     {
       key: 2,
-      name: '功能类-免费会员弹窗',
-      desc: '点击【快快收下】',
-      fastQuery: true,
-      activityIds: 'world.letsgo.booster.android.pages.home.HomeActivity',
-      rules: '[text="快快收下"]',
-      snapshotUrls: 'https://i.gkd.li/i/14072381',
-      enable: true,
+      name: '局部广告-顶部横幅',
+      desc: 'x掉',
+      rules: [
+        {
+          key: 0,
+          name: '①横幅更新提示',
+          fastQuery: true,
+          activityIds: 'world.letsgo.booster.android.pages.home.HomeActivity',
+          matches: '[vid="close_update_tip"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/26395787',
+        },
+      ],
     },
   ],
 });

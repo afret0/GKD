@@ -6,13 +6,16 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-版本弹窗',
-      activityIds: [
-        'com.ai.obc.cbn.app.ui.other.activity.MainActivity',
-        'com.ai.obc.cbn.app.ui.main.fragment.MainFragment',
-      ],
+      name: '更新提示',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            '.ui.other.activity.MainActivity',
+            '.ui.main.fragment.MainFragment$7$1',
+          ],
           matches: '[id$="/ivDis"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12617201',
@@ -20,7 +23,6 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: true,
     },
   ],
 });

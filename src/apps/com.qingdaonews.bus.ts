@@ -6,18 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '未分类-弹窗广告',
+      name: '全屏广告-弹窗广告',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      fastQuery: true,
       rules: [
         {
-          matches: '[id="com.qingdaonews.bus:id/iv_native_dislike"]',
+          matches: '[vid="iv_native_dislike"]',
           snapshotUrls: 'https://i.gkd.li/i/13467193',
         },
       ],
-      enable: true,
     },
   ],
 });

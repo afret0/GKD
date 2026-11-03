@@ -6,29 +6,34 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-弹窗广告',
-      activityIds: 'com.dmzj.manhua.ui.LaunchInterceptorActivity',
+      name: '全屏广告-弹窗广告',
       fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'activity',
       matchTime: 10000,
-      rules: '[id="com.dmzj.manhua:id/iv_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13542503',
-      enable: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.ui.LaunchInterceptorActivity',
+          matches: '[vid="iv_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13542503',
+        },
+      ],
     },
     {
       key: 2,
-      name: '未分类-主页-浮窗',
-      desc: '浮窗-您想运行会员系统吗？',
-      activityIds: 'com.dmzj.manhua.ui.home.HomeTabsActivitys',
+      name: '局部广告-悬浮广告',
+      desc: '点击取消',
       fastQuery: true,
-      actionMaximum: 1,
-      resetMatch: 'activity',
       matchTime: 10000,
-      rules:
-        '@[id="com.dmzj.manhua:id/ivAdClose"] - [id="com.dmzj.manhua:id/ivFloatAd"]',
-      snapshotUrls: 'https://i.gkd.li/i/13542506',
-      enable: true,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.ui.home.HomeTabsActivitys',
+          matches: '[vid="ivAdClose"]',
+          snapshotUrls: 'https://i.gkd.li/i/13542506',
+        },
+      ],
     },
   ],
 });

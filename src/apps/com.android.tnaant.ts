@@ -6,13 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '未分类-公告弹窗',
+      name: '通知提示-公告弹窗',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="公告"] +2 [text="我知道了"]',
-      snapshotUrls: 'https://i.gkd.li/i/13713449',
-      enable: true,
+      rules: [
+        {
+          activityIds: 'com.dd.antss.ui.activity.LaunchActivity',
+          matches: '[text="公告"] +2 [text="我知道了"]',
+          snapshotUrls: 'https://i.gkd.li/i/13713449',
+        },
+      ],
     },
   ],
 });

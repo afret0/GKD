@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-首页-信息流广告',
+      name: '分段广告-首页信息流广告',
       activityIds: ['com.baidu.tieba.tblauncher.MainTabActivity'],
       rules: [
         {
@@ -21,7 +21,6 @@ export default defineGkdApp({
           snapshotUrls: ['https://i.gkd.li/i/12904633'],
         },
       ],
-      enable: true,
     },
   ],
 });

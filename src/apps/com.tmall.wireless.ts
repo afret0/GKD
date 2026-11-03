@@ -6,48 +6,62 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-版本更新',
+      name: '更新提示',
       fastQuery: true,
-      activityIds: [
-        'com.tmall.wireless.splash.TMSplashActivity',
-        'com.tmall.wireless.maintab.module.TMMainTabActivity',
-        'com.tmall.wireless.webview.TMCommonWebViewActivity',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: [
+            '.splash.TMSplashActivity',
+            '.maintab.module.TMMainTabActivity',
+            '.webview.TMCommonWebViewActivity',
+            '.themis.container.TMThemisActivity',
+          ],
+          matches: '[vid="update_button_cancel"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13162603',
+            'https://i.gkd.li/i/13258201',
+            'https://i.gkd.li/i/13399536',
+            'https://i.gkd.li/i/19881137',
+          ],
+        },
       ],
-      rules: '[id="com.tmall.wireless:id/update_button_cancel"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13162603',
-        'https://i.gkd.li/i/13258201',
-        'https://i.gkd.li/i/13399536',
-      ],
-      enable: true,
     },
     {
       key: 2,
-      name: '未分类-弹窗广告',
-      activityIds: [
-        'com.tmall.wireless.maintab.module.TMMainTabActivity',
-        'com.tmall.wireless.turboweb.container.TurboWebViewActivity',
-        'com.tmall.wireless.webview.TMCommonWebViewActivity',
+      name: '全屏广告-弹窗广告',
+      rules: [
+        {
+          activityIds: [
+            '.maintab.module.TMMainTabActivity',
+            '.turboweb.container.TurboWebViewActivity',
+            '.webview.TMCommonWebViewActivity',
+          ],
+          matches:
+            'Image[id=null][clickable=false] < View + Image[id=null][clickable=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13222394',
+            'https://i.gkd.li/i/13222500',
+            'https://i.gkd.li/i/13222510',
+          ],
+        },
       ],
-      rules:
-        'Image[id=null][clickable=false] < View + Image[id=null][clickable=true]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13222394',
-        'https://i.gkd.li/i/13222500',
-        'https://i.gkd.li/i/13222510',
-      ],
-      enable: true,
     },
     {
       key: 3,
-      name: '未分类-系统通知',
+      name: '权限提示-通知权限',
       matchTime: 10000,
       actionMaximum: 1,
-      activityIds:
-        'com.tmall.wireless.messagebox.activity.TMMsgboxMainActivity',
-      rules: 'View[text="开启系统通知"] - View[clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/13258215',
-      enable: true,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.messagebox.activity.TMMsgboxMainActivity',
+          matches: 'View[text="开启系统通知"] - View[clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/13258215',
+        },
+      ],
     },
   ],
 });

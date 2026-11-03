@@ -37,7 +37,6 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: true,
     },
   ],
 });

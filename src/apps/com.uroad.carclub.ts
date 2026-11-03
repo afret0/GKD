@@ -6,17 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-卡片式广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 0,
-          activityIds: 'com.uroad.carclub.main.activity.MainActivity',
+          fastQuery: true,
+          activityIds: '.main.activity.MainActivity',
           matches:
-            '[id="com.uroad.carclub:id/ad_container_fl"] >n View[childCount=4] > TextView[index=2][clickable=true]',
+            'View[childCount=4] > @TextView[index=2][clickable=true] <<n [vid="ad_container_fl"]',
           snapshotUrls: 'https://i.gkd.li/i/13800067',
         },
       ],
-      enable: true,
     },
   ],
 });

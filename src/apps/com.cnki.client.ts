@@ -7,11 +7,16 @@ export default defineGkdApp({
     {
       key: 1,
       name: '更新提示',
-      activityIds: ['com.cnki.client.core.navigator.main.HomeActivity'],
-      rules: '[id="com.cnki.client:id/update_undo"]',
-      snapshotUrls: 'https://i.gkd.li/i/12854857',
-      enable: true,
-      order: -9,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.core.tramp.SplashActivity',
+          matches: '[vid="update_undo"]',
+          snapshotUrls: 'https://i.gkd.li/i/12854857',
+        },
+      ],
     },
   ],
 });

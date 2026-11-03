@@ -5,48 +5,19 @@ export default defineGkdApp({
   name: '皮皮虾',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
+      key: 1,
+      name: '青少年模式',
       actionMaximum: 1,
       resetMatch: 'app',
+      fastQuery: true,
       rules: [
         {
-          fastQuery: true,
-          matches:
-            'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView <<n [id="android:id/content"]',
-          snapshotUrls: 'https://i.gkd.li/i/14667409',
+          activityIds:
+            'com.sup.superb.m_teenager.view.EnterTeenagerModeDialogActivity',
+          matches: '[text$="青少年模式"] + [text="我知道了"]',
+          snapshotUrls: 'https://i.gkd.li/i/13796869',
         },
       ],
-      order: -10,
-    },
-    {
-      key: 2,
-      name: '综合广告-信息流广告',
-      desc: '伪装正常内容广告',
-      activityIds: 'com.sup.android.base.MainActivity',
-      rules: [
-        {
-          key: 0,
-          fastQuery: true,
-          matches: '@[text="关闭广告"] + RelativeLayout > [text="立即下载"]',
-          snapshotUrls: 'https://i.gkd.li/i/14471889',
-        },
-        {
-          key: 1,
-          matches:
-            'RecyclerView > FrameLayout[id!=null] >6 ImageView[clickable=true]',
-          snapshotUrls: 'https://i.gkd.li/i/14886478',
-        },
-        {
-          key: 2,
-          preKeys: 1,
-          fastQuery: true,
-          matches: '@RelativeLayout > [text="不感兴趣"]',
-          snapshotUrls: 'https://i.gkd.li/i/14886477',
-        },
-      ],
-      enable: true,
     },
     {
       key: 5,
@@ -54,9 +25,12 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="开启推送通知"] +2 * > [text="以后再说"]',
-      snapshotUrls: 'https://i.gkd.li/i/13691081',
-      enable: true,
+      rules: [
+        {
+          matches: '[text="开启推送通知"] +2 * > [text="以后再说"]',
+          snapshotUrls: 'https://i.gkd.li/i/13691081',
+        },
+      ],
     },
     {
       key: 6,
@@ -64,17 +38,21 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'com.sup.android.base.MainActivity',
-      rules:
-        'FrameLayout > RelativeLayout > @ImageView[clickable=true] + ImageView',
-      snapshotUrls: 'https://i.gkd.li/i/13624220',
-      enable: true,
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.sup.android.base.MainActivity',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] < RelativeLayout[childCount=2] < FrameLayout - [vid="tab_container"]',
+          snapshotUrls: 'https://i.gkd.li/i/13624220',
+        },
+      ],
     },
     {
       key: 7,
-      fastQuery: true,
       name: '更新提示',
-      desc: '点击我再想想',
+      desc: '点击[我再想想]',
+      fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -84,8 +62,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13858490',
         },
       ],
-      enable: true,
-      order: -9,
     },
     {
       key: 8,
@@ -97,6 +73,10 @@ export default defineGkdApp({
       resetMatch: 'app',
       rules: [
         {
+          activityIds: [
+            'com.sup.android.base.MainActivity',
+            'com.sup.android.base.praise.PraiseDialogActivity',
+          ],
           matches: ['[text^="喜欢皮皮虾吗"]', '[text="取消"]'],
           snapshotUrls: [
             'https://i.gkd.li/i/14005608',
@@ -104,23 +84,25 @@ export default defineGkdApp({
           ],
         },
       ],
-      enable: true,
     },
     {
       key: 9,
       name: '全屏广告-集五福弹窗',
       desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
           fastQuery: true,
           activityIds: 'com.sup.android.base.MainActivity',
-          matches: '[id="com.sup.android.superb:id/afa"]',
+          matches:
+            '@ImageView[clickable=true][visibleToUser=true][childCount=0] <2 RelativeLayout[childCount=2] < [id="android:id/content"]',
           exampleUrls:
             'https://m.gkd.li/57941037/246d1d0b-d493-4d40-bbb7-9c04ae6b457d',
           snapshotUrls: 'https://i.gkd.li/i/14151026',
         },
       ],
-      enable: true,
     },
     {
       key: 10,
@@ -136,7 +118,27 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/14471869',
         },
       ],
-      enable: true,
+    },
+    {
+      key: 11,
+      name: '分段广告-信息流广告',
+      desc: '点击展开-点击[不感兴趣]',
+      fastQuery: true,
+      activityIds: 'com.sup.android.base.MainActivity',
+      rules: [
+        {
+          key: 0,
+          matches:
+            'RecyclerView > FrameLayout[id!=null] >4 FrameLayout[childCount=5] > ViewGroup[childCount=1] > @ImageView[clickable=true][childCount=0] <<n [vid="view_pager"]',
+          snapshotUrls: 'https://i.gkd.li/i/14886478',
+        },
+        {
+          preKeys: [0],
+          key: 1,
+          matches: '@[clickable=true] > [text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/i/14886477',
+        },
+      ],
     },
   ],
 });

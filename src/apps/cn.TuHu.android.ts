@@ -6,25 +6,36 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-广告弹窗',
+      name: '全屏广告-弹窗广告',
       fastQuery: true,
-      activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
-      rules:
-        '@[id="cn.TuHu.android:id/imgClose"] - [id="cn.TuHu.android:id/rlContent"] > [id="cn.TuHu.android:id/img_jump"]',
-      snapshotUrls: 'https://i.gkd.li/i/13228818',
-      enable: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
+          matches: '@[vid="imgClose"] - [vid="rlContent"] > [vid="img_jump"]',
+          snapshotUrls: 'https://i.gkd.li/i/13228818', //无vid旧快照
+        },
+      ],
     },
     {
       key: 10,
+      name: '权限提示-通知权限',
       fastQuery: true,
-      name: '未分类-请求通知权限弹窗',
-      activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
-      rules: '[id="cn.TuHu.android:id/imgClose"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13228796',
-        'https://i.gkd.li/i/13256535',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'cn.TuHu.Activity.tuhutab.TuHuTabActivity',
+          matches: '[vid="imgClose"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13228796', //无vid旧快照
+            'https://i.gkd.li/i/13256535',
+          ],
+        },
       ],
-      enable: true,
     },
   ],
 });

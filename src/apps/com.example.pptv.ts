@@ -11,6 +11,8 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      actionMaximumKey: 0,
+      priorityTime: 10000,
       rules: [
         {
           key: 0,
@@ -19,22 +21,10 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          matches: '[id="com.example.pptv:id/view_count_shake"]',
+          matches: '[vid="view_count_shake"]',
           snapshotUrls: 'https://i.gkd.li/i/13761160',
         },
       ],
-      order: -10,
-    },
-    {
-      key: 1,
-      name: '青少年模式',
-      actionMaximum: 1,
-      resetMatch: 'app',
-      fastQuery: true,
-      rules: '@[text="我知道了"] - * > [text="未成年模式"]',
-      snapshotUrls: 'https://i.gkd.li/i/13761159',
-      enable: true,
-      order: -8,
     },
   ],
 });

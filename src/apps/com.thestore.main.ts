@@ -6,16 +6,19 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-促销广告',
-      desc: '关闭促销弹窗，也许有用呢',
-      activityIds: 'com.thestore.main.app.home.HomeActivity',
+      name: '全屏广告-弹窗广告',
+      desc: '关闭弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: '[id="com.thestore.main.home.feature:id/ad"] > TextView',
+          activityIds: '.app.home.HomeActivity',
+          matches:
+            '@TextView[clickable=true][childCount=0] <2 RelativeLayout[childCount=2] < FrameLayout < [parent=null]',
           snapshotUrls: 'https://i.gkd.li/i/13163686',
         },
       ],
-      enable: true,
     },
   ],
 });

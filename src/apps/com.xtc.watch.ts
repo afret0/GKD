@@ -6,32 +6,41 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-弹窗提醒',
-      desc: '已知包括APP升级提醒与开启通知提醒，自动点击关闭。',
+      name: '更新提示',
+      desc: '点击关闭',
       fastQuery: true,
-      activityIds: [
-        'com.xtc.widget.phone.popup.activity.CustomActivity14',
-        'com.xtc.widget.phone.popup.activity.CustomActivity13',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: 'com.xtc.widget.phone.popup.activity.CustomActivity14',
+          matches: ['[text="App功能更新了"]', '[vid="iv_close"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13197390',
+        },
       ],
-      rules: '[id="com.xtc.watch:id/iv_close"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13197390',
-        'https://i.gkd.li/i/13063274',
-      ],
-      enable: true,
     },
     {
       key: 3,
-      name: '未分类-开启通知提醒',
+      name: '权限提示-通知权限',
       fastQuery: true,
-      activityIds: ['com.xtc.watch.view.home.activity.XtcHomeActivity'],
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          matches: ['[id="com.xtc.watch:id/iv_notify_permission_close"]'],
-          snapshotUrls: ['https://i.gkd.li/i/13059965'],
+          key: 0,
+          activityIds: 'com.xtc.widget.phone.popup.activity.CustomActivity13',
+          matches: ['[text*="开启消息通知"]', '[vid="iv_close"]'],
+          snapshotUrls: 'https://i.gkd.li/i/13063274',
+        },
+        {
+          key: 1,
+          activityIds: '.view.home.activity.XtcHomeActivity',
+          matches: '[vid="iv_notify_permission_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13059965',
         },
       ],
-      enable: true,
     },
   ],
 });

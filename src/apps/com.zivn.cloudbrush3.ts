@@ -6,26 +6,25 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '未分类-信息流广告',
+      name: '分段广告-信息流广告',
       fastQuery: true,
-      activityIds: 'com.zivn.cloudbrush3.app.HomeActivity',
+      activityIds: '.app.HomeActivity',
       rules: [
         {
           key: 0,
-          name: '点击【x】',
+          name: '点击关闭',
           matches:
             '@View[clickable=true] < FrameLayout  -2 FrameLayout [text="广告"]',
           snapshotUrls: 'https://i.gkd.li/i/13425305',
         },
         {
-          preKeys: 0,
-          name: '点击【不感兴趣】',
+          preKeys: [0],
+          name: '点击[不感兴趣]',
           matches:
             '@LinearLayout > [id="com.byted.pangle.m:id/tt_item_tv"][text="不感兴趣"]',
           snapshotUrls: 'https://i.gkd.li/i/13425306',
         },
       ],
-      enable: true,
     },
   ],
 });

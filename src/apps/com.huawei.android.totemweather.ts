@@ -10,71 +10,68 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
+      priorityTime: 10000,
       rules: [
         {
-          fastQuery: true,
-          matches: [
-            '[id="com.huawei.android.totemweather:id/rl_splash_container"]',
-            '[text.length<=4][text^="跳过"]',
-          ],
-          action: 'clickCenter',
+          action: 'clickCenter', // 根据 https://github.com/gkd-kit/subscription/pull/1180#issuecomment-1767735683 反馈，此处使用 clickCenter 事件。
+          matches: '[id="com.huawei.hms.ads.uiengine:id/hiad_skip_text"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12928975',
             'https://i.gkd.li/i/13226636',
           ],
         },
       ],
-      order: -10,
     },
     {
-      key: 1,
-      name: '未分类-卡片式广告',
+      key: 2,
+      name: '分段广告-卡片广告',
       fastQuery: true,
       rules: [
         {
           key: 0,
-          activityIds:
-            'com.huawei.android.totemweather.composite.MarketCompositeActivity',
+          activityIds: ['.WeatherMainActivity', '.WeatherHome'],
           matches:
-            '[id="com.huawei.android.totemweather:id/promote_ad_cancel"]',
+            '[vid="rl_close_pps" || vid="ad_cancel"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13521221',
+            'https://i.gkd.li/i/13787501',
+            'https://i.gkd.li/i/13800100',
+            'https://i.gkd.li/i/14278462', // 使用visibleToUser=true防止在此页面误触
+            'https://i.gkd.li/i/15831584',
+          ],
+        },
+        {
+          key: 1,
+          activityIds: '.composite.MarketCompositeActivity',
+          matches: '[vid="promote_ad_cancel"]',
           snapshotUrls: 'https://i.gkd.li/i/13218197',
         },
         {
-          preKeys: 0,
-          key: 1,
-          activityIds: 'com.huawei.openalliance.ad.activity.FeedbackActivity',
-          matches:
-            '[id="com.huawei.android.totemweather:id/feedback_negative_flv"] > [text="直接关闭"]',
-          snapshotUrls: 'https://i.gkd.li/i/13259434',
-        },
-        {
           key: 2,
-          activityIds: 'com.huawei.android.totemweather.WeatherMainActivity',
+          fastQuery: true,
+          activityIds: '.news.main.content.ModulesActivity',
           matches:
-            '[id="com.huawei.android.totemweather:id/ad_cancel"][visibleToUser=true]',
-          snapshotUrls: 'https://i.gkd.li/i/13521221',
+            '@[clickable=true][text="负反馈"] <<n [vid="content_main_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/24688832',
         },
         {
-          key: 3,
-          activityIds: 'com.huawei.android.totemweather.WeatherHome',
-          matches: '[id="com.huawei.android.totemweather:id/ad_cancel"]',
-          snapshotUrls: 'https://i.gkd.li/i/13787501',
+          preKeys: [0, 1],
+          key: 99,
+          activityIds: [
+            'com.huawei.openalliance.ad.activity.FeedbackActivity',
+            '.news.main.content.ModulesActivity',
+          ],
+          anyMatches: [
+            '[text="直接关闭"]',
+            '@[clickable=true][text="直接关闭"] <<n [vid="content_main_view"]',
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/i/13259434',
+            'https://i.gkd.li/i/15831539',
+            'https://i.gkd.li/i/24688856',
+          ],
         },
       ],
-      enable: true,
-    },
-    {
-      key: 2,
-      name: '未分类-顶部广告条',
-      rules: [
-        {
-          key: 0,
-          activityIds: 'com.huawei.android.totemweather.WeatherMainActivity',
-          matches: '[vid="rl_close_pps"] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/13800100',
-        },
-      ],
-      enable: true,
     },
   ],
 });

@@ -6,16 +6,15 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-谷歌广告',
-      activityIds: 'com.mxtech.videoplayer.ad.ActivityMediaList',
+      name: '全屏广告-谷歌广告',
+      activityIds: '.ActivityMediaList',
       rules: [
         {
           matches:
             '[desc="Advertisement"] + View >(2) View + Button[clickable=true]',
-          snapshotUrls: ['https://i.gkd.li/i/12642204'],
+          snapshotUrls: 'https://i.gkd.li/i/12642204',
         },
       ],
-      enable: true,
     },
   ],
 });

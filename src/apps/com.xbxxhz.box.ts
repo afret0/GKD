@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
       desc: '点击关闭',
       rules: [
         {
@@ -33,13 +33,28 @@ export default defineGkdApp({
           fastQuery: true,
           activityIds: 'com.mango.appfile.print_finish.PrintFinishAct',
           matches:
-            'ImageView < @FrameLayout +2 FrameLayout >2 [text="打开或下载第三方应用"]',
+            '@ImageView[childCount=0][text=null][desc=null][id=null][visibleToUser=true][width<90 && height<90] < FrameLayout[childCount=1][text=null][desc=null][id=null][parent.childCount>3] <n FrameLayout >(2,3) [text^="立即" || text$="详情" || text^="了解" || text="去微信看看" || text$="应用" || text="进入小程序" || text="领取优惠" || text="跳转微信"]',
           exampleUrls:
             'https://m.gkd.li/57941037/b0c3be3a-64a7-477e-a022-8a503ebd2cf6',
           snapshotUrls: 'https://i.gkd.li/i/14741407',
         },
       ],
-      enable: true,
+    },
+    {
+      key: 2,
+      name: '更新提示',
+      desc: '点击关闭',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: 'com.mango.bridge.ui.update.AppUpdateTransAct',
+          matches: '[vid="base_uav3_dlg_hide"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24192680',
+        },
+      ],
     },
   ],
 });

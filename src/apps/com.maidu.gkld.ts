@@ -5,22 +5,46 @@ export default defineGkdApp({
   name: '公考雷达',
   groups: [
     {
+      key: 1,
+      name: '开屏广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      priorityTime: 10000,
+      rules: [
+        {
+          key: 0,
+          action: 'clickCenter',
+          matches:
+            '[text*="跳过"][text.length<10][width<500 && height<300][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/34117369',
+        },
+      ],
+    },
+    {
       key: 2,
-      name: '未分类-首页右侧悬浮广告',
-      activityIds: 'com.maidu.gkld.ui.main.MainActivity',
-      rules:
-        '[id="com.maidu.gkld:id/fl_float"] + [id="com.maidu.gkld:id/close_image_view"]',
-      snapshotUrls: 'https://i.gkd.li/i/12715291',
-      enable: true,
+      name: '局部广告-首页右侧悬浮广告',
+      rules: [
+        {
+          activityIds: '.ui.main.MainActivity',
+          matches: '[vid="fl_float"] + [vid="close_image_view"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715291',
+        },
+      ],
     },
     {
       key: 10,
-      name: '未分类-请求通知权限弹窗',
-      activityIds: 'com.maidu.gkld.ui.main.MainActivity',
-      rules:
-        '[id="com.maidu.gkld:id/ll_open_app_notice"] + [id="com.maidu.gkld:id/iv_cancel"]',
-      snapshotUrls: 'https://i.gkd.li/i/12715250',
-      enable: true,
+      name: '权限提示-通知权限',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          matches: '[vid="ll_open_app_notice"] + [vid="iv_cancel"]',
+          snapshotUrls: 'https://i.gkd.li/i/12715250',
+        },
+      ],
     },
   ],
 });

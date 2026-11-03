@@ -6,32 +6,45 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-应用内弹窗',
+      name: '全屏广告-弹窗广告',
       fastQuery: true,
-      activityIds: 'com.dw.btime.MainHomeTabActivity',
-      rules: '[id="com.dw.btime:id/iv_overlay_close"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12889448',
-      enable: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.MainHomeTabActivity',
+          matches: '[vid="iv_overlay_close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12889448',
+        },
+      ],
     },
     {
       key: 2,
-      name: '未分类-应用内横幅',
-      fastQuery: true,
-      activityIds: 'com.dw.btime.MainHomeTabActivity',
-      rules: '[id="com.dw.btime:id/old_baby_close"][clickable=true]',
-      snapshotUrls: 'https://i.gkd.li/i/12889450',
-      enable: true,
+      name: '局部广告-横幅广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.MainHomeTabActivity',
+          matches: '[vid="old_baby_close"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/12889450',
+        },
+      ],
     },
     {
       key: 3,
       name: '更新提示',
       fastQuery: true,
-      activityIds: 'com.dw.btime.base_library.dialog.DWBaseDialog',
-      rules:
-        'TextView[text="立即更新"] -3 [id="com.dw.btime:id/iv_upgrade_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/12911011',
-      enable: true,
-      order: -9,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.base_library.dialog.DWBaseDialog',
+          matches: '[vid="iv_upgrade_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/12911011',
+        },
+      ],
     },
   ],
 });

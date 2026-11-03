@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-广告弹窗',
+      name: '其他-广告弹窗',
       activityIds: 'com.zhouyu.music.activities.MainActivity',
       rules: '@[id=null][clickable=true] + View >n View [text$="广告"]',
       snapshotUrls: [
@@ -20,7 +20,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '未分类-搜索底部广告',
+      name: '其他-搜索底部广告',
       fastQuery: true,
       activityIds: 'com.zhouyu.music.activities.MainActivity',
       rules: '[id="com.zhouyu.music:id/ksad_ad_dislike"]',

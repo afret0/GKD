@@ -10,10 +10,13 @@ export default defineGkdApp({
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text="升级提示"] < * + [vid="btn_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/14188929',
-      enable: true,
-      order: -9,
+      rules: [
+        {
+          activityIds: 'com.xiaomi.gamecenter.sdk.ui.actlayout.ViewUpgrade',
+          matches: '[text="升级提示"] < * + [vid="btn_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/14188929',
+        },
+      ],
     },
   ],
 });

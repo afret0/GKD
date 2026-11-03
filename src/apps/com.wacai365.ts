@@ -8,51 +8,37 @@ export default defineGkdApp({
       key: 1,
       name: '更新提示',
       fastQuery: true,
-      actionMaximum: 1,
-      activityIds: [
-        'com.wacai365.HomeActivity',
-        'com.wacai.android.wind.splash.WindDialogActivity',
-      ],
-      rules:
-        '@ImageView[id="com.wacai365:id/tv_cancel"] - TextView[text^="新版本"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13249620',
-        'https://i.gkd.li/i/13772291',
-      ],
-      enable: true,
-      order: -9,
-    },
-    {
-      key: 2,
-      name: '全屏广告-弹窗广告',
-      fastQuery: true,
-      actionMaximum: 1,
-      activityIds: 'com.wacai365.HomeActivity',
-      rules: '[id^="com.wacai365:id/promote_banner_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13249666',
-      enable: true,
-    },
-    {
-      key: 3,
-      name: '开屏广告',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       rules: [
         {
-          key: 0,
-          fastQuery: true,
-          matches: '@View[clickable=true] <2 * <2 * < [vid="flTTContainer"]',
-          snapshotUrls: 'https://i.gkd.li/i/14021540',
-        },
-        {
-          key: 3,
-          fastQuery: true,
-          matches: '[text^="跳过"][text.length<=6]',
-          snapshotUrls: 'https://i.gkd.li/i/13399124',
+          activityIds: [
+            '.HomeActivity',
+            'com.wacai.android.wind.splash.WindDialogActivity',
+          ],
+          matches: '@ImageView[vid="tv_cancel"] - TextView[text^="新版本"]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13249620',
+            'https://i.gkd.li/i/13772291',
+          ],
         },
       ],
-      order: -10,
+    },
+    {
+      key: 2,
+      name: '全屏广告-弹窗广告',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.HomeActivity',
+          matches: '[id^="com.wacai365:id/promote_banner_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13249666',
+        },
+      ],
     },
   ],
 });

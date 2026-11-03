@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-信息流广告',
+      name: '局部广告-信息流广告',
       rules: [
         {
           key: 0,
@@ -16,7 +16,6 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/13520385',
         },
       ],
-      enable: true,
     },
   ],
 });

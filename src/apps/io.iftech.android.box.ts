@@ -5,30 +5,11 @@ export default defineGkdApp({
   name: '小组件盒子',
   groups: [
     {
-      key: 0,
-      name: '开屏广告',
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      rules:
-        'FrameLayout > FrameLayout[childCount>2] > @View[clickable=true] + TextView',
-      snapshotUrls: 'https://i.gkd.li/i/14204126',
-      order: -10,
-    },
-    {
-      key: 1,
-      name: '更新提示',
-      rules: '[text*="新版本"] +(2) [text="取消"]',
-      snapshotUrls: 'https://i.gkd.li/i/12706195',
-      enable: true,
-      order: -9,
-    },
-    {
       key: 2,
       name: '全屏广告-弹窗广告',
       rules: [
         {
-          name: '穿山甲',
+          key: 0,
           activityIds:
             'com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity',
           matches:
@@ -36,43 +17,46 @@ export default defineGkdApp({
           snapshotUrls: 'https://i.gkd.li/i/12706209',
         },
         {
-          name: '优量汇',
-          activityIds: 'io.iftech.android.box.main.HomeActivity',
+          key: 1,
+          activityIds: '.main.HomeActivity',
           matches: 'ImageView - FrameLayout > ImageView[id=null]',
           snapshotUrls: 'https://i.gkd.li/i/12706209',
         },
         {
-          name: '百青藤-1',
+          key: 2,
           activityIds: 'com.anythink.basead.ui.ATPortraitTranslucentActivity',
-          matches:
-            '[id="io.iftech.android.box:id/anythink_myoffer_btn_close_id"]',
+          matches: '[vid="anythink_myoffer_btn_close_id"]',
           snapshotUrls: 'https://i.gkd.li/i/12706228',
         },
         {
-          name: '百青藤-2',
+          key: 3,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[id=null][clickable=true] + RelativeLayout + ImageView + ImageView',
           snapshotUrls: 'https://i.gkd.li/i/12706236',
         },
         {
-          name: '百青藤-3',
+          key: 4,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches:
             '@ImageView[id=null][clickable=true] + RelativeLayout > RelativeLayout > ImageView + ImageView',
           snapshotUrls: 'https://i.gkd.li/i/12706240',
         },
       ],
-      enable: true,
     },
     {
       key: 10,
-      name: '未分类-会员限时优惠弹窗',
-      activityIds: 'io.iftech.android.box.main.HomeActivity',
-      rules:
-        '@[id="io.iftech.android.box:id/ivClose"] + [text^="限时"][text$="特惠"]',
-      snapshotUrls: 'https://i.gkd.li/i/12706226',
-      enable: true,
+      name: '全屏广告-会员限时优惠弹窗',
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.main.HomeActivity',
+          matches: '@[vid="ivClose"] + [text^="限时"][text$="特惠"]',
+          snapshotUrls: 'https://i.gkd.li/i/12706226',
+        },
+      ],
     },
   ],
 });

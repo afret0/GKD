@@ -6,15 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-版本更新',
+      name: '更新提示',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      activityIds: 'bin.mt.plus.Main',
-      rules: 'LinearLayoutCompat @[text="取消"] + [text="更新"]',
-      snapshotUrls: 'https://i.gkd.li/i/13561226',
-      enable: true,
+      rules: [
+        {
+          activityIds: 'bin.mt.plus.Main',
+          matches: '@[text="取消"] + [text="更新"]',
+          snapshotUrls: 'https://i.gkd.li/i/13561226',
+        },
+      ],
     },
   ],
 });

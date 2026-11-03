@@ -11,9 +11,17 @@ export default defineGkdApp({
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
-      rules: '[text*="关闭"][text.length<=10]',
-      snapshotUrls: 'https://i.gkd.li/i/13407227',
-      order: -10,
+      priorityTime: 10000,
+      rules: [
+        {
+          matches:
+            '@[clickable=true] > [text*="关闭" || text*="跳过"][text.length<10]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13407227',
+            'https://i.gkd.li/i/30527745',
+          ],
+        },
+      ],
     },
   ],
 });

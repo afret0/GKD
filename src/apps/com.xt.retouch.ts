@@ -6,11 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 5,
-      name: '未分类-好评反馈',
-      activityIds: 'com.xt.retouch.uilauncher.MainActivity',
-      rules: '[id="com.xt.retouch:id/market_feedback_dialog_close"]',
-      snapshotUrls: 'https://i.gkd.li/i/13062637',
-      enable: true,
+      name: '评价提示-好评反馈',
+      fastQuery: true,
+      matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
+      rules: [
+        {
+          activityIds: '.uilauncher.MainActivity',
+          matches: '[vid="market_feedback_dialog_close"]',
+          snapshotUrls: 'https://i.gkd.li/i/13062637',
+        },
+      ],
     },
   ],
 });

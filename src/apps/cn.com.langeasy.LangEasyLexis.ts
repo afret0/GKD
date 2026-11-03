@@ -6,32 +6,34 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-自动签到',
+      name: '功能类-自动签到',
       fastQuery: true,
       matchTime: 10000,
       actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          activityIds: 'cn.com.langeasy.LangEasyLexis.activity.MainActivity',
-          matches: '[id="cn.com.langeasy.LangEasyLexis:id/bb_checkin"]',
-          snapshotUrls: 'https://i.gkd.li/i/13610321',
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="bb_checkin"]',
+          snapshotUrls: 'https://i.gkd.li/i/13610321', //旧快照
         },
       ],
-      enable: true,
     },
     {
       key: 2,
-      name: '未分类-右下角弹窗',
+      name: '功能类-右下角年度报告弹窗',
+      desc: '点击关闭',
       fastQuery: true,
       matchTime: 10000,
+      actionMaximum: 1,
+      resetMatch: 'app',
       rules: [
         {
-          activityIds: 'cn.com.langeasy.LangEasyLexis.activity.MainActivity',
-          matches: '[id="cn.com.langeasy.LangEasyLexis:id/close_float_button"]',
-          snapshotUrls: 'https://i.gkd.li/i/13759025',
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="close_float_button"]',
+          snapshotUrls: 'https://i.gkd.li/i/13759025', //旧快照
         },
       ],
-      enable: true,
     },
   ],
 });

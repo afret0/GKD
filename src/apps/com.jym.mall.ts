@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '未分类-升级弹窗',
+      name: '其他-升级弹窗',
       rules: '[id="com.jym.mall:id/tv_cancel"][text="下次再说"]',
       snapshotUrls: 'https://i.gkd.li/i/12496974',
       enable: true,

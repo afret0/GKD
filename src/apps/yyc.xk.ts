@@ -6,16 +6,17 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '全屏广告-广告弹窗',
+      name: '全屏广告-弹窗广告',
+      desc: '点击关闭',
       rules: [
         {
-          key: 0,
-          name: '腾讯SDK',
-          matches: '[vid="XK"] >n FrameLayout[childCount=1] > ImageView',
-          snapshotUrls: 'https://i.gkd.li/i/14011298',
+          fastQuery: true,
+          activityIds: '.activity.MainActivity',
+          matches: '[vid="gm信息流广告关闭"][visibleToUser=true]',
+          exampleUrls: 'https://e.gkd.li/972de09c-a399-4b7d-b7c4-e03c072a7170',
+          snapshotUrls: 'https://i.gkd.li/i/20863704',
         },
       ],
-      enable: true,
     },
   ],
 });

@@ -6,21 +6,24 @@ export default defineGkdApp({
   groups: [
     {
       key: 3,
-      name: '未分类-广告弹窗',
-      fastQuery: true,
-      matchTime: 10000,
-      actionMaximum: 1,
-      resetMatch: 'app',
-      activityIds: [
-        'com.smk.activity.MainActivity',
-        'com.smk.activity.LaunchActivity',
+      name: '全屏广告-弹窗广告',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: [
+            '.activity.MainActivity',
+            '.activity.LaunchActivity',
+            'com.tianmu.biz.activity.InterstitialActivity',
+          ],
+          matches:
+            '[vid="iv_close_ad" || vid="tianmu_widget_iv_close"][visibleToUser=true]',
+          snapshotUrls: [
+            'https://i.gkd.li/i/13402584',
+            'https://i.gkd.li/i/13425013',
+            'https://i.gkd.li/i/23567834',
+          ],
+        },
       ],
-      rules: '[id="com.smk:id/iv_close_ad"]',
-      snapshotUrls: [
-        'https://i.gkd.li/i/13402584',
-        'https://i.gkd.li/i/13425013',
-      ],
-      enable: true,
     },
   ],
 });

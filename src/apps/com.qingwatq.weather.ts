@@ -6,17 +6,16 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '未分类-卡片式广告',
+      name: '局部广告-卡片广告',
       rules: [
         {
           key: 0,
-          activityIds: 'com.qingwatq.weather.home.HomeActivity',
-          matches:
-            '[id="com.qingwatq.weather:id/titleArea"] + [id="com.qingwatq.weather:id/closeImg"]',
+          fastQuery: true,
+          activityIds: '.home.HomeActivity',
+          matches: '[vid="titleArea"] + [vid="closeImg"]',
           snapshotUrls: 'https://i.gkd.li/i/13476350',
         },
       ],
-      enable: true,
     },
   ],
 });

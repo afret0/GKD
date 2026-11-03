@@ -6,15 +6,14 @@ export default defineGkdApp({
   groups: [
     {
       key: 0,
-      name: '未分类-下拉搜索横幅广告',
-      activityIds: [
-        'com.huawei.search.HomeActivity',
-        'com.huawei.search.MainActivity',
-      ],
+      name: '分段广告-下拉搜索横幅广告',
+      fastQuery: true,
+      activityIds: ['.HomeActivity', '.MainActivity'],
       rules: [
         {
+          key: 0,
           matches:
-            '[id="com.huawei.search:id/iv_topic_close_in_image"||id="com.huawei.search:id/iv_topic_left_close"||id="com.huawei.search:id/iv_topic_close_in_pps"]',
+            '[vid="iv_topic_close_in_image" || vid="iv_topic_left_close" || vid="iv_topic_close_in_pps"]',
           snapshotUrls: [
             'https://i.gkd.li/i/12667938',
             'https://i.gkd.li/i/12745008',
@@ -23,12 +22,25 @@ export default defineGkdApp({
           ],
         },
         {
-          matches:
-            'ViewGroup[id="com.huawei.search:id/unlike_flow_layout"] > TextView[text="直接关闭"]',
+          preKeys: [0],
+          key: 1,
+          matches: 'TextView[text="直接关闭"]',
           snapshotUrls: ['https://i.gkd.li/i/12745001'],
         },
       ],
-      enable: true,
+    },
+    {
+      key: 1,
+      name: '局部广告-搜索框下广告',
+      desc: '点击x掉',
+      rules: [
+        {
+          fastQuery: true,
+          activityIds: '.HomeActivity',
+          matches: '[vid="btn_full_mode_cancel"][clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/24856481',
+        },
+      ],
     },
   ],
 });

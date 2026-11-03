@@ -6,16 +6,18 @@ export default defineGkdApp({
   groups: [
     {
       key: 2,
-      name: '未分类-版本更新',
+      name: '更新提示',
       matchTime: 10000,
       actionMaximum: 1,
       resetMatch: 'app',
       fastQuery: true,
-      activityIds: 'com.wisorg.wisedu.home.ui.HomeActivity',
-      rules:
-        '[id="com.wisedu.cpdaily:id/btn_update"] + [id="com.wisedu.cpdaily:id/tv_ignore"]',
-      snapshotUrls: 'https://i.gkd.li/i/13643565',
-      enable: true,
+      rules: [
+        {
+          activityIds: 'com.wisorg.wisedu.home.ui.HomeActivity',
+          matches: '[vid="btn_update"] + [vid="tv_ignore"]',
+          snapshotUrls: 'https://i.gkd.li/i/13643565',
+        },
+      ],
     },
   ],
 });
