@@ -7,7 +7,7 @@ export default defineGkdApp({
     {
       key: 1,
       name: '功能类-点击蓝牙图标',
-      desc: '进入首页后自动点击一次蓝牙状态图标',
+      desc: '进入首页后自动点击一次蓝牙状态图标, 蓝牙图标不是蓝色时才点击',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
@@ -16,6 +16,7 @@ export default defineGkdApp({
         {
           key: 0,
           matches: '[vid="fl_ble_sts"]',
+          excludeMatches: '[vid="iv_control_type_blue"][visibleToUser=true]',
         },
       ],
       enable: true,
